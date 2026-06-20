@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cinema City Galilot — לוח הקרנות</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --panel: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --accent: #f0883e;
+      --vip: #d2a8ff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    header {
+      padding: 20px 16px;
+      border-bottom: 1px solid var(--border);
+      background: var(--panel);
+    }
+    header h1 { margin: 0 0 4px; font-size: 1.4rem; }
+    header p { margin: 0; color: var(--muted); font-size: .9rem; }
+    main { max-width: 1000px; margin: 0 auto; padding: 16px; }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: end;
+      margin-bottom: 16px;
+    }
+    .field { display: flex; flex-direction: column; gap: 4px; }
+    .field label { font-size: .75rem; color: var(--muted); }
+    .field input, .field select {
+      background: var(--panel);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 8px 10px;
+      font-size: .9rem;
+    }
+    #proxy { min-width: 320px; }
+    button {
+      background: var(--accent);
+      color: #1c1206;
+      border: 0;
+      border-radius: 6px;
+      padding: 9px 16px;
+      font-size: .9rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    button:disabled { opacity: .5; cursor: default; }
+    label.check { display: flex; align-items: center; gap: 6px; font-size: .85rem; color: var(--muted); }
+
+    #status {
+      padding: 10px 12px;
+      border-radius: 6px;
+      margin-bottom: 16px;
+      font-size: .9rem;
+      display: none;
+    }
+    #status.show { display: block; }
+    #status.info { background: #1c2733; color: #79c0ff; }
+    #status.error { background: #3d1d1d; color: #ff7b72; }
+
+    .note {
+      font-size: .8rem;
+      color: var(--muted);
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 10px 12px;
+      margin-bottom: 16px;
+    }
+    .note a { color: var(--accent); }
+
+    .movie {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin-bottom: 12px;
+    }
+    .movie h2 { margin: 0 0 10px; font-size: 1.1rem; }
+    .day-group { margin-bottom: 10px; }
+    .day-label { font-size: .8rem; color: var(--muted); margin-bottom: 6px; }
+    .times { display: flex; flex-wrap: wrap; gap: 8px; }
+    .time {
+      display: inline-block;
+      background: #21262d;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 5px 10px;
+      font-size: .9rem;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .time.vip { border-color: var(--vip); color: var(--vip); }
+    .time:hover { border-color: var(--accent); }
+    .badge {
+      font-size: .65rem;
+      vertical-align: top;
+      margin-inline-start: 4px;
+      color: var(--vip);
+    }
+    .empty { color: var(--muted); padding: 40px 0; text-align: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cinema City Galilot — לוח הקרנות</h1>
+    <p>נתונים חיים מתוך נקודת הקצה <code>EventsFlat</code> (Theatre 1170).</p>
+  </header>
+
+  <main>
+    <div class="controls">
+      <div class="field">
+        <label for="proxy">CORS proxy (cors-anywhere)</label>
+        <input id="proxy" type="text" spellcheck="false">
+      </div>
+      <div class="field">
+        <label for="dayFilter">יום</label>
+        <select id="dayFilter"><option value="">כל הימים</option></select>
+      </div>
+      <label class="check">
+        <input id="vipToggle" type="checkbox" checked>
+        כולל אולמות VIP
+      </label>
+      <button id="loadBtn">טען לוח</button>
+    </div>
+
+    <div class="note">
+      נקודת הקצה לא מחזירה כותרת <code>Access-Control-Allow-Origin</code>, ולכן הבקשה
+      עוברת דרך <a href="https://github.com/Rob--W/cors-anywhere" target="_blank" rel="noopener">cors-anywhere</a>.
+      מארח ה-demo הציבורי (<code>cors-anywhere.herokuapp.com</code>) דורש הפעלה ידנית חד-פעמית —
+      פתחו את <a href="https://cors-anywhere.herokuapp.com/corsdemo" target="_blank" rel="noopener">דף ההרשאה</a>
+      ולחצו “Request temporary access”, או הזינו כתובת של פרוקסי cors-anywhere משלכם.
+    </div>
+
+    <div id="status"></div>
+    <div id="results"><div class="empty">לחצו “טען לוח” כדי לשלוף את ההקרנות.</div></div>
+  </main>
+
+  <script>
+    // ---- Config -----------------------------------------------------------
+    const THEATRE_ID = 1170;
+    const ENDPOINT = "https://www.cinema-city.co.il/tickets/EventsFlat";
+    const DEFAULT_PROXY = "https://cors-anywhere.herokuapp.com/";
+    const VENUE_STANDARD = 1;
+    const VENUE_VIP = 3;
+
+    const $ = (id) => document.getElementById(id);
+    const proxyInput = $("proxy");
+    const dayFilter = $("dayFilter");
+    const vipToggle = $("vipToggle");
+    const loadBtn = $("loadBtn");
+    const statusEl = $("status");
+    const resultsEl = $("results");
+
+    // Restore saved proxy.
+    proxyInput.value = localStorage.getItem("cc_proxy") || DEFAULT_PROXY;
+
+    function setStatus(msg, kind) {
+      statusEl.textContent = msg;
+      statusEl.className = "show " + (kind || "info");
+    }
+    function clearStatus() { statusEl.className = ""; }
+
+    // cors-anywhere takes the raw target URL appended to the proxy base.
+    function viaProxy(targetUrl) {
+      let base = proxyInput.value.trim();
+      if (base && !base.endsWith("/")) base += "/";
+      return base + targetUrl;
+    }
+
+    function buildEndpointUrl(venueTypeId) {
+      const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+      const qs = new URLSearchParams({
+        TheatreId: THEATRE_ID,
+        VenueTypeId: venueTypeId,
+        MovieId: 0,
+        Date: today, // required but ignored by the endpoint
+      });
+      return `${ENDPOINT}?${qs.toString()}`;
+    }
+
+    async function fetchEvents(venueTypeId) {
+      const res = await fetch(viaProxy(buildEndpointUrl(venueTypeId)), {
+        headers: { "X-Requested-With": "XMLHttpRequest" },
+      });
+      if (!res.ok) {
+        throw new Error(`HTTP ${res.status} ${res.statusText} (VenueType ${venueTypeId})`);
+      }
+      const data = await res.json();
+      return Array.isArray(data) ? data : [];
+    }
+
+    // ---- Grouping (per the API doc: group by ExportCode) -------------------
+    function toTs(dateStr) {
+      // "DD/MM/YYYY HH:MM" -> epoch ms
+      const [d, t] = dateStr.split(" ");
+      const [dd, mm, yyyy] = d.split("/");
+      return new Date(`${yyyy}-${mm}-${dd}T${t || "00:00"}`).getTime();
+    }
+
+    function groupShows(events) {
+      const shows = new Map(); // ExportCode -> { name, screenings[] }
+      const seen = new Set();  // de-dupe merged arrays by eventId
+
+      for (const e of events) {
+        const d = e.Dates;
+        if (!d) continue;
+        const dedupeKey = `${e.ExportCode}|${d.EventId}`;
+        if (seen.has(dedupeKey)) continue;
+        seen.add(dedupeKey);
+
+        const key = e.ExportCode ?? e.Name;
+        if (!shows.has(key)) {
+          shows.set(key, { name: e.Name, screenings: [] });
+        }
+        shows.get(key).screenings.push({
+          day: d.Day,
+          date: d.Date,
+          hour: d.Hour,
+          eventId: d.EventId,
+          vip: (e.VenueType || "").toLowerCase() === "vip",
+        });
+      }
+
+      for (const v of shows.values()) {
+        v.screenings.sort((a, b) => toTs(a.date) - toTs(b.date));
+      }
+      return [...shows.values()].sort((a, b) =>
+        a.name.localeCompare(b.name, "he"));
+    }
+
+    // ---- Render -----------------------------------------------------------
+    let allShows = [];
+
+    function populateDayFilter(shows) {
+      const days = new Map(); // Day label -> earliest ts (for ordering)
+      for (const s of shows) {
+        for (const sc of s.screenings) {
+          if (!days.has(sc.day) || toTs(sc.date) < days.get(sc.day)) {
+            days.set(sc.day, toTs(sc.date));
+          }
+        }
+      }
+      const ordered = [...days.entries()].sort((a, b) => a[1] - b[1]);
+      dayFilter.innerHTML = '<option value="">כל הימים</option>';
+      for (const [day] of ordered) {
+        const opt = document.createElement("option");
+        opt.value = day;
+        opt.textContent = day;
+        dayFilter.appendChild(opt);
+      }
+    }
+
+    function bookingUrl(eventId) {
+      // Booking handle per the doc; exact purchase path unconfirmed.
+      return `https://www.cinema-city.co.il/tickets/seats?eventId=${eventId}`;
+    }
+
+    function render() {
+      const day = dayFilter.value;
+      resultsEl.innerHTML = "";
+
+      const visible = allShows
+        .map((s) => ({
+          ...s,
+          screenings: day ? s.screenings.filter((sc) => sc.day === day) : s.screenings,
+        }))
+        .filter((s) => s.screenings.length);
+
+      if (!visible.length) {
+        resultsEl.innerHTML = '<div class="empty">אין הקרנות להצגה.</div>';
+        return;
+      }
+
+      for (const show of visible) {
+        const card = document.createElement("div");
+        card.className = "movie";
+
+        const h2 = document.createElement("h2");
+        h2.textContent = show.name;
+        card.appendChild(h2);
+
+        // group screenings by day
+        const byDay = new Map();
+        for (const sc of show.screenings) {
+          if (!byDay.has(sc.day)) byDay.set(sc.day, []);
+          byDay.get(sc.day).push(sc);
+        }
+
+        for (const [dayLabel, list] of byDay) {
+          const group = document.createElement("div");
+          group.className = "day-group";
+
+          const dl = document.createElement("div");
+          dl.className = "day-label";
+          dl.textContent = dayLabel;
+          group.appendChild(dl);
+
+          const times = document.createElement("div");
+          times.className = "times";
+          for (const sc of list) {
+            const a = document.createElement("a");
+            a.className = "time" + (sc.vip ? " vip" : "");
+            a.href = bookingUrl(sc.eventId);
+            a.target = "_blank";
+            a.rel = "noopener";
+            a.textContent = sc.hour;
+            if (sc.vip) {
+              const b = document.createElement("span");
+              b.className = "badge";
+              b.textContent = "VIP";
+              a.appendChild(b);
+            }
+            times.appendChild(a);
+          }
+          group.appendChild(times);
+          card.appendChild(group);
+        }
+        resultsEl.appendChild(card);
+      }
+    }
+
+    // ---- Load -------------------------------------------------------------
+    async function load() {
+      localStorage.setItem("cc_proxy", proxyInput.value.trim());
+      loadBtn.disabled = true;
+      setStatus("טוען הקרנות…", "info");
+      try {
+        const requests = [fetchEvents(VENUE_STANDARD)];
+        if (vipToggle.checked) requests.push(fetchEvents(VENUE_VIP));
+
+        const arrays = await Promise.all(requests);
+        const merged = arrays.flat();
+        allShows = groupShows(merged);
+
+        const total = allShows.reduce((n, s) => n + s.screenings.length, 0);
+        populateDayFilter(allShows);
+        render();
+        clearStatus();
+        setStatus(`נטענו ${allShows.length} סרטים, ${total} הקרנות.`, "info");
+      } catch (err) {
+        console.error(err);
+        resultsEl.innerHTML = '<div class="empty">הטעינה נכשלה.</div>';
+        setStatus(
+          `שגיאה: ${err.message}. אם זה ה-demo הציבורי של cors-anywhere, ` +
+          `הפעילו גישה זמנית בכתובת cors-anywhere.herokuapp.com/corsdemo.`,
+          "error"
+        );
+      } finally {
+        loadBtn.disabled = false;
+      }
+    }
+
+    loadBtn.addEventListener("click", load);
+    dayFilter.addEventListener("change", render);
+  </script>
+</body>
+</html>
