@@ -23,6 +23,7 @@
 
 import { createCinemaCityProvider } from "./cinema-city.js";
 import { createLevProvider } from "./lev.js";
+import { createPlanetProvider } from "./planet.js";
 
 export const providers = [
   createCinemaCityProvider({
@@ -37,12 +38,21 @@ export const providers = [
     icon: "assets/icons/lev.png",
     locationId: 1162,
   }),
+  createPlanetProvider({
+    id: "planet-ayalon",
+    name: "פלאנט · אילון",
+    icon: "assets/icons/planet-cinema.png",
+    cinemaId: 1025,
+  }),
   // Add more providers here. For other Cinema City branches, reuse the factory
   // with that branch's TheatreId, e.g.:
   //   createCinemaCityProvider({ id: "cc-rishon", name: "Cinema City · ראשון", icon: "assets/icons/cinema-city.png", theatreId: <id> }),
   // For other Lev branches, reuse createLevProvider with that branch's locationId
   // (see ../docs/lev-presentations-api.md §7), e.g.:
   //   createLevProvider({ id: "lev-telaviv", name: "לב · תל אביב", icon: "assets/icons/lev.png", locationId: 1150 }),
+  // For other Planet Cinema branches, reuse createPlanetProvider with that
+  // branch's cinemaId (see ../docs/planet-cinema-api.md §2), e.g.:
+  //   createPlanetProvider({ id: "planet-haifa", name: "פלאנט · חיפה", icon: "assets/icons/planet-cinema.png", cinemaId: 1070 }),
 ];
 
 // Collapse near-identical titles so the same movie from two theaters merges into

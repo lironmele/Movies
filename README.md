@@ -4,8 +4,9 @@ A static page that fetches cinema schedules and displays the movies and their
 showtimes, grouped by movie and by day. Every theater is shown at once: the
 schedules from all providers are merged into a single movie list, and each
 showtime is tagged with the theater's logo so you can see where it plays. It is
-built around **pluggable movie providers** — Cinema City Galilot and Lev Ramat
-HaSharon are bundled today, and more can be added without touching the UI.
+built around **pluggable movie providers** — Cinema City Galilot, Lev Ramat
+HaSharon and Planet Ayalon are bundled today, and more can be added without
+touching the UI.
 
 ## Structure
 
@@ -18,6 +19,7 @@ providers/
   registry.js           the providers + fetchAllShows() (merge + theater tag)
   cinema-city.js        Cinema City provider factory (any branch by TheatreId)
   lev.js                Lev Cinema provider factory (any branch by locationId)
+  planet.js             Planet Cinema provider factory (any branch by cinemaId)
 assets/icons/           theater logos, fetched from each cinema's website
 ```
 
@@ -68,6 +70,13 @@ For another Lev branch, reuse its factory with that branch's `locationId`
 createLevProvider({ id: "lev-telaviv", name: "לב · תל אביב", icon: "assets/icons/lev.png", locationId: 1150 })
 ```
 
+For another Planet Cinema branch, reuse its factory with that branch's `cinemaId`
+(branch IDs are listed in [`docs/planet-cinema-api.md`](docs/planet-cinema-api.md)):
+
+```js
+createPlanetProvider({ id: "planet-haifa", name: "פלאנט · חיפה", icon: "assets/icons/planet-cinema.png", cinemaId: 1070 })
+```
+
 ## The Cinema City provider
 
 - Pulls from the undocumented `EventsFlat` endpoint — see
@@ -84,6 +93,16 @@ createLevProvider({ id: "lev-telaviv", name: "לב · תל אביב", icon: "ass
   physical-hall rows (`venueTypeId === 1`), groups screenings by `featureId`, and
   sorts chronologically.
 - Each showtime links to the order page built from the presentation `id`.
+
+## The Planet Cinema provider
+
+- Pulls from the Cineworld/Vista "quickbook" JSON API — see
+  [`docs/planet-cinema-api.md`](docs/planet-cinema-api.md).
+- There is no bulk endpoint, so it first asks which dates have showings, then
+  makes one request per date, joins `events` to `films` on `filmId`, groups
+  screenings by `filmId`, and sorts chronologically. A single date that fails to
+  load is tolerated; the branch only errors if every date request fails.
+- Each showtime links to the `bookingLink` returned on the event.
 
 ## CORS proxy (required)
 
