@@ -19,6 +19,7 @@
 // same interface.
 
 import { createCinemaCityProvider } from "./cinema-city.js";
+import { createLevProvider } from "./lev.js";
 
 export const providers = [
   createCinemaCityProvider({
@@ -26,9 +27,17 @@ export const providers = [
     name: "Cinema City · גלילות",
     theatreId: 1170,
   }),
+  createLevProvider({
+    id: "lev-ramat-hasharon",
+    name: "לב · רמת השרון",
+    locationId: 1162,
+  }),
   // Add more providers here. For other Cinema City branches, reuse the factory
   // with that branch's TheatreId, e.g.:
   //   createCinemaCityProvider({ id: "cc-rishon", name: "Cinema City · ראשון", theatreId: <id> }),
+  // For other Lev branches, reuse createLevProvider with that branch's locationId
+  // (see ../docs/lev-presentations-api.md §7), e.g.:
+  //   createLevProvider({ id: "lev-telaviv", name: "לב · תל אביב", locationId: 1150 }),
 ];
 
 export function getProvider(id) {

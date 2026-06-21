@@ -2,8 +2,8 @@
 
 A static page that fetches cinema schedules and displays the movies and their
 showtimes, grouped by movie and by day. It is built around **pluggable movie
-providers** — Cinema City Galilot is the one bundled today, and more can be
-added without touching the UI.
+providers** — Cinema City Galilot and Lev Ramat HaSharon are bundled today, and
+more can be added without touching the UI.
 
 ## Structure
 
@@ -14,6 +14,7 @@ lib/proxy.js            shared CORS-proxy helper
 providers/
   registry.js           the list of available providers
   cinema-city.js        Cinema City provider factory (any branch by TheatreId)
+  lev.js                Lev Cinema provider factory (any branch by locationId)
 ```
 
 When more than one provider is registered, a provider selector appears under
@@ -50,6 +51,13 @@ Cinema City branch, reuse the factory with that branch's `TheatreId`:
 createCinemaCityProvider({ id: "cc-rishon", name: "Cinema City · ראשון", theatreId: <id> })
 ```
 
+For another Lev branch, reuse its factory with that branch's `locationId`
+(branch IDs are listed in [`docs/lev-presentations-api.md`](docs/lev-presentations-api.md)):
+
+```js
+createLevProvider({ id: "lev-telaviv", name: "לב · תל אביב", locationId: 1150 })
+```
+
 ## The Cinema City provider
 
 - Pulls from the undocumented `EventsFlat` endpoint — see
@@ -58,12 +66,21 @@ createCinemaCityProvider({ id: "cc-rishon", name: "Cinema City · ראשון", t
   de-dupes them, groups screenings by `ExportCode`, and sorts chronologically.
 - Each showtime links to the booking handle built from `Dates.EventId`.
 
+## The Lev provider
+
+- Pulls from the `/api/presentations/` endpoint — see
+  [`docs/lev-presentations-api.md`](docs/lev-presentations-api.md).
+- Makes one request per branch (`locationId` + a ~4-week date window), keeps only
+  physical-hall rows (`venueTypeId === 1`), groups screenings by `featureId`, and
+  sorts chronologically.
+- Each showtime links to the order page built from the presentation `id`.
+
 ## CORS proxy (required)
 
-The endpoint sends no `Access-Control-Allow-Origin` header, so the browser
-cannot call it directly. Requests are routed through
-[cors-anywhere](https://github.com/Rob--W/cors-anywhere), which forwards the
-required `X-Requested-With: XMLHttpRequest` header to Cinema City.
+The cinema endpoints send no `Access-Control-Allow-Origin` header, so the browser
+cannot call them directly. Requests are routed through
+[cors-anywhere](https://github.com/Rob--W/cors-anywhere), which also forwards the
+`X-Requested-With: XMLHttpRequest` header that Cinema City requires.
 
 The proxy URL is editable in the page (saved to `localStorage`). It defaults to
 the public demo host `https://cors-anywhere.herokuapp.com/`, which requires a
