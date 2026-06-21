@@ -1,15 +1,61 @@
-# Cinema City Galilot — Showtimes
+# Movie Showtimes
 
-A single static page (`index.html`) that fetches the full forward schedule for
-Cinema City Galilot (Theatre `1170`) and displays the movies and their showtimes,
-grouped by movie and by day, with VIP screenings merged in.
+A static page that fetches cinema schedules and displays the movies and their
+showtimes, grouped by movie and by day. It is built around **pluggable movie
+providers** — Cinema City Galilot is the one bundled today, and more can be
+added without touching the UI.
 
-## How it works
+## Structure
+
+```
+index.html              markup + styles (no app logic)
+app.js                  provider-agnostic UI: search, day filter, accordion
+lib/proxy.js            shared CORS-proxy helper
+providers/
+  registry.js           the list of available providers
+  cinema-city.js        Cinema City provider factory (any branch by TheatreId)
+```
+
+When more than one provider is registered, a provider selector appears under
+the title; the choice is remembered in `localStorage`.
+
+## Adding a provider
+
+A provider is any object shaped like:
+
+```js
+{
+  id:   "my-cinema",          // stable id (used for persistence)
+  name: "My Cinema",          // label shown in the selector
+  async fetchShows() {        // returns the normalized shape below
+    return [
+      {
+        key: "movie-123",
+        name: "Some Movie",
+        screenings: [
+          { ts: 1750000000000, day: "שבת 20/06/2026", hour: "18:00",
+            bookingUrl: "https://…" },
+        ],
+      },
+    ];
+  },
+}
+```
+
+Add it to the array in [`providers/registry.js`](providers/registry.js). The UI
+only ever sees this normalized shape, so it never needs to change. For another
+Cinema City branch, reuse the factory with that branch's `TheatreId`:
+
+```js
+createCinemaCityProvider({ id: "cc-rishon", name: "Cinema City · ראשון", theatreId: <id> })
+```
+
+## The Cinema City provider
 
 - Pulls from the undocumented `EventsFlat` endpoint — see
   [`docs/cinema-city-galilot-api.md`](docs/cinema-city-galilot-api.md).
-- Makes 1–2 requests (standard halls + optional VIP), merges and de-dupes them,
-  groups screenings by `ExportCode`, and sorts chronologically.
+- Makes 1–2 requests per branch (standard halls + optional VIP), merges and
+  de-dupes them, groups screenings by `ExportCode`, and sorts chronologically.
 - Each showtime links to the booking handle built from `Dates.EventId`.
 
 ## CORS proxy (required)
@@ -31,11 +77,12 @@ its URL into the proxy field.
 
 ## Run
 
-Just open `index.html` in a browser, or serve the folder:
+The app now uses ES modules, so it must be served over HTTP (opening the file
+directly via `file://` will not load the modules):
 
 ```sh
 python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
 
-Click **טען לוח** (Load schedule) to fetch.
+The schedule loads automatically on open.
