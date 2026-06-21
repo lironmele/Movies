@@ -7,23 +7,16 @@
 // See ../docs/lev-presentations-api.md for the endpoint details.
 
 import { viaProxy } from "../lib/proxy.js";
+import { toDayKey, dayLabel } from "../lib/day.js";
 
 const ENDPOINT = "https://ticket.lev.co.il/api/presentations/";
 const VENUE_HALL = 1; // physical cinema hall (101 = VOD, excluded)
 const WINDOW_DAYS = 28; // forward window the API publishes, ~4 weeks
 
-// Match the Cinema City provider's display-ready day label: "שבת 20/06/2026".
-const HE_WEEKDAYS = ["ראשון", "שני", "שלישי", "רביעי", "חמישי", "שישי", "שבת"];
-
-function pad(n) {
-  return String(n).padStart(2, "0");
-}
-
-// "YYYY-MM-DD" (Asia/Jerusalem business day) -> "שבת 20/06/2026".
-function dayLabel(businessDate) {
+// "YYYY-MM-DD" (Asia/Jerusalem business day) -> canonical "YYYY-MM-DD" day key.
+function toDay(businessDate) {
   const [yyyy, mm, dd] = businessDate.split("-").map(Number);
-  const d = new Date(yyyy, mm - 1, dd); // local midnight, so getDay() is stable
-  return `${HE_WEEKDAYS[d.getDay()]} ${pad(dd)}/${pad(mm)}/${yyyy}`;
+  return toDayKey(yyyy, mm, dd);
 }
 
 // "YYYY-MM-DD HH:MM" (no offset) -> epoch millis, for chronological sorting.
@@ -74,9 +67,11 @@ function groupShows(presentations) {
     if (!p.dateTime || !p.businessDate) continue;
     const key = String(p.featureId ?? p.featureName); // featureId is the stable id
     if (!shows.has(key)) shows.set(key, { key, name: p.featureName, screenings: [] });
+    const dayKey = toDay(p.businessDate);
     shows.get(key).screenings.push({
       ts: toTs(p.dateTime),
-      day: dayLabel(p.businessDate),
+      dayKey, // canonical "YYYY-MM-DD" — groups across providers
+      day: dayLabel(dayKey), // display label, built from the same source
       hour: p.dateTime.slice(11, 16), // "HH:MM"
       bookingUrl: bookingUrl(p.id),
     });
@@ -84,10 +79,11 @@ function groupShows(presentations) {
   return [...shows.values()];
 }
 
-export function createLevProvider({ id, name, locationId }) {
+export function createLevProvider({ id, name, icon, locationId }) {
   return {
     id,
     name,
+    icon,
     async fetchShows() {
       return groupShows(await fetchPresentations(locationId));
     },

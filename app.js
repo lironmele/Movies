@@ -1,19 +1,18 @@
 // Provider-agnostic UI: search, day filter, and the movie accordion.
-// All cinema-specific logic lives behind the provider interface (registry.js);
-// this file only ever works with the normalized Show/Screening shape.
+// Every theater is shown at once: fetchAllShows() merges all providers into one
+// movie list and tags each screening with the theater it belongs to, so this
+// file only ever works with the normalized Show/Screening shape.
 
-import { providers, getProvider } from "./providers/registry.js";
+import { providers, fetchAllShows } from "./providers/registry.js";
 
 const $ = (id) => document.getElementById(id);
 const searchEl = $("search");
-const providersEl = $("providers");
-const eyebrowEl = $("eyebrow");
+const legendEl = $("legend");
 const daysEl = $("days");
 const movieListEl = $("movieList");
 const noteEl = $("note");
 
 // ---- State ------------------------------------------------------------------
-let provider = getProvider(localStorage.getItem("provider_id"));
 let allShows = [];
 let selectedKey = null;
 let query = "";
@@ -26,24 +25,30 @@ function showNote(html, isError) {
 }
 function hideNote() { noteEl.style.display = "none"; }
 
-// ---- Provider selector ------------------------------------------------------
-function renderProviders() {
-  // A lone provider needs no selector.
-  if (providers.length < 2) { providersEl.style.display = "none"; return; }
-  providersEl.style.display = "";
-  providersEl.innerHTML = "";
+// ---- Theater legend ---------------------------------------------------------
+// A non-interactive key mapping each theater's logo to its name, so the small
+// icons shown next to every showtime are decodable at a glance.
+function renderLegend() {
+  legendEl.innerHTML = "";
   for (const p of providers) {
-    const b = document.createElement("button");
-    b.className = "provider-chip" + (p.id === provider.id ? " active" : "");
-    b.textContent = p.name;
-    b.addEventListener("click", () => {
-      if (p.id === provider.id) return;
-      provider = p;
-      localStorage.setItem("provider_id", p.id);
-      load();
-    });
-    providersEl.appendChild(b);
+    const item = document.createElement("span");
+    item.className = "legend-item";
+    item.appendChild(makeLogo(p.icon, p.name));
+    const label = document.createElement("span");
+    label.textContent = p.name;
+    item.appendChild(label);
+    legendEl.appendChild(item);
   }
+}
+
+function makeLogo(src, name) {
+  const img = document.createElement("img");
+  img.className = "logo";
+  img.src = src;
+  img.alt = name;
+  img.title = name;
+  img.loading = "lazy";
+  return img;
 }
 
 // ---- Filtering --------------------------------------------------------------
@@ -51,17 +56,21 @@ function visibleShows() {
   const q = query.trim().toLowerCase();
   return allShows.filter((s) => {
     if (q && !s.name.toLowerCase().includes(q)) return false;
-    if (activeDay) return s.screenings.some((sc) => sc.day === activeDay);
+    if (activeDay) return s.screenings.some((sc) => sc.dayKey === activeDay);
     return true;
   });
 }
 
 function renderDays() {
+  // Key by the canonical dayKey so the same date from two theaters is one chip;
+  // keep the earliest ts for ordering and the display label for the text.
   const days = new Map();
   for (const s of allShows)
-    for (const sc of s.screenings)
-      if (!days.has(sc.day) || sc.ts < days.get(sc.day)) days.set(sc.day, sc.ts);
-  const ordered = [...days.entries()].sort((a, b) => a[1] - b[1]);
+    for (const sc of s.screenings) {
+      const cur = days.get(sc.dayKey);
+      if (!cur || sc.ts < cur.ts) days.set(sc.dayKey, { ts: sc.ts, label: sc.day });
+    }
+  const ordered = [...days.entries()].sort((a, b) => a[1].ts - b[1].ts);
 
   daysEl.innerHTML = "";
   const make = (value, label) => {
@@ -76,7 +85,7 @@ function renderDays() {
     daysEl.appendChild(b);
   };
   make("", "כל הימים");
-  for (const [day] of ordered) make(day, day);
+  for (const [dayKey, { label }] of ordered) make(dayKey, label);
 }
 
 function renderMovieList() {
@@ -94,7 +103,7 @@ function renderMovieList() {
   for (const show of shows) {
     const isActive = show.key === selectedKey;
     const screenings = activeDay
-      ? show.screenings.filter((sc) => sc.day === activeDay)
+      ? show.screenings.filter((sc) => sc.dayKey === activeDay)
       : show.screenings;
 
     const row = document.createElement("div");
@@ -128,18 +137,21 @@ function buildShowtimesPanel(screenings) {
   const panel = document.createElement("div");
   panel.className = "movie-panel";
 
+  // Group by canonical dayKey so both theaters' times sit under one day; the
+  // screenings arrive ts-sorted, so within a day the times stay chronological
+  // and the theater logo (set below) is what tells the cinemas apart.
   const byDay = new Map();
   for (const sc of screenings) {
-    if (!byDay.has(sc.day)) byDay.set(sc.day, []);
-    byDay.get(sc.day).push(sc);
+    if (!byDay.has(sc.dayKey)) byDay.set(sc.dayKey, { label: sc.day, list: [] });
+    byDay.get(sc.dayKey).list.push(sc);
   }
-  for (const [dayLabel, list] of byDay) {
+  for (const [, { label, list }] of byDay) {
     const group = document.createElement("div");
     group.className = "day-group";
 
     const dl = document.createElement("div");
     dl.className = "label";
-    dl.textContent = dayLabel;
+    dl.textContent = label;
     group.appendChild(dl);
 
     const times = document.createElement("div");
@@ -150,7 +162,12 @@ function buildShowtimesPanel(screenings) {
       a.href = sc.bookingUrl;
       a.target = "_blank";
       a.rel = "noopener";
-      a.textContent = sc.hour;
+      // The theater logo next to the time says which cinema this screening is at.
+      a.title = sc.providerName;
+      a.appendChild(makeLogo(sc.icon, sc.providerName));
+      const hour = document.createElement("span");
+      hour.textContent = sc.hour;
+      a.appendChild(hour);
       times.appendChild(a);
     }
     group.appendChild(times);
@@ -168,10 +185,7 @@ searchEl.addEventListener("input", () => {
 
 // ---- Load -------------------------------------------------------------------
 async function load() {
-  eyebrowEl.textContent = provider.name;
-  renderProviders();
-
-  // Reset per-provider view state; days and movies differ between providers.
+  renderLegend();
   selectedKey = null;
   activeDay = "";
   daysEl.innerHTML = "";
@@ -179,12 +193,23 @@ async function load() {
   showNote('<span>טוען הקרנות</span><span class="skeleton-dot"></span>');
 
   try {
-    const shows = await provider.fetchShows();
+    const { shows, errors } = await fetchAllShows();
+    // Only a total wipe-out is a hard failure; otherwise show what we have.
+    if (!shows.length && errors.length) throw errors[0].reason;
+
     for (const s of shows) s.screenings.sort((a, b) => a.ts - b.ts);
     shows.sort((a, b) => a.name.localeCompare(b.name, "he"));
     allShows = shows;
     renderDays();
     renderMovieList();
+
+    if (errors.length) {
+      const names = errors.map((e) => e.provider.name).join(", ");
+      const banner = document.createElement("div");
+      banner.className = "note error partial";
+      banner.textContent = `חלק מהלוחות לא נטענו (${names}).`;
+      movieListEl.before(banner);
+    }
     searchEl.focus();
   } catch (err) {
     console.error(err);

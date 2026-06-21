@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cinema City Galilot — לוח הקרנות</title>
+  <title>לוח הקרנות — כל בתי הקולנוע</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;900&family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -96,31 +96,30 @@
     }
     .search input:focus ~ .icon { color: var(--amber); }
 
-    /* Provider selector — shown only when more than one provider exists */
-    .providers {
+    /* Theater legend — a key for the small logos shown next to each showtime */
+    .legend {
       display: flex;
-      gap: 8px;
+      gap: 8px 18px;
       justify-content: center;
       flex-wrap: wrap;
       margin: 18px 0 0;
     }
-    .provider-chip {
-      background: transparent;
+    .legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
       color: var(--muted);
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 7px 16px;
-      font-family: var(--sans);
       font-size: .82rem;
-      cursor: pointer;
-      transition: color .15s ease, border-color .15s ease, background .15s ease;
     }
-    .provider-chip:hover { color: var(--text); border-color: var(--muted); }
-    .provider-chip.active {
-      color: #1c1206;
-      background: var(--amber);
-      border-color: var(--amber);
-      font-weight: 500;
+    /* Shared theater logo: in the legend and inside each time chip */
+    .logo {
+      width: 16px;
+      height: 16px;
+      border-radius: 4px;
+      object-fit: contain;
+      background: #fff;
+      padding: 1px;
+      flex: none;
     }
 
     /* Day filter — single quiet scrollable strip */
@@ -200,11 +199,13 @@
     .day-group .label { font-size: .78rem; color: var(--muted); margin-bottom: 8px; }
     .times { display: flex; flex-wrap: wrap; gap: 8px; }
     .time {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
       background: var(--panel-hi);
       border: 1px solid var(--line);
       border-radius: 8px;
-      padding: 7px 12px;
+      padding: 6px 10px;
       font-size: .92rem;
       font-variant-numeric: tabular-nums;
       color: var(--text);
@@ -220,6 +221,13 @@
       font-weight: 300;
     }
     .note.error { color: #ff9d8f; }
+    .note.partial {
+      padding: 10px 14px;
+      margin-bottom: 12px;
+      font-size: .82rem;
+      border: 1px solid rgba(255, 157, 143, .35);
+      border-radius: 10px;
+    }
     .note .skeleton-dot {
       display: inline-block;
       width: 7px; height: 7px;
@@ -237,13 +245,13 @@
 </head>
 <body>
   <header>
-    <p id="eyebrow" class="eyebrow">Cinema City · Galilot</p>
+    <p id="eyebrow" class="eyebrow">כל בתי הקולנוע</p>
     <h1>מה מתחשק לכם לראות?</h1>
-    <p>כל ההקרנות באולם, מתעדכן ישירות מקופת הקולנוע.</p>
+    <p>כל ההקרנות מכל בתי הקולנוע במקום אחד, מתעדכן ישירות מהקופות.</p>
   </header>
 
   <main>
-    <div id="providers" class="providers"></div>
+    <div id="legend" class="legend"></div>
 
     <div class="search">
       <input id="search" type="text" placeholder="התחילו להקליד שם של סרט…" spellcheck="false" autocomplete="off" aria-label="חיפוש סרט">

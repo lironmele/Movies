@@ -6,6 +6,7 @@
 // See ../docs/cinema-city-galilot-api.md for the endpoint details.
 
 import { viaProxy } from "../lib/proxy.js";
+import { toDayKey, dayLabel } from "../lib/day.js";
 
 const ENDPOINT = "https://www.cinema-city.co.il/tickets/EventsFlat";
 const VENUE_STANDARD = 1;
@@ -16,6 +17,12 @@ function toTs(dateStr) {
   const [d, t] = dateStr.split(" ");
   const [dd, mm, yyyy] = d.split("/");
   return new Date(`${yyyy}-${mm}-${dd}T${t || "00:00"}`).getTime();
+}
+
+// "DD/MM/YYYY HH:MM" -> canonical "YYYY-MM-DD" day key.
+function toDay(dateStr) {
+  const [dd, mm, yyyy] = dateStr.split(" ")[0].split("/").map(Number);
+  return toDayKey(yyyy, mm, dd);
 }
 
 function bookingUrl(eventId) {
@@ -54,9 +61,11 @@ function groupShows(events) {
     seen.add(dedupeKey);
     const key = String(e.ExportCode ?? e.Name); // ExportCode is the stable id
     if (!shows.has(key)) shows.set(key, { key, name: e.Name, screenings: [] });
+    const dayKey = toDay(d.Date);
     shows.get(key).screenings.push({
       ts: toTs(d.Date),
-      day: d.Day, // Hebrew weekday + date, display-ready; also the day key
+      dayKey, // canonical "YYYY-MM-DD" — groups across providers
+      day: dayLabel(dayKey), // display label, built from the same source
       hour: d.Hour,
       bookingUrl: bookingUrl(d.EventId),
     });
@@ -64,10 +73,11 @@ function groupShows(events) {
   return [...shows.values()];
 }
 
-export function createCinemaCityProvider({ id, name, theatreId, includeVip = true }) {
+export function createCinemaCityProvider({ id, name, icon, theatreId, includeVip = true }) {
   return {
     id,
     name,
+    icon,
     async fetchShows() {
       const venues = includeVip ? [VENUE_STANDARD, VENUE_VIP] : [VENUE_STANDARD];
       const results = await Promise.allSettled(

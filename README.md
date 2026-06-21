@@ -1,9 +1,11 @@
 # Movie Showtimes
 
 A static page that fetches cinema schedules and displays the movies and their
-showtimes, grouped by movie and by day. It is built around **pluggable movie
-providers** — Cinema City Galilot and Lev Ramat HaSharon are bundled today, and
-more can be added without touching the UI.
+showtimes, grouped by movie and by day. Every theater is shown at once: the
+schedules from all providers are merged into a single movie list, and each
+showtime is tagged with the theater's logo so you can see where it plays. It is
+built around **pluggable movie providers** — Cinema City Galilot and Lev Ramat
+HaSharon are bundled today, and more can be added without touching the UI.
 
 ## Structure
 
@@ -11,14 +13,19 @@ more can be added without touching the UI.
 index.html              markup + styles (no app logic)
 app.js                  provider-agnostic UI: search, day filter, accordion
 lib/proxy.js            shared CORS-proxy helper
+lib/day.js              canonical day key + shared Hebrew day label
 providers/
-  registry.js           the list of available providers
+  registry.js           the providers + fetchAllShows() (merge + theater tag)
   cinema-city.js        Cinema City provider factory (any branch by TheatreId)
   lev.js                Lev Cinema provider factory (any branch by locationId)
+assets/icons/           theater logos, fetched from each cinema's website
 ```
 
-When more than one provider is registered, a provider selector appears under
-the title; the choice is remembered in `localStorage`.
+All providers are fetched in parallel by `fetchAllShows()`, which merges their
+movies into one list (same title from two theaters collapses into one row) and
+stamps every screening with `{ providerId, providerName, icon }`. A legend under
+the title maps each logo to its theater; a provider that fails to load is
+reported in a small banner without blocking the others.
 
 ## Adding a provider
 
@@ -26,16 +33,17 @@ A provider is any object shaped like:
 
 ```js
 {
-  id:   "my-cinema",          // stable id (used for persistence)
-  name: "My Cinema",          // label shown in the selector
+  id:   "my-cinema",          // stable id
+  name: "My Cinema",          // theater name (legend + tooltip)
+  icon: "assets/icons/my.png",// theater logo shown next to each showtime
   async fetchShows() {        // returns the normalized shape below
     return [
       {
         key: "movie-123",
         name: "Some Movie",
         screenings: [
-          { ts: 1750000000000, day: "שבת 20/06/2026", hour: "18:00",
-            bookingUrl: "https://…" },
+          { ts: 1750000000000, dayKey: "2026-06-20",
+            day: "שבת 20/06/2026", hour: "18:00", bookingUrl: "https://…" },
         ],
       },
     ];
@@ -43,19 +51,21 @@ A provider is any object shaped like:
 }
 ```
 
-Add it to the array in [`providers/registry.js`](providers/registry.js). The UI
-only ever sees this normalized shape, so it never needs to change. For another
-Cinema City branch, reuse the factory with that branch's `TheatreId`:
+Add it to the array in [`providers/registry.js`](providers/registry.js) and drop
+its logo in `assets/icons/` (grab the theater's own favicon/PNG from its site).
+The UI only ever sees the normalized shape — plus the per-screening theater tag
+that `fetchAllShows()` adds — so it never needs to change. For another Cinema
+City branch, reuse the factory with that branch's `TheatreId`:
 
 ```js
-createCinemaCityProvider({ id: "cc-rishon", name: "Cinema City · ראשון", theatreId: <id> })
+createCinemaCityProvider({ id: "cc-rishon", name: "Cinema City · ראשון", icon: "assets/icons/cinema-city.png", theatreId: <id> })
 ```
 
 For another Lev branch, reuse its factory with that branch's `locationId`
 (branch IDs are listed in [`docs/lev-presentations-api.md`](docs/lev-presentations-api.md)):
 
 ```js
-createLevProvider({ id: "lev-telaviv", name: "לב · תל אביב", locationId: 1150 })
+createLevProvider({ id: "lev-telaviv", name: "לב · תל אביב", icon: "assets/icons/lev.png", locationId: 1150 })
 ```
 
 ## The Cinema City provider
