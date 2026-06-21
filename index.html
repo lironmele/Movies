@@ -12,7 +12,6 @@
       --text: #e6edf3;
       --muted: #8b949e;
       --accent: #f0883e;
-      --vip: #d2a8ff;
     }
     * { box-sizing: border-box; }
     body {
@@ -60,7 +59,6 @@
       cursor: pointer;
     }
     button:disabled { opacity: .5; cursor: default; }
-    label.check { display: flex; align-items: center; gap: 6px; font-size: .85rem; color: var(--muted); }
 
     #status {
       padding: 10px 12px;
@@ -73,26 +71,55 @@
     #status.info { background: #1c2733; color: #79c0ff; }
     #status.error { background: #3d1d1d; color: #ff7b72; }
 
-    .note {
-      font-size: .8rem;
-      color: var(--muted);
-      background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 10px 12px;
+    /* Movie list (accordion) */
+    .movie-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
       margin-bottom: 16px;
     }
-    .note a { color: var(--accent); }
-
-    .movie {
+    .movie-row {
       background: var(--panel);
       border: 1px solid var(--border);
       border-radius: 8px;
-      padding: 14px 16px;
-      margin-bottom: 12px;
+      overflow: hidden;
     }
-    .movie h2 { margin: 0 0 10px; font-size: 1.1rem; }
+    .movie-row.active { border-color: var(--accent); }
+    .movie-item {
+      text-align: start;
+      width: 100%;
+      background: transparent;
+      color: var(--text);
+      border: 0;
+      border-radius: 0;
+      padding: 12px 16px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .movie-item:hover { color: var(--accent); }
+    .movie-row.active .movie-item { color: var(--accent); }
+    .movie-item .chevron {
+      transition: transform .15s ease;
+      color: var(--muted);
+      flex: none;
+    }
+    .movie-row.active .movie-item .chevron {
+      transform: rotate(180deg);
+      color: var(--accent);
+    }
+
+    /* Expanded showtimes panel */
+    .movie-panel {
+      padding: 0 16px 14px;
+      border-top: 1px solid var(--border);
+    }
     .day-group { margin-bottom: 10px; }
+    .day-group:first-child { margin-top: 10px; }
     .day-label { font-size: .8rem; color: var(--muted); margin-bottom: 6px; }
     .times { display: flex; flex-wrap: wrap; gap: 8px; }
     .time {
@@ -105,14 +132,7 @@
       color: var(--text);
       text-decoration: none;
     }
-    .time.vip { border-color: var(--vip); color: var(--vip); }
     .time:hover { border-color: var(--accent); }
-    .badge {
-      font-size: .65rem;
-      vertical-align: top;
-      margin-inline-start: 4px;
-      color: var(--vip);
-    }
     .empty { color: var(--muted); padding: 40px 0; text-align: center; }
   </style>
 </head>
@@ -125,30 +145,20 @@
   <main>
     <div class="controls">
       <div class="field">
-        <label for="proxy">CORS proxy (cors-anywhere)</label>
+        <label for="proxy">Proxy</label>
         <input id="proxy" type="text" spellcheck="false">
       </div>
       <div class="field">
         <label for="dayFilter">יום</label>
         <select id="dayFilter"><option value="">כל הימים</option></select>
       </div>
-      <label class="check">
-        <input id="vipToggle" type="checkbox" checked>
-        כולל אולמות VIP
-      </label>
       <button id="loadBtn">טען לוח</button>
     </div>
 
-    <div class="note">
-      נקודת הקצה לא מחזירה כותרת <code>Access-Control-Allow-Origin</code>, ולכן הבקשה
-      עוברת דרך <a href="https://github.com/Rob--W/cors-anywhere" target="_blank" rel="noopener">cors-anywhere</a>.
-      מארח ה-demo הציבורי (<code>cors-anywhere.herokuapp.com</code>) דורש הפעלה ידנית חד-פעמית —
-      פתחו את <a href="https://cors-anywhere.herokuapp.com/corsdemo" target="_blank" rel="noopener">דף ההרשאה</a>
-      ולחצו “Request temporary access”, או הזינו כתובת של פרוקסי cors-anywhere משלכם.
-    </div>
-
     <div id="status"></div>
-    <div id="results"><div class="empty">לחצו “טען לוח” כדי לשלוף את ההקרנות.</div></div>
+    <div id="movieList" class="movie-list">
+      <div class="empty">לחצו “טען לוח” כדי לשלוף את ההקרנות.</div>
+    </div>
   </main>
 
   <script>
@@ -157,15 +167,13 @@
     const ENDPOINT = "https://www.cinema-city.co.il/tickets/EventsFlat";
     const DEFAULT_PROXY = "https://cors-anywhere.herokuapp.com/";
     const VENUE_STANDARD = 1;
-    const VENUE_VIP = 3;
 
     const $ = (id) => document.getElementById(id);
     const proxyInput = $("proxy");
     const dayFilter = $("dayFilter");
-    const vipToggle = $("vipToggle");
     const loadBtn = $("loadBtn");
     const statusEl = $("status");
-    const resultsEl = $("results");
+    const movieListEl = $("movieList");
 
     // Restore saved proxy.
     proxyInput.value = localStorage.getItem("cc_proxy") || DEFAULT_PROXY;
@@ -214,7 +222,7 @@
     }
 
     function groupShows(events) {
-      const shows = new Map(); // ExportCode -> { name, screenings[] }
+      const shows = new Map(); // ExportCode -> { key, name, screenings[] }
       const seen = new Set();  // de-dupe merged arrays by eventId
 
       for (const e of events) {
@@ -224,16 +232,15 @@
         if (seen.has(dedupeKey)) continue;
         seen.add(dedupeKey);
 
-        const key = e.ExportCode ?? e.Name;
+        const key = String(e.ExportCode ?? e.Name);
         if (!shows.has(key)) {
-          shows.set(key, { name: e.Name, screenings: [] });
+          shows.set(key, { key, name: e.Name, screenings: [] });
         }
         shows.get(key).screenings.push({
           day: d.Day,
           date: d.Date,
           hour: d.Hour,
           eventId: d.EventId,
-          vip: (e.VenueType || "").toLowerCase() === "vip",
         });
       }
 
@@ -246,6 +253,7 @@
 
     // ---- Render -----------------------------------------------------------
     let allShows = [];
+    let selectedKey = null;
 
     function populateDayFilter(shows) {
       const days = new Map(); // Day label -> earliest ts (for ordering)
@@ -271,68 +279,94 @@
       return `https://www.cinema-city.co.il/tickets/seats?eventId=${eventId}`;
     }
 
-    function render() {
-      const day = dayFilter.value;
-      resultsEl.innerHTML = "";
+    // Accordion: each movie expands inline to reveal its hours.
+    function renderMovieList() {
+      movieListEl.innerHTML = "";
 
-      const visible = allShows
-        .map((s) => ({
-          ...s,
-          screenings: day ? s.screenings.filter((sc) => sc.day === day) : s.screenings,
-        }))
-        .filter((s) => s.screenings.length);
-
-      if (!visible.length) {
-        resultsEl.innerHTML = '<div class="empty">אין הקרנות להצגה.</div>';
+      if (!allShows.length) {
+        movieListEl.innerHTML = '<div class="empty">אין סרטים להצגה.</div>';
         return;
       }
 
-      for (const show of visible) {
-        const card = document.createElement("div");
-        card.className = "movie";
+      for (const show of allShows) {
+        const isActive = show.key === selectedKey;
 
-        const h2 = document.createElement("h2");
-        h2.textContent = show.name;
-        card.appendChild(h2);
+        const row = document.createElement("div");
+        row.className = "movie-row" + (isActive ? " active" : "");
 
-        // group screenings by day
-        const byDay = new Map();
-        for (const sc of show.screenings) {
-          if (!byDay.has(sc.day)) byDay.set(sc.day, []);
-          byDay.get(sc.day).push(sc);
+        const btn = document.createElement("button");
+        btn.className = "movie-item";
+        btn.setAttribute("aria-expanded", String(isActive));
+
+        const name = document.createElement("span");
+        name.textContent = show.name;
+        btn.appendChild(name);
+
+        const chevron = document.createElement("span");
+        chevron.className = "chevron";
+        chevron.textContent = "▾";
+        btn.appendChild(chevron);
+
+        btn.addEventListener("click", () => {
+          // toggle: clicking the open movie collapses it
+          selectedKey = isActive ? null : show.key;
+          renderMovieList();
+        });
+        row.appendChild(btn);
+
+        if (isActive) {
+          row.appendChild(buildShowtimesPanel(show));
         }
-
-        for (const [dayLabel, list] of byDay) {
-          const group = document.createElement("div");
-          group.className = "day-group";
-
-          const dl = document.createElement("div");
-          dl.className = "day-label";
-          dl.textContent = dayLabel;
-          group.appendChild(dl);
-
-          const times = document.createElement("div");
-          times.className = "times";
-          for (const sc of list) {
-            const a = document.createElement("a");
-            a.className = "time" + (sc.vip ? " vip" : "");
-            a.href = bookingUrl(sc.eventId);
-            a.target = "_blank";
-            a.rel = "noopener";
-            a.textContent = sc.hour;
-            if (sc.vip) {
-              const b = document.createElement("span");
-              b.className = "badge";
-              b.textContent = "VIP";
-              a.appendChild(b);
-            }
-            times.appendChild(a);
-          }
-          group.appendChild(times);
-          card.appendChild(group);
-        }
-        resultsEl.appendChild(card);
+        movieListEl.appendChild(row);
       }
+    }
+
+    // Inline panel with the selected movie's hours, grouped by day.
+    function buildShowtimesPanel(show) {
+      const panel = document.createElement("div");
+      panel.className = "movie-panel";
+
+      const day = dayFilter.value;
+      const screenings = day
+        ? show.screenings.filter((sc) => sc.day === day)
+        : show.screenings;
+
+      if (!screenings.length) {
+        panel.innerHTML = '<div class="empty">אין הקרנות להצגה.</div>';
+        return panel;
+      }
+
+      // group screenings by day
+      const byDay = new Map();
+      for (const sc of screenings) {
+        if (!byDay.has(sc.day)) byDay.set(sc.day, []);
+        byDay.get(sc.day).push(sc);
+      }
+
+      for (const [dayLabel, list] of byDay) {
+        const group = document.createElement("div");
+        group.className = "day-group";
+
+        const dl = document.createElement("div");
+        dl.className = "day-label";
+        dl.textContent = dayLabel;
+        group.appendChild(dl);
+
+        const times = document.createElement("div");
+        times.className = "times";
+        for (const sc of list) {
+          const a = document.createElement("a");
+          a.className = "time";
+          a.href = bookingUrl(sc.eventId);
+          a.target = "_blank";
+          a.rel = "noopener";
+          a.textContent = sc.hour;
+          times.appendChild(a);
+        }
+        group.appendChild(times);
+        panel.appendChild(group);
+      }
+      return panel;
     }
 
     // ---- Load -------------------------------------------------------------
@@ -341,33 +375,25 @@
       loadBtn.disabled = true;
       setStatus("טוען הקרנות…", "info");
       try {
-        const requests = [fetchEvents(VENUE_STANDARD)];
-        if (vipToggle.checked) requests.push(fetchEvents(VENUE_VIP));
-
-        const arrays = await Promise.all(requests);
-        const merged = arrays.flat();
-        allShows = groupShows(merged);
+        const events = await fetchEvents(VENUE_STANDARD);
+        allShows = groupShows(events);
+        selectedKey = null;
 
         const total = allShows.reduce((n, s) => n + s.screenings.length, 0);
         populateDayFilter(allShows);
-        render();
-        clearStatus();
-        setStatus(`נטענו ${allShows.length} סרטים, ${total} הקרנות.`, "info");
+        renderMovieList();
+        setStatus(`נטענו ${allShows.length} סרטים, ${total} הקרנות. בחרו סרט מהרשימה.`, "info");
       } catch (err) {
         console.error(err);
-        resultsEl.innerHTML = '<div class="empty">הטעינה נכשלה.</div>';
-        setStatus(
-          `שגיאה: ${err.message}. אם זה ה-demo הציבורי של cors-anywhere, ` +
-          `הפעילו גישה זמנית בכתובת cors-anywhere.herokuapp.com/corsdemo.`,
-          "error"
-        );
+        movieListEl.innerHTML = '<div class="empty">הטעינה נכשלה.</div>';
+        setStatus(`שגיאה: ${err.message}.`, "error");
       } finally {
         loadBtn.disabled = false;
       }
     }
 
     loadBtn.addEventListener("click", load);
-    dayFilter.addEventListener("change", render);
+    dayFilter.addEventListener("change", renderMovieList);
   </script>
 </body>
 </html>
