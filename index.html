@@ -4,161 +4,227 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cinema City Galilot — לוח הקרנות</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;900&family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #0d1117;
-      --panel: #161b22;
-      --border: #30363d;
-      --text: #e6edf3;
-      --muted: #8b949e;
-      --accent: #f0883e;
+      --bg: #0b0a0d;
+      --panel: #141217;
+      --panel-hi: #1b1820;
+      --line: #2a2630;
+      --text: #ece6df;
+      --muted: #9a8f86;
+      --amber: #ffb43d;
+      --amber-soft: rgba(255, 180, 61, .14);
+      --serif: "Frank Ruhl Libre", Georgia, serif;
+      --sans: "Heebo", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
     }
     * { box-sizing: border-box; }
+    html, body { height: 100%; }
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      font-family: var(--sans);
       background: var(--bg);
       color: var(--text);
       line-height: 1.5;
+      /* projector bloom from the top */
+      background-image: radial-gradient(120% 60% at 50% -10%, rgba(255, 180, 61, .10), transparent 60%);
+      background-repeat: no-repeat;
     }
-    header {
-      padding: 20px 16px;
-      border-bottom: 1px solid var(--border);
-      background: var(--panel);
-    }
-    header h1 { margin: 0 0 4px; font-size: 1.4rem; }
-    header p { margin: 0; color: var(--muted); font-size: .9rem; }
-    main { max-width: 1000px; margin: 0 auto; padding: 16px; }
 
-    .controls {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      align-items: end;
-      margin-bottom: 16px;
+    header {
+      text-align: center;
+      padding: 48px 16px 8px;
     }
-    .field { display: flex; flex-direction: column; gap: 4px; }
-    .field label { font-size: .75rem; color: var(--muted); }
-    .field input, .field select {
+    .eyebrow {
+      font-size: .72rem;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin: 0 0 10px;
+      font-weight: 500;
+    }
+    header h1 {
+      font-family: var(--serif);
+      font-weight: 900;
+      font-size: clamp(2rem, 6vw, 3.1rem);
+      line-height: 1.05;
+      margin: 0;
+    }
+    header p {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: .9rem;
+      font-weight: 300;
+    }
+
+    main { max-width: 720px; margin: 0 auto; padding: 16px 16px 64px; }
+
+    /* Search — the projector beam */
+    .search {
+      position: relative;
+      margin: 28px 0 14px;
+    }
+    .search input {
+      width: 100%;
       background: var(--panel);
       color: var(--text);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 8px 10px;
-      font-size: .9rem;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 18px 56px 18px 20px;
+      font-family: var(--sans);
+      font-size: 1.15rem;
+      font-weight: 400;
+      outline: none;
+      transition: border-color .2s ease, box-shadow .2s ease, background .2s ease;
     }
-    #proxy { min-width: 320px; }
-    button {
-      background: var(--accent);
-      color: #1c1206;
-      border: 0;
-      border-radius: 6px;
-      padding: 9px 16px;
-      font-size: .9rem;
-      font-weight: 600;
-      cursor: pointer;
+    .search input::placeholder { color: var(--muted); }
+    .search input:focus {
+      border-color: var(--amber);
+      background: var(--panel-hi);
+      box-shadow: 0 0 0 4px var(--amber-soft), 0 18px 50px -20px rgba(255, 180, 61, .5);
     }
-    button:disabled { opacity: .5; cursor: default; }
+    .search .icon {
+      position: absolute;
+      inset-inline-end: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+      pointer-events: none;
+      transition: color .2s ease;
+    }
+    .search input:focus ~ .icon { color: var(--amber); }
 
-    #status {
-      padding: 10px 12px;
-      border-radius: 6px;
-      margin-bottom: 16px;
-      font-size: .9rem;
-      display: none;
+    /* Day filter — single quiet scrollable strip */
+    .days {
+      display: flex;
+      gap: 6px;
+      margin: 0 0 22px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      /* fade the trailing edge to hint at scroll */
+      -webkit-mask-image: linear-gradient(to left, transparent, #000 24px);
+      mask-image: linear-gradient(to left, transparent, #000 24px);
     }
-    #status.show { display: block; }
-    #status.info { background: #1c2733; color: #79c0ff; }
-    #status.error { background: #3d1d1d; color: #ff7b72; }
+    .days::-webkit-scrollbar { display: none; }
+    .day-chip {
+      background: transparent;
+      color: var(--muted);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 5px 12px;
+      font-family: var(--sans);
+      font-size: .8rem;
+      cursor: pointer;
+      white-space: nowrap;
+      flex: none;
+      transition: color .15s ease, border-color .15s ease, background .15s ease;
+    }
+    .day-chip:hover { color: var(--text); border-color: var(--muted); }
+    .day-chip.active {
+      color: #1c1206;
+      background: var(--amber);
+      border-color: var(--amber);
+      font-weight: 500;
+    }
 
     /* Movie list (accordion) */
-    .movie-list {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      margin-bottom: 16px;
-    }
+    .movie-list { display: flex; flex-direction: column; gap: 8px; }
     .movie-row {
       background: var(--panel);
-      border: 1px solid var(--border);
-      border-radius: 8px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
       overflow: hidden;
+      transition: border-color .15s ease;
     }
-    .movie-row.active { border-color: var(--accent); }
+    .movie-row.active { border-color: var(--amber); }
     .movie-item {
       text-align: start;
       width: 100%;
       background: transparent;
       color: var(--text);
       border: 0;
-      border-radius: 0;
-      padding: 12px 16px;
-      font-size: 1rem;
-      font-weight: 600;
+      padding: 16px 18px;
+      font-family: var(--serif);
+      font-size: 1.18rem;
+      font-weight: 700;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 12px;
     }
-    .movie-item:hover { color: var(--accent); }
-    .movie-row.active .movie-item { color: var(--accent); }
-    .movie-item .chevron {
-      transition: transform .15s ease;
+    .movie-item:hover { color: var(--amber); }
+    .movie-row.active .movie-item { color: var(--amber); }
+    .movie-item .count {
+      font-family: var(--sans);
+      font-size: .78rem;
+      font-weight: 400;
       color: var(--muted);
       flex: none;
     }
-    .movie-row.active .movie-item .chevron {
-      transform: rotate(180deg);
-      color: var(--accent);
-    }
+    .movie-row.active .movie-item .count { color: var(--amber); }
 
     /* Expanded showtimes panel */
-    .movie-panel {
-      padding: 0 16px 14px;
-      border-top: 1px solid var(--border);
-    }
-    .day-group { margin-bottom: 10px; }
-    .day-group:first-child { margin-top: 10px; }
-    .day-label { font-size: .8rem; color: var(--muted); margin-bottom: 6px; }
+    .movie-panel { padding: 4px 18px 16px; border-top: 1px solid var(--line); }
+    .day-group { margin-top: 14px; }
+    .day-group .label { font-size: .78rem; color: var(--muted); margin-bottom: 8px; }
     .times { display: flex; flex-wrap: wrap; gap: 8px; }
     .time {
       display: inline-block;
-      background: #21262d;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 5px 10px;
-      font-size: .9rem;
+      background: var(--panel-hi);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 7px 12px;
+      font-size: .92rem;
+      font-variant-numeric: tabular-nums;
       color: var(--text);
       text-decoration: none;
+      transition: border-color .15s ease, color .15s ease;
     }
-    .time:hover { border-color: var(--accent); }
-    .empty { color: var(--muted); padding: 40px 0; text-align: center; }
+    .time:hover { border-color: var(--amber); color: var(--amber); }
+
+    .note {
+      text-align: center;
+      color: var(--muted);
+      padding: 56px 16px;
+      font-weight: 300;
+    }
+    .note.error { color: #ff9d8f; }
+    .note .skeleton-dot {
+      display: inline-block;
+      width: 7px; height: 7px;
+      margin-inline-start: 4px;
+      border-radius: 50%;
+      background: var(--amber);
+      animation: pulse 1s ease-in-out infinite;
+    }
+    @keyframes pulse { 0%, 100% { opacity: .3; } 50% { opacity: 1; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; animation: none !important; }
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Cinema City Galilot — לוח הקרנות</h1>
-    <p>נתונים חיים מתוך נקודת הקצה <code>EventsFlat</code> (Theatre 1170).</p>
+    <p class="eyebrow">Cinema City · Galilot</p>
+    <h1>מה מתחשק לכם לראות?</h1>
+    <p>כל ההקרנות באולם, מתעדכן ישירות מקופת הקולנוע.</p>
   </header>
 
   <main>
-    <div class="controls">
-      <div class="field">
-        <label for="proxy">Proxy</label>
-        <input id="proxy" type="text" spellcheck="false">
-      </div>
-      <div class="field">
-        <label for="dayFilter">יום</label>
-        <select id="dayFilter"><option value="">כל הימים</option></select>
-      </div>
-      <button id="loadBtn">טען לוח</button>
+    <div class="search">
+      <input id="search" type="text" placeholder="התחילו להקליד שם של סרט…" spellcheck="false" autocomplete="off" aria-label="חיפוש סרט">
+      <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.5" y2="16.5"></line></svg>
     </div>
 
-    <div id="status"></div>
-    <div id="movieList" class="movie-list">
-      <div class="empty">לחצו “טען לוח” כדי לשלוף את ההקרנות.</div>
-    </div>
+    <div id="days" class="days"></div>
+
+    <div id="movieList" class="movie-list"></div>
+    <div id="note" class="note"><span>טוען הקרנות</span><span class="skeleton-dot"></span></div>
   </main>
 
   <script>
@@ -167,37 +233,35 @@
     const ENDPOINT = "https://www.cinema-city.co.il/tickets/EventsFlat";
     const DEFAULT_PROXY = "https://cors-anywhere.herokuapp.com/";
     const VENUE_STANDARD = 1;
+    // Proxy stays configurable via localStorage("cc_proxy") — no visible field.
+    const PROXY = (localStorage.getItem("cc_proxy") || DEFAULT_PROXY).trim();
 
     const $ = (id) => document.getElementById(id);
-    const proxyInput = $("proxy");
-    const dayFilter = $("dayFilter");
-    const loadBtn = $("loadBtn");
-    const statusEl = $("status");
+    const searchEl = $("search");
+    const daysEl = $("days");
     const movieListEl = $("movieList");
+    const noteEl = $("note");
 
-    // Restore saved proxy.
-    proxyInput.value = localStorage.getItem("cc_proxy") || DEFAULT_PROXY;
-
-    function setStatus(msg, kind) {
-      statusEl.textContent = msg;
-      statusEl.className = "show " + (kind || "info");
+    function showNote(html, isError) {
+      noteEl.innerHTML = html;
+      noteEl.className = "note" + (isError ? " error" : "");
+      noteEl.style.display = "";
     }
-    function clearStatus() { statusEl.className = ""; }
+    function hideNote() { noteEl.style.display = "none"; }
 
-    // cors-anywhere takes the raw target URL appended to the proxy base.
     function viaProxy(targetUrl) {
-      let base = proxyInput.value.trim();
+      let base = PROXY;
       if (base && !base.endsWith("/")) base += "/";
       return base + targetUrl;
     }
 
     function buildEndpointUrl(venueTypeId) {
-      const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+      const today = new Date().toISOString().slice(0, 10);
       const qs = new URLSearchParams({
         TheatreId: THEATRE_ID,
         VenueTypeId: venueTypeId,
         MovieId: 0,
-        Date: today, // required but ignored by the endpoint
+        Date: today,
       });
       return `${ENDPOINT}?${qs.toString()}`;
     }
@@ -206,90 +270,92 @@
       const res = await fetch(viaProxy(buildEndpointUrl(venueTypeId)), {
         headers: { "X-Requested-With": "XMLHttpRequest" },
       });
-      if (!res.ok) {
-        throw new Error(`HTTP ${res.status} ${res.statusText} (VenueType ${venueTypeId})`);
-      }
+      if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
       const data = await res.json();
       return Array.isArray(data) ? data : [];
     }
 
-    // ---- Grouping (per the API doc: group by ExportCode) -------------------
+    // ---- Grouping ---------------------------------------------------------
     function toTs(dateStr) {
-      // "DD/MM/YYYY HH:MM" -> epoch ms
       const [d, t] = dateStr.split(" ");
       const [dd, mm, yyyy] = d.split("/");
       return new Date(`${yyyy}-${mm}-${dd}T${t || "00:00"}`).getTime();
     }
 
     function groupShows(events) {
-      const shows = new Map(); // ExportCode -> { key, name, screenings[] }
-      const seen = new Set();  // de-dupe merged arrays by eventId
-
+      const shows = new Map();
+      const seen = new Set();
       for (const e of events) {
         const d = e.Dates;
         if (!d) continue;
         const dedupeKey = `${e.ExportCode}|${d.EventId}`;
         if (seen.has(dedupeKey)) continue;
         seen.add(dedupeKey);
-
         const key = String(e.ExportCode ?? e.Name);
-        if (!shows.has(key)) {
-          shows.set(key, { key, name: e.Name, screenings: [] });
-        }
-        shows.get(key).screenings.push({
-          day: d.Day,
-          date: d.Date,
-          hour: d.Hour,
-          eventId: d.EventId,
-        });
+        if (!shows.has(key)) shows.set(key, { key, name: e.Name, screenings: [] });
+        shows.get(key).screenings.push({ day: d.Day, date: d.Date, hour: d.Hour, eventId: d.EventId });
       }
-
-      for (const v of shows.values()) {
-        v.screenings.sort((a, b) => toTs(a.date) - toTs(b.date));
-      }
-      return [...shows.values()].sort((a, b) =>
-        a.name.localeCompare(b.name, "he"));
+      for (const v of shows.values()) v.screenings.sort((a, b) => toTs(a.date) - toTs(b.date));
+      return [...shows.values()].sort((a, b) => a.name.localeCompare(b.name, "he"));
     }
 
-    // ---- Render -----------------------------------------------------------
+    // ---- State & render ---------------------------------------------------
     let allShows = [];
     let selectedKey = null;
-
-    function populateDayFilter(shows) {
-      const days = new Map(); // Day label -> earliest ts (for ordering)
-      for (const s of shows) {
-        for (const sc of s.screenings) {
-          if (!days.has(sc.day) || toTs(sc.date) < days.get(sc.day)) {
-            days.set(sc.day, toTs(sc.date));
-          }
-        }
-      }
-      const ordered = [...days.entries()].sort((a, b) => a[1] - b[1]);
-      dayFilter.innerHTML = '<option value="">כל הימים</option>';
-      for (const [day] of ordered) {
-        const opt = document.createElement("option");
-        opt.value = day;
-        opt.textContent = day;
-        dayFilter.appendChild(opt);
-      }
-    }
+    let query = "";
+    let activeDay = "";
 
     function bookingUrl(eventId) {
-      // Booking handle per the doc; exact purchase path unconfirmed.
       return `https://www.cinema-city.co.il/tickets/seats?eventId=${eventId}`;
     }
 
-    // Accordion: each movie expands inline to reveal its hours.
+    function visibleShows() {
+      const q = query.trim().toLowerCase();
+      return allShows.filter((s) => {
+        if (q && !s.name.toLowerCase().includes(q)) return false;
+        if (activeDay) return s.screenings.some((sc) => sc.day === activeDay);
+        return true;
+      });
+    }
+
+    function renderDays() {
+      const days = new Map();
+      for (const s of allShows)
+        for (const sc of s.screenings)
+          if (!days.has(sc.day) || toTs(sc.date) < days.get(sc.day)) days.set(sc.day, toTs(sc.date));
+      const ordered = [...days.entries()].sort((a, b) => a[1] - b[1]);
+
+      daysEl.innerHTML = "";
+      const make = (value, label) => {
+        const b = document.createElement("button");
+        b.className = "day-chip" + (activeDay === value ? " active" : "");
+        b.textContent = label;
+        b.addEventListener("click", () => {
+          activeDay = value;
+          renderDays();
+          renderMovieList();
+        });
+        daysEl.appendChild(b);
+      };
+      make("", "כל הימים");
+      for (const [day] of ordered) make(day, day);
+    }
+
     function renderMovieList() {
+      const shows = visibleShows();
       movieListEl.innerHTML = "";
 
-      if (!allShows.length) {
-        movieListEl.innerHTML = '<div class="empty">אין סרטים להצגה.</div>';
+      if (!shows.length) {
+        showNote(query.trim()
+          ? `אין סרט שתואם ל“${query.trim()}”. נסו שם אחר.`
+          : "אין הקרנות להצגה כרגע.");
         return;
       }
+      hideNote();
 
-      for (const show of allShows) {
+      for (const show of shows) {
         const isActive = show.key === selectedKey;
+        const screenings = activeDay ? show.screenings.filter((sc) => sc.day === activeDay) : show.screenings;
 
         const row = document.createElement("div");
         row.className = "movie-row" + (isActive ? " active" : "");
@@ -302,53 +368,37 @@
         name.textContent = show.name;
         btn.appendChild(name);
 
-        const chevron = document.createElement("span");
-        chevron.className = "chevron";
-        chevron.textContent = "▾";
-        btn.appendChild(chevron);
+        const count = document.createElement("span");
+        count.className = "count";
+        count.textContent = screenings.length === 1 ? "הקרנה אחת" : `${screenings.length} הקרנות`;
+        btn.appendChild(count);
 
         btn.addEventListener("click", () => {
-          // toggle: clicking the open movie collapses it
           selectedKey = isActive ? null : show.key;
           renderMovieList();
         });
         row.appendChild(btn);
 
-        if (isActive) {
-          row.appendChild(buildShowtimesPanel(show));
-        }
+        if (isActive) row.appendChild(buildShowtimesPanel(screenings));
         movieListEl.appendChild(row);
       }
     }
 
-    // Inline panel with the selected movie's hours, grouped by day.
-    function buildShowtimesPanel(show) {
+    function buildShowtimesPanel(screenings) {
       const panel = document.createElement("div");
       panel.className = "movie-panel";
 
-      const day = dayFilter.value;
-      const screenings = day
-        ? show.screenings.filter((sc) => sc.day === day)
-        : show.screenings;
-
-      if (!screenings.length) {
-        panel.innerHTML = '<div class="empty">אין הקרנות להצגה.</div>';
-        return panel;
-      }
-
-      // group screenings by day
       const byDay = new Map();
       for (const sc of screenings) {
         if (!byDay.has(sc.day)) byDay.set(sc.day, []);
         byDay.get(sc.day).push(sc);
       }
-
       for (const [dayLabel, list] of byDay) {
         const group = document.createElement("div");
         group.className = "day-group";
 
         const dl = document.createElement("div");
-        dl.className = "day-label";
+        dl.className = "label";
         dl.textContent = dayLabel;
         group.appendChild(dl);
 
@@ -369,31 +419,32 @@
       return panel;
     }
 
-    // ---- Load -------------------------------------------------------------
+    // ---- Live search ------------------------------------------------------
+    searchEl.addEventListener("input", () => {
+      query = searchEl.value;
+      selectedKey = null;
+      renderMovieList();
+    });
+
+    // ---- Load on open -----------------------------------------------------
     async function load() {
-      localStorage.setItem("cc_proxy", proxyInput.value.trim());
-      loadBtn.disabled = true;
-      setStatus("טוען הקרנות…", "info");
+      showNote('<span>טוען הקרנות</span><span class="skeleton-dot"></span>');
       try {
         const events = await fetchEvents(VENUE_STANDARD);
         allShows = groupShows(events);
-        selectedKey = null;
-
-        const total = allShows.reduce((n, s) => n + s.screenings.length, 0);
-        populateDayFilter(allShows);
+        renderDays();
         renderMovieList();
-        setStatus(`נטענו ${allShows.length} סרטים, ${total} הקרנות. בחרו סרט מהרשימה.`, "info");
+        searchEl.focus();
       } catch (err) {
         console.error(err);
-        movieListEl.innerHTML = '<div class="empty">הטעינה נכשלה.</div>';
-        setStatus(`שגיאה: ${err.message}.`, "error");
-      } finally {
-        loadBtn.disabled = false;
+        allShows = [];
+        movieListEl.innerHTML = "";
+        daysEl.innerHTML = "";
+        showNote("לא הצלחנו לטעון את הלוח כרגע. רעננו את הדף כדי לנסות שוב.", true);
       }
     }
 
-    loadBtn.addEventListener("click", load);
-    dayFilter.addEventListener("change", renderMovieList);
+    load();
   </script>
 </body>
 </html>
