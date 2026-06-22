@@ -184,6 +184,25 @@
     }
     .movie-item:hover { color: var(--amber); }
     .movie-row.active .movie-item { color: var(--amber); }
+    .movie-item .title {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    /* Right side of a collapsed row: theater logos + screening count. The
+       logos show which cinemas a movie plays at without expanding the card. */
+    .movie-item .meta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      flex: none;
+    }
+    .movie-item .theaters {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
     .movie-item .count {
       font-family: var(--sans);
       font-size: .78rem;
