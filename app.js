@@ -90,8 +90,23 @@ function renderDays() {
   for (const [dayKey, { label }] of ordered) make(dayKey, label);
 }
 
+// Count a movie's screenings on the active day (or all of them when no day is
+// selected). Used both for ordering and the count badge.
+function shownCount(show) {
+  if (!activeDay) return show.screenings.length;
+  let n = 0;
+  for (const sc of show.screenings) if (sc.dayKey === activeDay) n++;
+  return n;
+}
+
 function renderMovieList() {
   const shows = visibleShows();
+  // The build-time order is by all-days total. When a day is selected, re-sort
+  // by that day's screening count so the order matches the visible counts.
+  if (activeDay)
+    shows.sort(
+      (a, b) => shownCount(b) - shownCount(a) || a.name.localeCompare(b.name, "he")
+    );
   movieListEl.innerHTML = "";
 
   if (!shows.length) {
