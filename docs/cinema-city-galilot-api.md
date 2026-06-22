@@ -155,6 +155,8 @@ const events = await res.json();
   `/Media/Movies/Images/<Pic>` path returned 404. Confirm the real CDN base
   from the live site's `<img>` tags before relying on posters. Posters are not
   required for the shows/hours list.
-- **Booking link:** build from `Dates.EventId`; confirm the exact purchase URL
-  pattern from the site's "buy" flow.
+- **Booking link:** `https://tickets.cinema-city.co.il/order/<EventId>`. The
+  site's own "buy" flow (`ticketsNew2.js`) navigates to
+  `/order/?eventID=<EventId>&theaterId=<TheaterId>`, which 302-redirects to that
+  canonical order URL. (The older `/tickets/seats?eventId=` path 404s.)
 - **Other theatres:** swap `TheatreId`. Galilot = `1170`.
