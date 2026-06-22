@@ -53,7 +53,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "15:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264479?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264479?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -73,7 +73,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "17:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264480?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264480?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -103,7 +103,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "19:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263110?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263110?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -113,7 +113,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "19:40",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264482?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264482?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -133,7 +133,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "21:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263111?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263111?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -153,7 +153,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "22:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264484?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264484?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -173,7 +173,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "15:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263142?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263142?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -183,7 +183,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "17:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264485?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264485?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -213,7 +213,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "19:40",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264486?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264486?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -253,7 +253,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "22:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264489?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264489?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -263,7 +263,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "15:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264572?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264572?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -283,7 +283,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "17:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264573?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264573?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -313,7 +313,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "19:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263143?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263143?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -323,7 +323,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "19:40",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264575?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264575?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -343,7 +343,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "21:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263144?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263144?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -363,7 +363,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "22:10",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264576?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264576?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -379,7 +379,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "17:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264040?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264040?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -389,7 +389,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "10:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263146?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263146?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -409,7 +409,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "12:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263148?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263148?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -419,7 +419,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "17:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264041?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264041?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -429,7 +429,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "17:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264042?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264042?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -445,7 +445,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "14:50",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263975?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263975?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -455,7 +455,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "10:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263981?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263981?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -475,7 +475,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "12:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263982?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263982?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -485,7 +485,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "14:50",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263985?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263985?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -495,7 +495,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "14:50",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263986?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263986?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -511,7 +511,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "17:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263401?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263401?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -521,7 +521,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "18:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263660?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263660?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -531,7 +531,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "20:50",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263662?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263662?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -541,7 +541,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "16:40",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263403?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263403?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -561,7 +561,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "19:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263406?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263406?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -571,7 +571,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "21:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263407?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263407?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -581,7 +581,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "16:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263408?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263408?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -601,7 +601,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "21:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263409?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263409?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -663,7 +663,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "17:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264001?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264001?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -673,7 +673,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "18:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264004?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264004?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -683,7 +683,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "20:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264005?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264005?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -703,7 +703,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "22:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264007?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264007?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -713,7 +713,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "17:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264008?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264008?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -723,7 +723,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "18:50",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264010?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264010?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -733,7 +733,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "20:35",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264011?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264011?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -753,7 +753,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "22:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264013?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264013?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -763,7 +763,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "22:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263150?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263150?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -773,7 +773,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "17:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264015?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264015?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -783,7 +783,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "18:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264016?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264016?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -793,7 +793,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "20:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264017?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264017?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -813,7 +813,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "22:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264018?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264018?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1301,7 +1301,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "20:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264628?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264628?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1311,7 +1311,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "10:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263232?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263232?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1331,7 +1331,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "21:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264629?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264629?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1383,7 +1383,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "14:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264706?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264706?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1393,7 +1393,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "14:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264710?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264710?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1403,7 +1403,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "14:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264713?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264713?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1455,7 +1455,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "15:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263862?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263862?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1475,7 +1475,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "15:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263872?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263872?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1485,7 +1485,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "19:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263874?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263874?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1495,7 +1495,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "15:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263875?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263875?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1505,7 +1505,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "18:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263876?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263876?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1583,7 +1583,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "14:40",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263567?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263567?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1613,7 +1613,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "14:40",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263568?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263568?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1643,7 +1643,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "14:40",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263569?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263569?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1679,7 +1679,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "14:10",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264124?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264124?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1699,7 +1699,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "19:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264125?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264125?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1719,7 +1719,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "11:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264130?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264130?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1749,7 +1749,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "14:10",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264132?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264132?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1789,7 +1789,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "19:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264133?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264133?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1809,7 +1809,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "14:10",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264138?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264138?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1829,7 +1829,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "19:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264141?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264141?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1927,7 +1927,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "16:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264720?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264720?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1937,7 +1937,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "10:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264726?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264726?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1947,7 +1947,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "12:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264728?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264728?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1957,7 +1957,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "16:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264729?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264729?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -1967,7 +1967,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "16:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264730?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264730?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2009,7 +2009,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "10:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264493?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264493?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2019,7 +2019,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "12:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264495?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264495?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2045,7 +2045,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "18:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264664?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264664?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2055,7 +2055,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "10:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262667?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262667?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2075,7 +2075,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "15:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264526?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264526?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2105,7 +2105,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "18:50",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264666?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264666?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2115,7 +2115,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "18:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264668?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264668?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2167,7 +2167,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "19:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262907?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262907?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2187,7 +2187,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "21:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262908?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262908?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2197,7 +2197,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "11:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262910?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262910?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2207,7 +2207,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "14:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262914?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262914?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2257,7 +2257,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "18:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263416?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263416?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2309,7 +2309,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "22:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262656?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262656?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2319,7 +2319,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "20:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262659?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262659?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2339,7 +2339,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "22:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262660?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262660?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2359,7 +2359,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "20:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262663?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262663?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2379,7 +2379,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "22:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262664?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262664?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2395,7 +2395,7 @@
           "dayKey": "2026-06-26",
           "day": "שישי 26/06/2026",
           "hour": "22:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/258647?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/258647?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2457,7 +2457,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "17:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262672?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262672?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2467,7 +2467,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "17:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262673?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262673?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2835,7 +2835,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "18:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263499?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263499?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2855,7 +2855,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "20:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263500?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263500?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2875,7 +2875,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "10:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263503?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263503?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2885,7 +2885,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "11:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262661?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262661?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2895,7 +2895,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "12:40",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263505?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263505?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2915,7 +2915,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "14:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262662?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262662?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2925,7 +2925,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "15:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263506?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263506?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2955,7 +2955,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "18:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263509?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263509?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2965,7 +2965,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "21:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263510?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263510?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2975,7 +2975,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "18:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263512?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263512?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2995,7 +2995,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "20:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263513?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263513?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3037,7 +3037,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "15:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263477?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263477?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3047,7 +3047,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "17:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262585?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262585?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3077,7 +3077,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "10:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263681?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263681?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3087,7 +3087,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "13:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263739?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263739?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3097,7 +3097,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "17:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262586?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262586?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3127,7 +3127,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "21:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263742?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263742?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3137,7 +3137,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "15:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263478?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263478?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3147,7 +3147,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "17:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262587?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262587?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3157,7 +3157,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "21:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263746?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263746?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3173,7 +3173,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "14:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263211?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263211?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3183,7 +3183,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "15:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263439?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263439?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3193,7 +3193,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "16:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263212?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263212?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3203,7 +3203,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "17:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263102?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263102?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3213,7 +3213,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "19:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263216?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263216?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3223,7 +3223,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "21:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263218?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263218?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3233,7 +3233,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "10:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263441?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263441?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3243,7 +3243,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "12:10",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263443?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263443?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3253,7 +3253,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "13:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263229?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263229?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3263,7 +3263,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "14:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263445?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263445?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3273,7 +3273,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "15:50",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263230?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263230?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3283,7 +3283,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "17:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263104?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263104?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3293,7 +3293,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "19:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262959?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262959?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3303,7 +3303,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "21:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262960?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262960?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3313,7 +3313,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "14:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263450?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263450?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3323,7 +3323,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "14:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263270?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263270?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3333,7 +3333,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "16:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263273?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263273?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3343,7 +3343,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "17:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263105?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263105?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3353,7 +3353,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "19:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262962?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262962?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3363,7 +3363,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "21:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262961?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262961?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3753,7 +3753,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "14:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263284?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263284?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3763,7 +3763,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "16:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263286?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263286?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3773,7 +3773,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "17:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262985?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262985?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3783,7 +3783,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "18:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263288?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263288?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3793,7 +3793,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "19:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263016?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263016?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3803,7 +3803,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "20:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263290?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263290?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3813,7 +3813,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "21:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263017?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263017?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3823,7 +3823,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "22:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263291?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263291?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3833,7 +3833,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "22:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264115?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264115?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3843,7 +3843,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "10:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263292?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263292?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3853,7 +3853,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "11:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263018?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263018?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3863,7 +3863,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "12:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263293?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263293?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3873,7 +3873,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "13:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263019?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263019?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3883,7 +3883,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "14:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263295?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263295?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3893,7 +3893,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "15:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263020?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263020?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3903,7 +3903,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "16:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263297?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263297?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3913,7 +3913,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "17:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263021?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263021?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3923,7 +3923,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "18:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263298?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263298?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3933,7 +3933,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "19:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263022?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263022?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3943,7 +3943,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "20:40",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263299?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263299?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3953,7 +3953,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "21:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263023?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263023?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3963,7 +3963,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "22:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264117?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264117?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3973,7 +3973,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "22:35",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263300?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263300?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3983,7 +3983,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "14:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263302?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263302?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -3993,7 +3993,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "16:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263305?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263305?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -4003,7 +4003,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "17:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263024?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263024?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -4013,7 +4013,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "18:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263307?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263307?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -4023,7 +4023,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "19:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263025?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263025?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -4033,7 +4033,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "20:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263308?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263308?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -4043,7 +4043,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "21:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263026?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263026?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -4053,7 +4053,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "22:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263310?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263310?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -4063,7 +4063,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "22:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264118?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264118?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -4683,7 +4683,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "17:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262674?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262674?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -4703,7 +4703,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "19:50",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263610?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263610?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -4713,7 +4713,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "22:10",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263612?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263612?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -4723,7 +4723,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "10:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263624?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263624?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -4743,7 +4743,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "12:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263625?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263625?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -4763,7 +4763,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "17:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263626?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263626?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -4783,7 +4783,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "19:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263627?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263627?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -4803,7 +4803,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "21:40",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263629?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263629?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -4813,7 +4813,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "17:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263603?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263603?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -4833,7 +4833,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "19:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263605?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263605?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -4843,7 +4843,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "22:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263607?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263607?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -4905,7 +4905,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "17:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262965?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262965?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -4925,7 +4925,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "19:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262689?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262689?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -4935,7 +4935,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "21:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262690?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262690?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -4965,7 +4965,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "12:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262692?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262692?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -4985,7 +4985,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "15:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262694?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262694?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -5005,7 +5005,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "17:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262966?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262966?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -5035,7 +5035,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "19:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262696?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262696?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -5055,7 +5055,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "21:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262697?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262697?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -5065,7 +5065,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "17:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262967?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262967?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -5085,7 +5085,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "19:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262700?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262700?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -5105,7 +5105,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "21:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262702?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262702?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -5183,7 +5183,7 @@
           "dayKey": "2026-06-23",
           "day": "שלישי 23/06/2026",
           "hour": "19:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/263039?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/263039?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -5193,7 +5193,7 @@
           "dayKey": "2026-06-24",
           "day": "רביעי 24/06/2026",
           "hour": "20:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/264600?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/264600?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -5209,7 +5209,7 @@
           "dayKey": "2026-06-22",
           "day": "שני 22/06/2026",
           "hour": "20:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/api/order/262658?lang=he",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/262658?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
