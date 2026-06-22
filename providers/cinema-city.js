@@ -25,8 +25,12 @@ function toDay(dateStr) {
   return toDayKey(yyyy, mm, dd);
 }
 
+// The site's order flow (ticketsNew2.js -> navigateToOrder) hits
+// `/order/?eventID=<id>&theaterId=<tid>`, which 302-redirects to the canonical
+// order page on the ticketing host. Link straight to that final URL so the
+// "buy" link resolves in one hop instead of 404-ing.
 function bookingUrl(eventId) {
-  return `https://www.cinema-city.co.il/tickets/seats?eventId=${eventId}`;
+  return `https://tickets.cinema-city.co.il/order/${eventId}`;
 }
 
 function buildEndpointUrl(theatreId, venueTypeId) {
