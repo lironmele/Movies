@@ -20,6 +20,16 @@ function toTs(eventDateTime) {
   return new Date(eventDateTime).getTime();
 }
 
+// The API's `bookingLink` points at the internal data path
+// `https://tickets5.../api/order/{id}` which 404s in a browser ("This page
+// could not be found"). The real, user-facing ordering page is the same URL
+// without the `/api/` segment: `https://tickets5.../order/{id}`. Strip it so
+// the link we store actually opens the booking page.
+function toOrderUrl(bookingLink) {
+  if (!bookingLink) return bookingLink;
+  return bookingLink.replace("/api/order/", "/order/");
+}
+
 // "YYYY-MM-DD" (business day) -> canonical "YYYY-MM-DD" day key.
 function toDay(businessDay) {
   const [yyyy, mm, dd] = businessDay.split("-").map(Number);
@@ -76,7 +86,7 @@ function groupShows(rows) {
       dayKey, // canonical "YYYY-MM-DD" — groups across providers
       day: dayLabel(dayKey), // display label, built from the same source
       hour: e.eventDateTime.slice(11, 16), // "HH:MM"
-      bookingUrl: e.bookingLink,
+      bookingUrl: toOrderUrl(e.bookingLink),
     });
   }
   return [...shows.values()];

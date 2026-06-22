@@ -88,7 +88,7 @@ Returns two parallel arrays, `films` and `events`, joined by `filmId`.
 | **`eventDateTime`** | **`"2026-06-23T10:00:00"`** | **the showtime you want** |
 | `auditorium` | `"אולם 5"` | screen / hall name |
 | `auditoriumTinyName` | `"5"` | short hall number |
-| `bookingLink` | `https://tickets5.planetcinema.co.il/api/order/263146?lang=he` | deep link to buy |
+| `bookingLink` | `https://tickets5.planetcinema.co.il/api/order/263146?lang=he` | ⚠️ internal `/api/` path — 404s in a browser. Strip `/api/` → `https://tickets5.planetcinema.co.il/order/263146?lang=he` for the real ordering page |
 | `soldOut` | `false` | |
 | `availabilityRatio` | number | rough seat availability |
 | `attributeIds` | `["2d","comedy","subbed",...]` | format/language of this specific screening |
