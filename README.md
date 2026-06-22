@@ -1,19 +1,30 @@
 # Movie Showtimes
 
-A static page that fetches cinema schedules and displays the movies and their
-showtimes, grouped by movie and by day. Every theater is shown at once: the
-schedules from all providers are merged into a single movie list, and each
-showtime is tagged with the theater's logo so you can see where it plays. It is
-built around **pluggable movie providers** — Cinema City Galilot, Lev Ramat
-HaSharon and Planet Ayalon are bundled today, and more can be added without
-touching the UI.
+A page that displays cinema schedules grouped by movie and by day. Every theater
+is shown at once: the schedules from all providers are merged into a single movie
+list, and each showtime is tagged with the theater's logo so you can see where it
+plays. It is built around **pluggable movie providers** — Cinema City Galilot,
+Lev Ramat HaSharon and Planet Ayalon are bundled today, and more can be added
+without touching the UI.
+
+The project is in two parts:
+
+1. **A daily build script** (`scripts/build-data.mjs`) run by GitHub Actions. It
+   fetches every provider, merges them, and commits the result to
+   `data/showtimes.json`.
+2. **A static page** (`index.html` + `app.js`) that just reads
+   `data/showtimes.json` and renders it. The page does no fetching of cinema
+   APIs, so it needs no CORS proxy and works on any static host (e.g. GitHub
+   Pages).
 
 ## Structure
 
 ```
 index.html              markup + styles (no app logic)
-app.js                  provider-agnostic UI: search, day filter, accordion
-lib/proxy.js            shared CORS-proxy helper
+app.js                  UI: reads data/showtimes.json, search, day filter, accordion
+data/showtimes.json     the pre-built, merged schedule (regenerated daily)
+scripts/build-data.mjs  Node build script: fetch all providers -> write the JSON
+lib/proxy.js            optional request-proxy helper (off by default)
 lib/day.js              canonical day key + shared Hebrew day label
 providers/
   registry.js           the providers + fetchAllShows() (merge + theater tag)
@@ -21,13 +32,26 @@ providers/
   lev.js                Lev Cinema provider factory (any branch by locationId)
   planet.js             Planet Cinema provider factory (any branch by cinemaId)
 assets/icons/           theater logos, fetched from each cinema's website
+.github/workflows/update-data.yml   the daily cron job
 ```
 
-All providers are fetched in parallel by `fetchAllShows()`, which merges their
-movies into one list (same title from two theaters collapses into one row) and
-stamps every screening with `{ providerId, providerName, icon }`. A legend under
-the title maps each logo to its theater; a provider that fails to load is
-reported in a small banner without blocking the others.
+The build script calls `fetchAllShows()`, which fetches all providers in parallel
+and merges their movies into one list (same title from two theaters collapses
+into one row), stamping every screening with `{ providerId, providerName, icon }`.
+It then sorts everything and writes `data/showtimes.json`:
+
+```json
+{
+  "generatedAt": "2026-06-22T03:00:00.000Z",
+  "providers": [ { "id": "...", "name": "...", "icon": "..." } ],
+  "shows": [ { "key": "...", "name": "...", "screenings": [ /* tagged */ ] } ],
+  "errors": [ { "provider": "...", "reason": "..." } ]
+}
+```
+
+The page reads that file on load. A legend under the title maps each logo to its
+theater; if a provider failed during the last build, it is listed in `errors` and
+shown in a small banner without blocking the rest.
 
 ## Adding a provider
 
@@ -104,31 +128,30 @@ createPlanetProvider({ id: "planet-haifa", name: "פלאנט · חיפה", icon:
   load is tolerated; the branch only errors if every date request fails.
 - Each showtime links to the `bookingLink` returned on the event.
 
-## CORS proxy (required)
+## Daily update (GitHub Actions)
 
-The cinema endpoints send no `Access-Control-Allow-Origin` header, so the browser
-cannot call them directly. Requests are routed through
-[cors-anywhere](https://github.com/Rob--W/cors-anywhere), which also forwards the
-`X-Requested-With: XMLHttpRequest` header that Cinema City requires.
+[`.github/workflows/update-data.yml`](.github/workflows/update-data.yml) runs the
+build script once a day (03:00 UTC ≈ 06:00 Israel) and on demand via
+*workflow_dispatch*. If `data/showtimes.json` changed, it commits and pushes the
+new file. The workflow needs `contents: write` permission (already set in the
+file) so the bot can push.
 
-The proxy URL is editable in the page (saved to `localStorage`). It defaults to
-the public demo host `https://cors-anywhere.herokuapp.com/`, which requires a
-one-time manual unlock:
-
-1. Open <https://cors-anywhere.herokuapp.com/corsdemo>
-2. Click **Request temporary access to the demo server**
-
-For anything beyond casual use, run your own cors-anywhere instance and paste
-its URL into the proxy field.
+Because the fetch now happens server-side in Node, there is **no CORS proxy**:
+the cinema endpoints are called directly. If a host ever needs to be routed
+through a proxy from the runner, set the `CORS_PROXY` env var (see
+[`lib/proxy.js`](lib/proxy.js)). The build refuses to overwrite the data file
+with an empty result, so a total fetch failure leaves the last good file in place
+and fails the job loudly.
 
 ## Run
 
-The app now uses ES modules, so it must be served over HTTP (opening the file
-directly via `file://` will not load the modules):
+Build the data once, then serve the static page over HTTP (ES modules / `fetch`
+won't work from `file://`):
 
 ```sh
-python3 -m http.server 8000
-# then visit http://localhost:8000
+node scripts/build-data.mjs    # writes data/showtimes.json
+python3 -m http.server 8000    # then visit http://localhost:8000
 ```
 
-The schedule loads automatically on open.
+In production only the second step runs in the browser — the first is done daily
+by GitHub Actions. The schedule loads automatically on open.

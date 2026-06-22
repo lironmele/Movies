@@ -1,0 +1,10 @@
+{
+  "name": "movie-showtimes",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Daily-built cinema showtimes: a Node script fetches every provider and commits data/showtimes.json; a static page renders it.",
+  "scripts": {
+    "build": "node scripts/build-data.mjs"
+  }
+}

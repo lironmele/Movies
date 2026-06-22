@@ -1,9 +1,10 @@
 // Provider-agnostic UI: search, day filter, and the movie accordion.
-// Every theater is shown at once: fetchAllShows() merges all providers into one
-// movie list and tags each screening with the theater it belongs to, so this
-// file only ever works with the normalized Show/Screening shape.
+// Every theater is shown at once. The merge + theater-tagging now happens
+// server-side once a day (scripts/build-data.mjs); this page just reads the
+// pre-built data/showtimes.json, so it only ever works with the normalized
+// Show/Screening shape plus the per-screening theater tag.
 
-import { providers, fetchAllShows } from "./providers/registry.js";
+const DATA_URL = "data/showtimes.json";
 
 const $ = (id) => document.getElementById(id);
 const searchEl = $("search");
@@ -14,6 +15,7 @@ const noteEl = $("note");
 
 // ---- State ------------------------------------------------------------------
 let allShows = [];
+let providers = []; // { id, name, icon } list, read from the data file for the legend
 let selectedKey = null;
 let query = "";
 let activeDay = "";
@@ -184,8 +186,10 @@ searchEl.addEventListener("input", () => {
 });
 
 // ---- Load -------------------------------------------------------------------
+// Read the pre-built JSON (refreshed daily by the GitHub Action). The shows are
+// already merged, theater-tagged and sorted by the build script, so there is no
+// fetching or merging to do here — just render.
 async function load() {
-  renderLegend();
   selectedKey = null;
   activeDay = "";
   daysEl.innerHTML = "";
@@ -193,18 +197,19 @@ async function load() {
   showNote('<span>טוען הקרנות</span><span class="skeleton-dot"></span>');
 
   try {
-    const { shows, errors } = await fetchAllShows();
-    // Only a total wipe-out is a hard failure; otherwise show what we have.
-    if (!shows.length && errors.length) throw errors[0].reason;
+    const res = await fetch(DATA_URL, { cache: "no-cache" });
+    if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
+    const data = await res.json();
 
-    for (const s of shows) s.screenings.sort((a, b) => a.ts - b.ts);
-    shows.sort((a, b) => a.name.localeCompare(b.name, "he"));
-    allShows = shows;
+    providers = data.providers || [];
+    allShows = data.shows || [];
+    renderLegend();
     renderDays();
     renderMovieList();
 
+    const errors = data.errors || [];
     if (errors.length) {
-      const names = errors.map((e) => e.provider.name).join(", ");
+      const names = errors.map((e) => e.provider).join(", ");
       const banner = document.createElement("div");
       banner.className = "note error partial";
       banner.textContent = `חלק מהלוחות לא נטענו (${names}).`;
