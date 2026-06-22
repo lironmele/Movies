@@ -19,10 +19,15 @@ const outFile = join(root, "data", "showtimes.json");
 async function main() {
   const { shows, errors } = await fetchAllShows();
 
-  // Same ordering the page applied on load, done once here so the JSON is
-  // render-ready: screenings chronological, movies alphabetical (Hebrew).
+  // Ordering done once here so the JSON is render-ready: screenings
+  // chronological, movies by total number of screenings (most first), with the
+  // Hebrew name as a stable tie-breaker.
   for (const s of shows) s.screenings.sort((a, b) => a.ts - b.ts);
-  shows.sort((a, b) => a.name.localeCompare(b.name, "he"));
+  shows.sort(
+    (a, b) =>
+      b.screenings.length - a.screenings.length ||
+      a.name.localeCompare(b.name, "he")
+  );
 
   for (const e of errors)
     console.error(`provider failed: ${e.provider.name}: ${e.reason}`);

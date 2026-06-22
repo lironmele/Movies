@@ -38,7 +38,9 @@ assets/icons/           theater logos, fetched from each cinema's website
 The build script calls `fetchAllShows()`, which fetches all providers in parallel
 and merges their movies into one list (same title from two theaters collapses
 into one row), stamping every screening with `{ providerId, providerName, icon }`.
-It then sorts everything and writes `data/showtimes.json`:
+It then sorts everything — each movie's screenings chronologically, and the
+movies themselves by total number of screenings (most first) — and writes
+`data/showtimes.json`:
 
 ```json
 {
