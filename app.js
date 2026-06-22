@@ -116,13 +116,31 @@ function renderMovieList() {
     btn.setAttribute("aria-expanded", String(isActive));
 
     const name = document.createElement("span");
+    name.className = "title";
     name.textContent = show.name;
     btn.appendChild(name);
+
+    // Right-hand meta: the theaters this movie plays at, then the count. The
+    // logos let you see *where* a movie is showing without expanding the row.
+    const meta = document.createElement("span");
+    meta.className = "meta";
+
+    const theaters = document.createElement("span");
+    theaters.className = "theaters";
+    const seen = new Set();
+    for (const sc of screenings) {
+      if (seen.has(sc.providerId)) continue;
+      seen.add(sc.providerId);
+      theaters.appendChild(makeLogo(sc.icon, sc.providerName));
+    }
+    meta.appendChild(theaters);
 
     const count = document.createElement("span");
     count.className = "count";
     count.textContent = screenings.length === 1 ? "הקרנה אחת" : `${screenings.length} הקרנות`;
-    btn.appendChild(count);
+    meta.appendChild(count);
+
+    btn.appendChild(meta);
 
     btn.addEventListener("click", () => {
       selectedKey = isActive ? null : show.key;
