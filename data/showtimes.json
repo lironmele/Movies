@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T05:46:43.118Z",
+  "generatedAt": "2026-07-12T06:09:47.653Z",
   "providers": [
     {
       "id": "cc-galilot",
@@ -22,176 +22,6 @@
       "key": "מיניוניםומפלצות",
       "name": "מיניונים ומפלצות",
       "screenings": [
-        {
-          "ts": 1783764000000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "10:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280820?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783764900000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "10:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280967?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783764900000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "10:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282031?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783765200000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "10:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278607?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783771200000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "12:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280822?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783772100000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "12:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280968?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783772100000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "12:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282032?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783773900000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "12:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281173?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783778400000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "14:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280823?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783779300000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "14:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280969?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783779300000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "14:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282033?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783785600000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "16:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280825?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783786500000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "16:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280970?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783792800000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "18:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280827?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783800000000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "20:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280830?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783807200000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "22:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280831?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783814400000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "00:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280832?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
         {
           "ts": 1783850400000,
           "dayKey": "2026-07-12",
@@ -819,146 +649,6 @@
       "name": "קופה ראשית",
       "screenings": [
         {
-          "ts": 1783764000000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "10:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279661?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783765800000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "10:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281409?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783771200000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "12:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279663?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783773000000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "12:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281411?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783778400000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "14:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279664?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783785600000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "16:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279665?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783792800000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "18:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279666?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783793700000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "18:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280971?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783800000000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "20:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279667?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783800900000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "20:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280972?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783807200000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "22:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279668?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783808100000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "22:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280973?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783814400000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "00:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279669?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783815300000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "00:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280974?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
           "ts": 1783850400000,
           "dayKey": "2026-07-12",
           "day": "ראשון 12/07/2026",
@@ -1405,106 +1095,6 @@
       "name": "צעצוע של סיפור 5",
       "screenings": [
         {
-          "ts": 1783765800000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "10:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279295?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783765800000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "10:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281916?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783773900000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "12:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279296?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783773900000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "12:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281917?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783780200000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "14:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281404?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783782900000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "15:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279299?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783788300000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "16:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281405?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783791000000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "17:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279301?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783799100000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "19:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279302?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783807200000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "22:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279303?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
           "ts": 1783852200000,
           "dayKey": "2026-07-12",
           "day": "ראשון 12/07/2026",
@@ -1911,96 +1501,6 @@
       "name": "מואנה לייב אקשן",
       "screenings": [
         {
-          "ts": 1783764000000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "10:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277394?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783769400000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "11:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277389?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783773000000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "12:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277395?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783778400000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "14:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277390?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783782000000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "15:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277396?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783787400000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "16:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277391?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783791000000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "17:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277397?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783800000000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "20:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277392?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783809000000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "22:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277393?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
           "ts": 1783850400000,
           "dayKey": "2026-07-12",
           "day": "ראשון 12/07/2026",
@@ -2041,16 +1541,6 @@
           "icon": "assets/icons/planet-cinema.png"
         },
         {
-          "ts": 1783868400000,
-          "dayKey": "2026-07-12",
-          "day": "ראשון 12/07/2026",
-          "hour": "15:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279976?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
           "ts": 1783872000000,
           "dayKey": "2026-07-12",
           "day": "ראשון 12/07/2026",
@@ -2061,11 +1551,11 @@
           "icon": "assets/icons/planet-cinema.png"
         },
         {
-          "ts": 1783877400000,
+          "ts": 1783875600000,
           "dayKey": "2026-07-12",
           "day": "ראשון 12/07/2026",
-          "hour": "17:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279978?lang=he",
+          "hour": "17:00",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282670?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -2326,76 +1816,6 @@
       "key": "חינהאמריקאית",
       "name": "חינה אמריקאית",
       "screenings": [
-        {
-          "ts": 1783767600000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "11:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280914?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783774800000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "13:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280915?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783782000000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "15:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280916?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783789200000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "17:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280917?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783796400000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "19:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279532?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783803600000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "21:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279533?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783810800000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "23:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279534?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
         {
           "ts": 1783854000000,
           "dayKey": "2026-07-12",
@@ -2949,66 +2369,6 @@
       "name": "ההזמנה.",
       "screenings": [
         {
-          "ts": 1783767600000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "11:00",
-          "bookingUrl": "https://ticket.lev.co.il/order/600646",
-          "providerId": "lev-ramat-hasharon",
-          "providerName": "לב · רמת השרון",
-          "icon": "assets/icons/lev.png"
-        },
-        {
-          "ts": 1783790400000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "17:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278631?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783795200000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "18:40",
-          "bookingUrl": "https://ticket.lev.co.il/order/600650",
-          "providerId": "lev-ramat-hasharon",
-          "providerName": "לב · רמת השרון",
-          "icon": "assets/icons/lev.png"
-        },
-        {
-          "ts": 1783798800000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "19:40",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278650?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783807200000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "22:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278651?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783815600000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "00:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278652?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
           "ts": 1783878000000,
           "dayKey": "2026-07-12",
           "day": "ראשון 12/07/2026",
@@ -3175,56 +2535,6 @@
       "name": "מאמא",
       "screenings": [
         {
-          "ts": 1783791000000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "17:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282243?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783798200000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "19:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282244?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783803600000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "21:00",
-          "bookingUrl": "https://ticket.lev.co.il/order/600647",
-          "providerId": "lev-ramat-hasharon",
-          "providerName": "לב · רמת השרון",
-          "icon": "assets/icons/lev.png"
-        },
-        {
-          "ts": 1783805400000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "21:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282246?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783812600000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "23:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282247?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
           "ts": 1783877400000,
           "dayKey": "2026-07-12",
           "day": "ראשון 12/07/2026",
@@ -3387,816 +2697,6 @@
       ]
     },
     {
-      "key": "גקאסגומריםבשיא",
-      "name": "ג'קאס: גומרים בשיא",
-      "screenings": [
-        {
-          "ts": 1783794000000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "18:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277911?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783801200000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "20:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277913?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783808400000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "22:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277915?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783815600000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "00:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277917?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783881000000,
-          "dayKey": "2026-07-12",
-          "day": "ראשון 12/07/2026",
-          "hour": "18:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277975?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783888200000,
-          "dayKey": "2026-07-12",
-          "day": "ראשון 12/07/2026",
-          "hour": "20:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277981?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783895400000,
-          "dayKey": "2026-07-12",
-          "day": "ראשון 12/07/2026",
-          "hour": "22:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277995?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783967400000,
-          "dayKey": "2026-07-13",
-          "day": "שני 13/07/2026",
-          "hour": "18:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278011?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783974600000,
-          "dayKey": "2026-07-13",
-          "day": "שני 13/07/2026",
-          "hour": "20:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278014?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783981800000,
-          "dayKey": "2026-07-13",
-          "day": "שני 13/07/2026",
-          "hour": "22:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278028?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784053800000,
-          "dayKey": "2026-07-14",
-          "day": "שלישי 14/07/2026",
-          "hour": "18:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278374?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784061000000,
-          "dayKey": "2026-07-14",
-          "day": "שלישי 14/07/2026",
-          "hour": "20:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278375?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784068200000,
-          "dayKey": "2026-07-14",
-          "day": "שלישי 14/07/2026",
-          "hour": "22:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278397?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784137500000,
-          "dayKey": "2026-07-15",
-          "day": "רביעי 15/07/2026",
-          "hour": "17:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281193?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784144700000,
-          "dayKey": "2026-07-15",
-          "day": "רביעי 15/07/2026",
-          "hour": "19:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281194?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784151900000,
-          "dayKey": "2026-07-15",
-          "day": "רביעי 15/07/2026",
-          "hour": "21:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281195?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        }
-      ]
-    },
-    {
-      "key": "מוותאכזריאש",
-      "name": "מוות אכזרי אש",
-      "screenings": [
-        {
-          "ts": 1783789200000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "17:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282109?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783797600000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "19:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282110?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783806000000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "21:40",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282111?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783814400000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "00:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282112?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783875600000,
-          "dayKey": "2026-07-12",
-          "day": "ראשון 12/07/2026",
-          "hour": "17:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282128?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783884000000,
-          "dayKey": "2026-07-12",
-          "day": "ראשון 12/07/2026",
-          "hour": "19:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282131?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783892400000,
-          "dayKey": "2026-07-12",
-          "day": "ראשון 12/07/2026",
-          "hour": "21:40",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282133?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783962000000,
-          "dayKey": "2026-07-13",
-          "day": "שני 13/07/2026",
-          "hour": "17:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282141?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783970400000,
-          "dayKey": "2026-07-13",
-          "day": "שני 13/07/2026",
-          "hour": "19:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282142?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783978800000,
-          "dayKey": "2026-07-13",
-          "day": "שני 13/07/2026",
-          "hour": "21:40",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282144?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784048400000,
-          "dayKey": "2026-07-14",
-          "day": "שלישי 14/07/2026",
-          "hour": "17:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282162?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784056800000,
-          "dayKey": "2026-07-14",
-          "day": "שלישי 14/07/2026",
-          "hour": "19:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282163?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784065200000,
-          "dayKey": "2026-07-14",
-          "day": "שלישי 14/07/2026",
-          "hour": "21:40",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282164?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784133000000,
-          "dayKey": "2026-07-15",
-          "day": "רביעי 15/07/2026",
-          "hour": "16:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281003?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784142000000,
-          "dayKey": "2026-07-15",
-          "day": "רביעי 15/07/2026",
-          "hour": "19:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281004?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784150700000,
-          "dayKey": "2026-07-15",
-          "day": "רביעי 15/07/2026",
-          "hour": "21:25",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281005?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        }
-      ]
-    },
-    {
-      "key": "ערךסנטימנטלי",
-      "name": "ערך סנטימנטלי",
-      "screenings": [
-        {
-          "ts": 1783764000000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "10:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277922?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783774200000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "12:50",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277923?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783784100000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "15:35",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277924?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783851300000,
-          "dayKey": "2026-07-12",
-          "day": "ראשון 12/07/2026",
-          "hour": "10:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277968?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783861200000,
-          "dayKey": "2026-07-12",
-          "day": "ראשון 12/07/2026",
-          "hour": "13:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277971?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783937700000,
-          "dayKey": "2026-07-13",
-          "day": "שני 13/07/2026",
-          "hour": "10:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278369?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783947600000,
-          "dayKey": "2026-07-13",
-          "day": "שני 13/07/2026",
-          "hour": "13:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278370?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783957500000,
-          "dayKey": "2026-07-13",
-          "day": "שני 13/07/2026",
-          "hour": "15:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278372?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783964700000,
-          "dayKey": "2026-07-13",
-          "day": "שני 13/07/2026",
-          "hour": "17:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279337?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783974600000,
-          "dayKey": "2026-07-13",
-          "day": "שני 13/07/2026",
-          "hour": "20:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279338?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784024100000,
-          "dayKey": "2026-07-14",
-          "day": "שלישי 14/07/2026",
-          "hour": "10:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278398?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784034000000,
-          "dayKey": "2026-07-14",
-          "day": "שלישי 14/07/2026",
-          "hour": "13:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278399?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784043900000,
-          "dayKey": "2026-07-14",
-          "day": "שלישי 14/07/2026",
-          "hour": "15:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278400?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784054700000,
-          "dayKey": "2026-07-14",
-          "day": "שלישי 14/07/2026",
-          "hour": "18:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279345?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784115000000,
-          "dayKey": "2026-07-15",
-          "day": "רביעי 15/07/2026",
-          "hour": "11:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278474?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784125800000,
-          "dayKey": "2026-07-15",
-          "day": "רביעי 15/07/2026",
-          "hour": "14:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278478?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        }
-      ]
-    },
-    {
-      "key": "עשיררצח",
-      "name": "עשיר רצח",
-      "screenings": [
-        {
-          "ts": 1783786500000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "16:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282034?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783795500000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "18:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282035?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783804500000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "21:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282036?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783813500000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "23:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282037?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783872900000,
-          "dayKey": "2026-07-12",
-          "day": "ראשון 12/07/2026",
-          "hour": "16:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282038?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783881900000,
-          "dayKey": "2026-07-12",
-          "day": "ראשון 12/07/2026",
-          "hour": "18:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282039?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783890900000,
-          "dayKey": "2026-07-12",
-          "day": "ראשון 12/07/2026",
-          "hour": "21:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282040?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783959300000,
-          "dayKey": "2026-07-13",
-          "day": "שני 13/07/2026",
-          "hour": "16:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282047?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783968300000,
-          "dayKey": "2026-07-13",
-          "day": "שני 13/07/2026",
-          "hour": "18:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282048?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783977300000,
-          "dayKey": "2026-07-13",
-          "day": "שני 13/07/2026",
-          "hour": "21:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282049?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784045700000,
-          "dayKey": "2026-07-14",
-          "day": "שלישי 14/07/2026",
-          "hour": "16:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282050?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784054700000,
-          "dayKey": "2026-07-14",
-          "day": "שלישי 14/07/2026",
-          "hour": "18:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282051?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784063700000,
-          "dayKey": "2026-07-14",
-          "day": "שלישי 14/07/2026",
-          "hour": "21:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282052?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784132100000,
-          "dayKey": "2026-07-15",
-          "day": "רביעי 15/07/2026",
-          "hour": "16:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282059?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784141100000,
-          "dayKey": "2026-07-15",
-          "day": "רביעי 15/07/2026",
-          "hour": "18:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282060?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784150100000,
-          "dayKey": "2026-07-15",
-          "day": "רביעי 15/07/2026",
-          "hour": "21:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282061?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        }
-      ]
-    },
-    {
-      "key": "נהגחדש",
-      "name": "נהג חדש",
-      "screenings": [
-        {
-          "ts": 1783796400000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "19:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280911?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783804500000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "21:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280912?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783812600000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "23:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280913?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783882800000,
-          "dayKey": "2026-07-12",
-          "day": "ראשון 12/07/2026",
-          "hour": "19:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280926?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783890900000,
-          "dayKey": "2026-07-12",
-          "day": "ראשון 12/07/2026",
-          "hour": "21:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280927?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783895400000,
-          "dayKey": "2026-07-12",
-          "day": "ראשון 12/07/2026",
-          "hour": "22:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279984?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783969200000,
-          "dayKey": "2026-07-13",
-          "day": "שני 13/07/2026",
-          "hour": "19:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280932?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783977300000,
-          "dayKey": "2026-07-13",
-          "day": "שני 13/07/2026",
-          "hour": "21:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280933?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783981800000,
-          "dayKey": "2026-07-13",
-          "day": "שני 13/07/2026",
-          "hour": "22:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280064?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784059800000,
-          "dayKey": "2026-07-14",
-          "day": "שלישי 14/07/2026",
-          "hour": "20:10",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280936?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784067300000,
-          "dayKey": "2026-07-14",
-          "day": "שלישי 14/07/2026",
-          "hour": "22:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280937?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784068200000,
-          "dayKey": "2026-07-14",
-          "day": "שלישי 14/07/2026",
-          "hour": "22:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280072?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784146200000,
-          "dayKey": "2026-07-15",
-          "day": "רביעי 15/07/2026",
-          "hour": "20:10",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280943?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784154000000,
-          "dayKey": "2026-07-15",
-          "day": "רביעי 15/07/2026",
-          "hour": "22:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280945?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        }
-      ]
-    },
-    {
       "key": "סולטיזהסרט",
       "name": "סולטיז הסרט",
       "screenings": [
@@ -4343,39 +2843,639 @@
       ]
     },
     {
+      "key": "ערךסנטימנטלי",
+      "name": "ערך סנטימנטלי",
+      "screenings": [
+        {
+          "ts": 1783851300000,
+          "dayKey": "2026-07-12",
+          "day": "ראשון 12/07/2026",
+          "hour": "10:15",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277968?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783861200000,
+          "dayKey": "2026-07-12",
+          "day": "ראשון 12/07/2026",
+          "hour": "13:00",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277971?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783937700000,
+          "dayKey": "2026-07-13",
+          "day": "שני 13/07/2026",
+          "hour": "10:15",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278369?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783947600000,
+          "dayKey": "2026-07-13",
+          "day": "שני 13/07/2026",
+          "hour": "13:00",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278370?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783957500000,
+          "dayKey": "2026-07-13",
+          "day": "שני 13/07/2026",
+          "hour": "15:45",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278372?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783964700000,
+          "dayKey": "2026-07-13",
+          "day": "שני 13/07/2026",
+          "hour": "17:45",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279337?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783974600000,
+          "dayKey": "2026-07-13",
+          "day": "שני 13/07/2026",
+          "hour": "20:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279338?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784024100000,
+          "dayKey": "2026-07-14",
+          "day": "שלישי 14/07/2026",
+          "hour": "10:15",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278398?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784034000000,
+          "dayKey": "2026-07-14",
+          "day": "שלישי 14/07/2026",
+          "hour": "13:00",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278399?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784043900000,
+          "dayKey": "2026-07-14",
+          "day": "שלישי 14/07/2026",
+          "hour": "15:45",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278400?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784054700000,
+          "dayKey": "2026-07-14",
+          "day": "שלישי 14/07/2026",
+          "hour": "18:45",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279345?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784115000000,
+          "dayKey": "2026-07-15",
+          "day": "רביעי 15/07/2026",
+          "hour": "11:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278474?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784125800000,
+          "dayKey": "2026-07-15",
+          "day": "רביעי 15/07/2026",
+          "hour": "14:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278478?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        }
+      ]
+    },
+    {
+      "key": "גקאסגומריםבשיא",
+      "name": "ג'קאס: גומרים בשיא",
+      "screenings": [
+        {
+          "ts": 1783881000000,
+          "dayKey": "2026-07-12",
+          "day": "ראשון 12/07/2026",
+          "hour": "18:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277975?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783888200000,
+          "dayKey": "2026-07-12",
+          "day": "ראשון 12/07/2026",
+          "hour": "20:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277981?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783895400000,
+          "dayKey": "2026-07-12",
+          "day": "ראשון 12/07/2026",
+          "hour": "22:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/277995?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783967400000,
+          "dayKey": "2026-07-13",
+          "day": "שני 13/07/2026",
+          "hour": "18:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278011?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783974600000,
+          "dayKey": "2026-07-13",
+          "day": "שני 13/07/2026",
+          "hour": "20:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278014?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783981800000,
+          "dayKey": "2026-07-13",
+          "day": "שני 13/07/2026",
+          "hour": "22:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278028?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784053800000,
+          "dayKey": "2026-07-14",
+          "day": "שלישי 14/07/2026",
+          "hour": "18:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278374?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784061000000,
+          "dayKey": "2026-07-14",
+          "day": "שלישי 14/07/2026",
+          "hour": "20:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278375?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784068200000,
+          "dayKey": "2026-07-14",
+          "day": "שלישי 14/07/2026",
+          "hour": "22:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278397?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784137500000,
+          "dayKey": "2026-07-15",
+          "day": "רביעי 15/07/2026",
+          "hour": "17:45",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281193?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784144700000,
+          "dayKey": "2026-07-15",
+          "day": "רביעי 15/07/2026",
+          "hour": "19:45",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281194?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784151900000,
+          "dayKey": "2026-07-15",
+          "day": "רביעי 15/07/2026",
+          "hour": "21:45",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281195?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        }
+      ]
+    },
+    {
+      "key": "מוותאכזריאש",
+      "name": "מוות אכזרי אש",
+      "screenings": [
+        {
+          "ts": 1783875600000,
+          "dayKey": "2026-07-12",
+          "day": "ראשון 12/07/2026",
+          "hour": "17:00",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282128?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783884000000,
+          "dayKey": "2026-07-12",
+          "day": "ראשון 12/07/2026",
+          "hour": "19:20",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282131?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783892400000,
+          "dayKey": "2026-07-12",
+          "day": "ראשון 12/07/2026",
+          "hour": "21:40",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282133?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783962000000,
+          "dayKey": "2026-07-13",
+          "day": "שני 13/07/2026",
+          "hour": "17:00",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282141?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783970400000,
+          "dayKey": "2026-07-13",
+          "day": "שני 13/07/2026",
+          "hour": "19:20",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282142?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783978800000,
+          "dayKey": "2026-07-13",
+          "day": "שני 13/07/2026",
+          "hour": "21:40",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282144?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784048400000,
+          "dayKey": "2026-07-14",
+          "day": "שלישי 14/07/2026",
+          "hour": "17:00",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282162?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784056800000,
+          "dayKey": "2026-07-14",
+          "day": "שלישי 14/07/2026",
+          "hour": "19:20",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282163?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784065200000,
+          "dayKey": "2026-07-14",
+          "day": "שלישי 14/07/2026",
+          "hour": "21:40",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282164?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784133000000,
+          "dayKey": "2026-07-15",
+          "day": "רביעי 15/07/2026",
+          "hour": "16:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281003?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784142000000,
+          "dayKey": "2026-07-15",
+          "day": "רביעי 15/07/2026",
+          "hour": "19:00",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281004?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784150700000,
+          "dayKey": "2026-07-15",
+          "day": "רביעי 15/07/2026",
+          "hour": "21:25",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281005?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        }
+      ]
+    },
+    {
+      "key": "עשיררצח",
+      "name": "עשיר רצח",
+      "screenings": [
+        {
+          "ts": 1783872900000,
+          "dayKey": "2026-07-12",
+          "day": "ראשון 12/07/2026",
+          "hour": "16:15",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282038?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783881900000,
+          "dayKey": "2026-07-12",
+          "day": "ראשון 12/07/2026",
+          "hour": "18:45",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282039?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783890900000,
+          "dayKey": "2026-07-12",
+          "day": "ראשון 12/07/2026",
+          "hour": "21:15",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282040?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783959300000,
+          "dayKey": "2026-07-13",
+          "day": "שני 13/07/2026",
+          "hour": "16:15",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282047?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783968300000,
+          "dayKey": "2026-07-13",
+          "day": "שני 13/07/2026",
+          "hour": "18:45",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282048?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783977300000,
+          "dayKey": "2026-07-13",
+          "day": "שני 13/07/2026",
+          "hour": "21:15",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282049?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784045700000,
+          "dayKey": "2026-07-14",
+          "day": "שלישי 14/07/2026",
+          "hour": "16:15",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282050?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784054700000,
+          "dayKey": "2026-07-14",
+          "day": "שלישי 14/07/2026",
+          "hour": "18:45",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282051?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784063700000,
+          "dayKey": "2026-07-14",
+          "day": "שלישי 14/07/2026",
+          "hour": "21:15",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282052?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784132100000,
+          "dayKey": "2026-07-15",
+          "day": "רביעי 15/07/2026",
+          "hour": "16:15",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282059?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784141100000,
+          "dayKey": "2026-07-15",
+          "day": "רביעי 15/07/2026",
+          "hour": "18:45",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282060?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784150100000,
+          "dayKey": "2026-07-15",
+          "day": "רביעי 15/07/2026",
+          "hour": "21:15",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282061?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        }
+      ]
+    },
+    {
+      "key": "נהגחדש",
+      "name": "נהג חדש",
+      "screenings": [
+        {
+          "ts": 1783882800000,
+          "dayKey": "2026-07-12",
+          "day": "ראשון 12/07/2026",
+          "hour": "19:00",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280926?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783890900000,
+          "dayKey": "2026-07-12",
+          "day": "ראשון 12/07/2026",
+          "hour": "21:15",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280927?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783895400000,
+          "dayKey": "2026-07-12",
+          "day": "ראשון 12/07/2026",
+          "hour": "22:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279984?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783969200000,
+          "dayKey": "2026-07-13",
+          "day": "שני 13/07/2026",
+          "hour": "19:00",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280932?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783977300000,
+          "dayKey": "2026-07-13",
+          "day": "שני 13/07/2026",
+          "hour": "21:15",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280933?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783981800000,
+          "dayKey": "2026-07-13",
+          "day": "שני 13/07/2026",
+          "hour": "22:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280064?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784059800000,
+          "dayKey": "2026-07-14",
+          "day": "שלישי 14/07/2026",
+          "hour": "20:10",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280936?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784067300000,
+          "dayKey": "2026-07-14",
+          "day": "שלישי 14/07/2026",
+          "hour": "22:15",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280937?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784068200000,
+          "dayKey": "2026-07-14",
+          "day": "שלישי 14/07/2026",
+          "hour": "22:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280072?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784146200000,
+          "dayKey": "2026-07-15",
+          "day": "רביעי 15/07/2026",
+          "hour": "20:10",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280943?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1784154000000,
+          "dayKey": "2026-07-15",
+          "day": "רביעי 15/07/2026",
+          "hour": "22:20",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/280945?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        }
+      ]
+    },
+    {
       "key": "התגלית",
       "name": "התגלית",
       "screenings": [
-        {
-          "ts": 1783781100000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "14:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281166?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783791600000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "17:40",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281168?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783801800000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "20:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281170?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
         {
           "ts": 1783867500000,
           "dayKey": "2026-07-12",
@@ -4453,26 +3553,6 @@
       "name": "מילה שלי",
       "screenings": [
         {
-          "ts": 1783776000000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "13:20",
-          "bookingUrl": "https://ticket.lev.co.il/order/600649",
-          "providerId": "lev-ramat-hasharon",
-          "providerName": "לב · רמת השרון",
-          "icon": "assets/icons/lev.png"
-        },
-        {
-          "ts": 1783782000000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "15:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282238?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
           "ts": 1783868400000,
           "dayKey": "2026-07-12",
           "day": "ראשון 12/07/2026",
@@ -4549,26 +3629,6 @@
       "name": "אובססיה",
       "screenings": [
         {
-          "ts": 1783806300000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "21:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281914?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783814400000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "00:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281915?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
           "ts": 1783892700000,
           "dayKey": "2026-07-12",
           "day": "ראשון 12/07/2026",
@@ -4635,26 +3695,6 @@
       "name": "מכולת",
       "screenings": [
         {
-          "ts": 1783774800000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "13:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282236?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783796400000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "19:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281392?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
           "ts": 1783861200000,
           "dayKey": "2026-07-12",
           "day": "ראשון 12/07/2026",
@@ -4711,16 +3751,6 @@
       "name": "מייקל",
       "screenings": [
         {
-          "ts": 1783772400000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "12:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278608?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
           "ts": 1783860300000,
           "dayKey": "2026-07-12",
           "day": "ראשון 12/07/2026",
@@ -4766,16 +3796,6 @@
       "key": "פרוייקטהיילמרי",
       "name": "פרוייקט הייל מרי",
       "screenings": [
-        {
-          "ts": 1783764000000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "10:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282231?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
         {
           "ts": 1783850400000,
           "dayKey": "2026-07-12",
@@ -4823,16 +3843,6 @@
       "name": "כימים אחדים",
       "screenings": [
         {
-          "ts": 1783772400000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "12:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282113?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
           "ts": 1783858800000,
           "dayKey": "2026-07-12",
           "day": "ראשון 12/07/2026",
@@ -4868,16 +3878,6 @@
       "key": "לצאתמהמשחק",
       "name": "לצאת מהמשחק",
       "screenings": [
-        {
-          "ts": 1783766100000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "10:35",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281172?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
         {
           "ts": 1783852500000,
           "dayKey": "2026-07-12",
@@ -4915,16 +3915,6 @@
       "name": "סופרגירל",
       "screenings": [
         {
-          "ts": 1783803000000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "20:50",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281400?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
           "ts": 1783893600000,
           "dayKey": "2026-07-12",
           "day": "ראשון 12/07/2026",
@@ -4960,16 +3950,6 @@
       "key": "צבעיהזמן",
       "name": "צבעי הזמן",
       "screenings": [
-        {
-          "ts": 1783785600000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "16:00",
-          "bookingUrl": "https://ticket.lev.co.il/order/600648",
-          "providerId": "lev-ramat-hasharon",
-          "providerName": "לב · רמת השרון",
-          "icon": "assets/icons/lev.png"
-        },
         {
           "ts": 1783873800000,
           "dayKey": "2026-07-12",
@@ -5007,16 +3987,6 @@
       "name": "שרה ברנארד - האלוהית",
       "screenings": [
         {
-          "ts": 1783764900000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "10:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282106?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
           "ts": 1783851300000,
           "dayKey": "2026-07-12",
           "day": "ראשון 12/07/2026",
@@ -5042,114 +4012,6 @@
           "day": "שלישי 14/07/2026",
           "hour": "10:15",
           "bookingUrl": "https://tickets5.planetcinema.co.il/order/282165?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        }
-      ]
-    },
-    {
-      "key": "מהשמחברבינינו",
-      "name": "מה שמחבר בינינו",
-      "screenings": [
-        {
-          "ts": 1783782000000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "15:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278630?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783956000000,
-          "dayKey": "2026-07-13",
-          "day": "שני 13/07/2026",
-          "hour": "15:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278865?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1784042400000,
-          "dayKey": "2026-07-14",
-          "day": "שלישי 14/07/2026",
-          "hour": "15:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278867?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        }
-      ]
-    },
-    {
-      "key": "פזמוןחוזר",
-      "name": "פזמון חוזר",
-      "screenings": [
-        {
-          "ts": 1783781100000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "14:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282118?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783867500000,
-          "dayKey": "2026-07-12",
-          "day": "ראשון 12/07/2026",
-          "hour": "14:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282122?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783953900000,
-          "dayKey": "2026-07-13",
-          "day": "שני 13/07/2026",
-          "hour": "14:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282147?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        }
-      ]
-    },
-    {
-      "key": "שמייםוארץ",
-      "name": "שמיים וארץ",
-      "screenings": [
-        {
-          "ts": 1783789800000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "17:10",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281918?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783876200000,
-          "dayKey": "2026-07-12",
-          "day": "ראשון 12/07/2026",
-          "hour": "17:10",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281924?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1783962600000,
-          "dayKey": "2026-07-13",
-          "day": "שני 13/07/2026",
-          "hour": "17:10",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281931?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -5193,25 +4055,25 @@
       ]
     },
     {
-      "key": "миньоныимонстрыminions&monsters",
-      "name": "МИНЬОНЫ И МОНСТРЫ - Minions & Monsters",
+      "key": "מהשמחברבינינו",
+      "name": "מה שמחבר בינינו",
       "screenings": [
         {
-          "ts": 1783782000000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "15:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281912?lang=he",
+          "ts": 1783956000000,
+          "dayKey": "2026-07-13",
+          "day": "שני 13/07/2026",
+          "hour": "15:20",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278865?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
         },
         {
-          "ts": 1784051100000,
+          "ts": 1784042400000,
           "dayKey": "2026-07-14",
           "day": "שלישי 14/07/2026",
-          "hour": "17:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281188?lang=he",
+          "hour": "15:20",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/278867?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -5219,25 +4081,25 @@
       ]
     },
     {
-      "key": "приглашениеtheinvite",
-      "name": "ПРИГЛАШЕНИЕ - The Invite",
+      "key": "פזמוןחוזר",
+      "name": "פזמון חוזר",
       "screenings": [
         {
-          "ts": 1783798200000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "19:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281913?lang=he",
+          "ts": 1783867500000,
+          "dayKey": "2026-07-12",
+          "day": "ראשון 12/07/2026",
+          "hour": "14:45",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282122?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
         },
         {
-          "ts": 1784057400000,
-          "dayKey": "2026-07-14",
-          "day": "שלישי 14/07/2026",
-          "hour": "19:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281956?lang=he",
+          "ts": 1783953900000,
+          "dayKey": "2026-07-13",
+          "day": "שני 13/07/2026",
+          "hour": "14:45",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/282147?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -5245,15 +4107,25 @@
       ]
     },
     {
-      "key": "באקרומס",
-      "name": "באקרומס",
+      "key": "שמייםוארץ",
+      "name": "שמיים וארץ",
       "screenings": [
         {
-          "ts": 1783812000000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "23:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281165?lang=he",
+          "ts": 1783876200000,
+          "dayKey": "2026-07-12",
+          "day": "ראשון 12/07/2026",
+          "hour": "17:10",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281924?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1783962600000,
+          "dayKey": "2026-07-13",
+          "day": "שני 13/07/2026",
+          "hour": "17:10",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281931?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -5273,22 +4145,6 @@
           "providerId": "lev-ramat-hasharon",
           "providerName": "לב · רמת השרון",
           "icon": "assets/icons/lev.png"
-        }
-      ]
-    },
-    {
-      "key": "המכוון",
-      "name": "המכוון",
-      "screenings": [
-        {
-          "ts": 1783811700000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "23:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281397?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
         }
       ]
     },
@@ -5357,22 +4213,6 @@
       ]
     },
     {
-      "key": "מתלצעוק",
-      "name": "מת לצעוק",
-      "screenings": [
-        {
-          "ts": 1783815300000,
-          "dayKey": "2026-07-11",
-          "day": "שבת 11/07/2026",
-          "hour": "00:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/279159?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        }
-      ]
-    },
-    {
       "key": "תיכוןמגשימים",
       "name": "תיכון מגשימים",
       "screenings": [
@@ -5398,6 +4238,38 @@
           "day": "ראשון 12/07/2026",
           "hour": "19:00",
           "bookingUrl": "https://tickets5.planetcinema.co.il/order/281428?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        }
+      ]
+    },
+    {
+      "key": "миньоныимонстрыminions&monsters",
+      "name": "МИНЬОНЫ И МОНСТРЫ - Minions & Monsters",
+      "screenings": [
+        {
+          "ts": 1784051100000,
+          "dayKey": "2026-07-14",
+          "day": "שלישי 14/07/2026",
+          "hour": "17:45",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281188?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        }
+      ]
+    },
+    {
+      "key": "приглашениеtheinvite",
+      "name": "ПРИГЛАШЕНИЕ - The Invite",
+      "screenings": [
+        {
+          "ts": 1784057400000,
+          "dayKey": "2026-07-14",
+          "day": "שלישי 14/07/2026",
+          "hour": "19:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/281956?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
