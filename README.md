@@ -21,7 +21,8 @@ The project is in two parts:
 
 ```
 index.html              markup + styles (no app logic)
-app.js                  UI: reads data/showtimes.json, search, day filter, accordion
+app.js                  UI: reads data/showtimes.json, search, day filter, accordion,
+                        inline booking frame
 data/showtimes.json     the pre-built, merged schedule (regenerated daily)
 scripts/build-data.mjs  Node build script: fetch all providers -> write the JSON
 lib/proxy.js            optional request-proxy helper (off by default)
@@ -54,6 +55,16 @@ movies themselves by total number of screenings (most first) — and writes
 The page reads that file on load. A legend under the title maps each logo to its
 theater; if a provider failed during the last build, it is listed in `errors` and
 shown in a small banner without blocking the rest.
+
+## Booking inline
+
+Clicking a showtime opens its `bookingUrl` in an iframe right under that day's
+times instead of sending you to a new tab, so you keep the schedule in view while
+you book. One frame is open at a time; it closes when you click the same time
+again, hit the ✕, collapse the movie, or change the day/search. The chip is still
+a real link, so ctrl/cmd/middle-click keeps the browser's own new-tab behavior and
+the frame's title bar carries a "פתיחה בלשונית" escape hatch for any ticket page
+that misbehaves when framed.
 
 ## Adding a provider
 
