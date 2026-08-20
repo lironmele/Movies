@@ -232,6 +232,63 @@
       transition: border-color .15s ease, color .15s ease;
     }
     .time:hover { border-color: var(--amber); color: var(--amber); }
+    .time.open {
+      border-color: var(--amber);
+      background: var(--amber-soft);
+      color: var(--amber);
+    }
+
+    /* Inline booking — the ticket page opens right under the day it belongs to */
+    .booking {
+      margin-top: 12px;
+      border: 1px solid var(--amber);
+      border-radius: 10px;
+      overflow: hidden;
+      background: var(--panel-hi);
+    }
+    .booking-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 10px;
+      border-bottom: 1px solid var(--line);
+      font-size: .78rem;
+      color: var(--muted);
+    }
+    .booking-bar .who {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      min-width: 0;
+    }
+    .booking-bar .who span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .booking-bar .spacer { flex: 1 1 auto; }
+    .booking-bar a,
+    .booking-bar .close {
+      flex: none;
+      background: transparent;
+      border: 0;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font: inherit;
+      color: var(--muted);
+      text-decoration: none;
+      cursor: pointer;
+      transition: color .15s ease;
+    }
+    .booking-bar a:hover,
+    .booking-bar .close:hover { color: var(--amber); }
+    .booking iframe {
+      display: block;
+      width: 100%;
+      height: min(72vh, 640px);
+      border: 0;
+      background: #fff;
+    }
 
     .note {
       text-align: center;

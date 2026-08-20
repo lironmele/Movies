@@ -1,4 +1,5 @@
-// Provider-agnostic UI: search, day filter, and the movie accordion.
+// Provider-agnostic UI: search, day filter, the movie accordion, and the
+// inline booking frame.
 // Every theater is shown at once. The merge + theater-tagging now happens
 // server-side once a day (scripts/build-data.mjs); this page just reads the
 // pre-built data/showtimes.json, so it only ever works with the normalized
@@ -19,6 +20,8 @@ let providers = []; // { id, name, icon } list, read from the data file for the 
 let selectedKey = null;
 let query = "";
 let activeDay = "";
+// bookingUrl of the screening whose ticket page is open inline (one at a time).
+let openBookingUrl = null;
 
 function showNote(html, isError) {
   noteEl.innerHTML = html;
@@ -81,6 +84,7 @@ function renderDays() {
     b.textContent = label;
     b.addEventListener("click", () => {
       activeDay = value;
+      openBookingUrl = null;
       renderDays();
       renderMovieList();
     });
@@ -159,6 +163,7 @@ function renderMovieList() {
 
     btn.addEventListener("click", () => {
       selectedKey = isActive ? null : show.key;
+      openBookingUrl = null;
       renderMovieList();
     });
     row.appendChild(btn);
@@ -192,29 +197,106 @@ function buildShowtimesPanel(screenings) {
     const times = document.createElement("div");
     times.className = "times";
     for (const sc of list) {
+      const isOpen = sc.bookingUrl === openBookingUrl;
       const a = document.createElement("a");
-      a.className = "time";
+      a.className = "time" + (isOpen ? " open" : "");
       a.href = sc.bookingUrl;
-      a.target = "_blank";
       a.rel = "noopener";
+      a.dataset.bookingUrl = sc.bookingUrl;
+      a.setAttribute("aria-expanded", String(isOpen));
       // The theater logo next to the time says which cinema this screening is at.
       a.title = sc.providerName;
       a.appendChild(makeLogo(sc.icon, sc.providerName));
       const hour = document.createElement("span");
       hour.textContent = sc.hour;
       a.appendChild(hour);
+      // A plain click opens the ticket page inline, just under this day's times.
+      // Modified/middle clicks are left alone so the browser's own "open in a new
+      // tab" still works, and the href keeps the link shareable.
+      a.addEventListener("click", (ev) => {
+        if (ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+        ev.preventDefault();
+        openBooking(isOpen ? null : sc.bookingUrl);
+      });
       times.appendChild(a);
     }
     group.appendChild(times);
+
+    // The frame belongs to the day it was opened from, so the ticket page shows
+    // up in context instead of taking over the page.
+    const open = list.find((sc) => sc.bookingUrl === openBookingUrl);
+    if (open) group.appendChild(buildBookingFrame(open));
+
     panel.appendChild(group);
   }
   return panel;
+}
+
+// ---- Inline booking ---------------------------------------------------------
+// Re-render with a different (or no) screening open, then put focus back on the
+// time that was clicked and bring the frame into view.
+function openBooking(url) {
+  openBookingUrl = url;
+  renderMovieList();
+  if (!url) return;
+  const chip = movieListEl.querySelector(`.time[data-booking-url="${CSS.escape(url)}"]`);
+  if (chip) chip.focus({ preventScroll: true });
+  const frame = movieListEl.querySelector(".booking");
+  if (frame) frame.scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+
+function buildBookingFrame(sc) {
+  const box = document.createElement("div");
+  box.className = "booking";
+
+  const bar = document.createElement("div");
+  bar.className = "booking-bar";
+
+  const who = document.createElement("span");
+  who.className = "who";
+  who.appendChild(makeLogo(sc.icon, sc.providerName));
+  const whoText = document.createElement("span");
+  whoText.textContent = `${sc.providerName} · ${sc.day} · ${sc.hour}`;
+  who.appendChild(whoText);
+  bar.appendChild(who);
+
+  const spacer = document.createElement("span");
+  spacer.className = "spacer";
+  bar.appendChild(spacer);
+
+  // Escape hatch: a ticket page that misbehaves in a frame can still be opened
+  // the old way.
+  const out = document.createElement("a");
+  out.href = sc.bookingUrl;
+  out.target = "_blank";
+  out.rel = "noopener";
+  out.textContent = "פתיחה בלשונית";
+  bar.appendChild(out);
+
+  const close = document.createElement("button");
+  close.type = "button";
+  close.className = "close";
+  close.textContent = "✕";
+  close.setAttribute("aria-label", "סגירת ההזמנה");
+  close.addEventListener("click", () => openBooking(null));
+  bar.appendChild(close);
+
+  box.appendChild(bar);
+
+  const frame = document.createElement("iframe");
+  frame.src = sc.bookingUrl;
+  frame.title = `הזמנת כרטיסים — ${sc.providerName}, ${sc.day} ${sc.hour}`;
+  frame.allow = "payment";
+  box.appendChild(frame);
+
+  return box;
 }
 
 // ---- Live search ------------------------------------------------------------
 searchEl.addEventListener("input", () => {
   query = searchEl.value;
   selectedKey = null;
+  openBookingUrl = null;
   renderMovieList();
 });
 
@@ -225,6 +307,7 @@ searchEl.addEventListener("input", () => {
 async function load() {
   selectedKey = null;
   activeDay = "";
+  openBookingUrl = null;
   daysEl.innerHTML = "";
   movieListEl.innerHTML = "";
   showNote('<span>טוען הקרנות</span><span class="skeleton-dot"></span>');
