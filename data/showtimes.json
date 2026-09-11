@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T08:01:55.031Z",
+  "generatedAt": "2026-09-11T07:57:36.426Z",
   "providers": [
     {
       "id": "cc-galilot",
@@ -22,186 +22,6 @@
       "key": "עצמאות",
       "name": "עצמאות",
       "screenings": [
-        {
-          "ts": 1789040700000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "11:45",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861179",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789047000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "13:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861188",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789050600000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "14:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861178",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789056600000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "16:10",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861187",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789056900000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "16:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323180?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789060200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "17:10",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861177",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789063800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "18:10",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861191",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789065000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "18:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323181?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789066800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "19:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861186",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789066800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "19:00",
-          "bookingUrl": "https://ticket.lev.co.il/order/605775",
-          "providerId": "lev-ramat-hasharon",
-          "providerName": "לב · רמת השרון",
-          "icon": "assets/icons/lev.png"
-        },
-        {
-          "ts": 1789070400000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "20:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861176",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789072200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "20:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861240",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789073400000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "20:50",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861190",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789074000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "21:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323182?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789075200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "21:20",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861226",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789076400000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "21:40",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861185",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789080000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "22:40",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861175",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789083000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "23:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323207?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
         {
           "ts": 1789209600000,
           "dayKey": "2026-09-12",
@@ -703,6 +523,16 @@
           "icon": "assets/icons/cinema-city.png"
         },
         {
+          "ts": 1789408800000,
+          "dayKey": "2026-09-14",
+          "day": "שני 14/09/2026",
+          "hour": "18:00",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/863883",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
           "ts": 1789409400000,
           "dayKey": "2026-09-14",
           "day": "שני 14/09/2026",
@@ -1179,146 +1009,6 @@
       "name": "האודיסאה",
       "screenings": [
         {
-          "ts": 1789048200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "13:50",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861222",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789048800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "14:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323534?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789050600000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "14:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323412?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789051500000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "14:45",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861161",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789059600000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "17:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323286?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789061400000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "17:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861220",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789061400000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "17:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323544?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789065000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "18:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861160",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789067700000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "19:15",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861239",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789071600000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "20:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323288?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789074000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "21:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861221",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789074000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "21:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323565?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789078200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "22:10",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861162",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789083900000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "23:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323290?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
           "ts": 1789208100000,
           "dayKey": "2026-09-12",
           "day": "שבת 12/09/2026",
@@ -1719,6 +1409,16 @@
           "icon": "assets/icons/cinema-city.png"
         },
         {
+          "ts": 1789415100000,
+          "dayKey": "2026-09-14",
+          "day": "שני 14/09/2026",
+          "hour": "19:45",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/863888",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
           "ts": 1789417800000,
           "dayKey": "2026-09-14",
           "day": "שני 14/09/2026",
@@ -2054,156 +1754,6 @@
       "key": "ספיידרמןיוםחדש",
       "name": "ספיידרמן: יום חדש",
       "screenings": [
-        {
-          "ts": 1789041000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "11:50",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861236",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789048800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "14:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861208",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789052400000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "15:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861224",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789060200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "17:10",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861203",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789061400000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "17:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323353?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789063200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "18:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861238",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789063800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "18:10",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861223",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789064100000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "18:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323471?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789065000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "18:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861201",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789072200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "20:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861204",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789072200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "20:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323355?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789074600000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "21:10",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323473?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789077000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "21:50",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861202",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789083000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "23:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323357?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789085100000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "00:05",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323477?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
         {
           "ts": 1789212600000,
           "dayKey": "2026-09-12",
@@ -2615,6 +2165,16 @@
           "icon": "assets/icons/planet-cinema.png"
         },
         {
+          "ts": 1789415100000,
+          "dayKey": "2026-09-14",
+          "day": "שני 14/09/2026",
+          "hour": "19:45",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/863887",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
           "ts": 1789417800000,
           "dayKey": "2026-09-14",
           "day": "שני 14/09/2026",
@@ -2880,106 +2440,6 @@
       "key": "קסםמעשי2",
       "name": "קסם מעשי 2",
       "screenings": [
-        {
-          "ts": 1789039200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "11:20",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861242",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789048500000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "13:55",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861241",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789049700000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "14:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323730?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789057200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "16:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323626?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789057800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "16:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861213",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789063800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "18:10",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861212",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789066800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "19:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323658?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789073400000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "20:50",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861158",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789076700000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "21:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323659?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789084800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "00:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323157?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
         {
           "ts": 1789209900000,
           "dayKey": "2026-09-12",
@@ -3497,86 +2957,6 @@
       "name": "איש החידות",
       "screenings": [
         {
-          "ts": 1789044300000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "12:45",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861247",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789057200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "16:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322359?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789064400000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "18:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322362?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789068600000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "19:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861145",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789071600000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "20:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322363?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789077000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "21:50",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861144",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789078800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "22:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322366?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789086000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "00:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322368?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
           "ts": 1789230000000,
           "dayKey": "2026-09-12",
           "day": "שבת 12/09/2026",
@@ -4013,86 +3393,6 @@
       "name": "חולים על החיים",
       "screenings": [
         {
-          "ts": 1789049400000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "14:10",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861156",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789058700000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "16:45",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861155",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789061400000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "17:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324175?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789068000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "19:20",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861149",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789068600000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "19:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324293?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789076700000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "21:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324294?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789077000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "21:50",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861148",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789084800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "00:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324295?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
           "ts": 1789222200000,
           "dayKey": "2026-09-12",
           "day": "שבת 12/09/2026",
@@ -4489,56 +3789,6 @@
       "name": "גבעה 338",
       "screenings": [
         {
-          "ts": 1789048800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "14:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324269?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789056000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "16:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861245",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789065600000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "18:40",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861207",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789069800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "19:50",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324145?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789075200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "21:20",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861209",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
           "ts": 1789221600000,
           "dayKey": "2026-09-12",
           "day": "שבת 12/09/2026",
@@ -4667,6 +3917,16 @@
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789408800000,
+          "dayKey": "2026-09-14",
+          "day": "שני 14/09/2026",
+          "hour": "18:00",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/863885",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
         },
         {
           "ts": 1789412400000,
@@ -4834,66 +4094,6 @@
       "key": "המרד",
       "name": "המרד",
       "screenings": [
-        {
-          "ts": 1789058400000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "16:40",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324325?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789065900000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "18:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324373?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789070400000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "20:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861147",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789075200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "21:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324374?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789080600000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "22:50",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861146",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789084500000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "23:55",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324375?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
         {
           "ts": 1789231200000,
           "dayKey": "2026-09-12",
@@ -5171,56 +4371,6 @@
       "name": "נקמה בלב ים",
       "screenings": [
         {
-          "ts": 1789063200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "18:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861216",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789071600000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "20:20",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861215",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789075800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "21:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324331?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789080300000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "22:45",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861214",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789081200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "23:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861257",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
           "ts": 1789227000000,
           "dayKey": "2026-09-12",
           "day": "שבת 12/09/2026",
@@ -5473,345 +4623,9 @@
       ]
     },
     {
-      "key": "קופהראשיתהסרט",
-      "name": "קופה ראשית: הסרט",
-      "screenings": [
-        {
-          "ts": 1789042500000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "12:15",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861231",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789050600000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "14:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861197",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789059000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "16:50",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861200",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789067400000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "19:10",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861199",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789075800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "21:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861198",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789214400000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "12:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861473",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789222500000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "14:15",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861380",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789230600000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "16:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861383",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789240200000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "19:10",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861382",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789248600000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "21:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861381",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789296600000,
-          "dayKey": "2026-09-13",
-          "day": "ראשון 13/09/2026",
-          "hour": "10:50",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861740",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789305000000,
-          "dayKey": "2026-09-13",
-          "day": "ראשון 13/09/2026",
-          "hour": "13:10",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861742",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789313400000,
-          "dayKey": "2026-09-13",
-          "day": "ראשון 13/09/2026",
-          "hour": "15:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861696",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789321800000,
-          "dayKey": "2026-09-13",
-          "day": "ראשון 13/09/2026",
-          "hour": "17:50",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861698",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789330200000,
-          "dayKey": "2026-09-13",
-          "day": "ראשון 13/09/2026",
-          "hour": "20:10",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861697",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789396800000,
-          "dayKey": "2026-09-14",
-          "day": "שני 14/09/2026",
-          "hour": "14:40",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861863",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789405200000,
-          "dayKey": "2026-09-14",
-          "day": "שני 14/09/2026",
-          "hour": "17:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861865",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789414800000,
-          "dayKey": "2026-09-14",
-          "day": "שני 14/09/2026",
-          "hour": "19:40",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861864",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789466400000,
-          "dayKey": "2026-09-15",
-          "day": "שלישי 15/09/2026",
-          "hour": "10:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862163",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789474500000,
-          "dayKey": "2026-09-15",
-          "day": "שלישי 15/09/2026",
-          "hour": "12:15",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862126",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789482600000,
-          "dayKey": "2026-09-15",
-          "day": "שלישי 15/09/2026",
-          "hour": "14:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862083",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789491000000,
-          "dayKey": "2026-09-15",
-          "day": "שלישי 15/09/2026",
-          "hour": "16:50",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862086",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789498800000,
-          "dayKey": "2026-09-15",
-          "day": "שלישי 15/09/2026",
-          "hour": "19:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862085",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789515000000,
-          "dayKey": "2026-09-15",
-          "day": "שלישי 15/09/2026",
-          "hour": "23:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862084",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789554300000,
-          "dayKey": "2026-09-16",
-          "day": "רביעי 16/09/2026",
-          "hour": "10:25",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862804",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789562400000,
-          "dayKey": "2026-09-16",
-          "day": "רביעי 16/09/2026",
-          "hour": "12:40",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862780",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789570800000,
-          "dayKey": "2026-09-16",
-          "day": "רביעי 16/09/2026",
-          "hour": "15:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862878",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789579200000,
-          "dayKey": "2026-09-16",
-          "day": "רביעי 16/09/2026",
-          "hour": "17:20",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862876",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789591800000,
-          "dayKey": "2026-09-16",
-          "day": "רביעי 16/09/2026",
-          "hour": "20:50",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862913",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        }
-      ]
-    },
-    {
       "key": "בכלמחיר",
       "name": "בכל מחיר",
       "screenings": [
-        {
-          "ts": 1789065000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "18:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324258?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789067400000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "19:10",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861169",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789076400000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "21:40",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861168",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789080300000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "22:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324259?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
         {
           "ts": 1789238400000,
           "dayKey": "2026-09-12",
@@ -6055,49 +4869,255 @@
       ]
     },
     {
+      "key": "קופהראשיתהסרט",
+      "name": "קופה ראשית: הסרט",
+      "screenings": [
+        {
+          "ts": 1789214400000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
+          "hour": "12:00",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861473",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789222500000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
+          "hour": "14:15",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861380",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789230600000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
+          "hour": "16:30",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861383",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789240200000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
+          "hour": "19:10",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861382",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789248600000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
+          "hour": "21:30",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861381",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789296600000,
+          "dayKey": "2026-09-13",
+          "day": "ראשון 13/09/2026",
+          "hour": "10:50",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861740",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789305000000,
+          "dayKey": "2026-09-13",
+          "day": "ראשון 13/09/2026",
+          "hour": "13:10",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861742",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789313400000,
+          "dayKey": "2026-09-13",
+          "day": "ראשון 13/09/2026",
+          "hour": "15:30",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861696",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789321800000,
+          "dayKey": "2026-09-13",
+          "day": "ראשון 13/09/2026",
+          "hour": "17:50",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861698",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789330200000,
+          "dayKey": "2026-09-13",
+          "day": "ראשון 13/09/2026",
+          "hour": "20:10",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861697",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789396800000,
+          "dayKey": "2026-09-14",
+          "day": "שני 14/09/2026",
+          "hour": "14:40",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861863",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789405200000,
+          "dayKey": "2026-09-14",
+          "day": "שני 14/09/2026",
+          "hour": "17:00",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861865",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789414800000,
+          "dayKey": "2026-09-14",
+          "day": "שני 14/09/2026",
+          "hour": "19:40",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861864",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789466400000,
+          "dayKey": "2026-09-15",
+          "day": "שלישי 15/09/2026",
+          "hour": "10:00",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862163",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789474500000,
+          "dayKey": "2026-09-15",
+          "day": "שלישי 15/09/2026",
+          "hour": "12:15",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862126",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789482600000,
+          "dayKey": "2026-09-15",
+          "day": "שלישי 15/09/2026",
+          "hour": "14:30",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862083",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789491000000,
+          "dayKey": "2026-09-15",
+          "day": "שלישי 15/09/2026",
+          "hour": "16:50",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862086",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789498800000,
+          "dayKey": "2026-09-15",
+          "day": "שלישי 15/09/2026",
+          "hour": "19:00",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862085",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789515000000,
+          "dayKey": "2026-09-15",
+          "day": "שלישי 15/09/2026",
+          "hour": "23:30",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862084",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789554300000,
+          "dayKey": "2026-09-16",
+          "day": "רביעי 16/09/2026",
+          "hour": "10:25",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862804",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789562400000,
+          "dayKey": "2026-09-16",
+          "day": "רביעי 16/09/2026",
+          "hour": "12:40",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862780",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789570800000,
+          "dayKey": "2026-09-16",
+          "day": "רביעי 16/09/2026",
+          "hour": "15:00",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862878",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789579200000,
+          "dayKey": "2026-09-16",
+          "day": "רביעי 16/09/2026",
+          "hour": "17:20",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862876",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789591800000,
+          "dayKey": "2026-09-16",
+          "day": "רביעי 16/09/2026",
+          "hour": "20:50",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862913",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        }
+      ]
+    },
+    {
       "key": "ספאוויקנד",
       "name": "ספא וויקנד",
       "screenings": [
-        {
-          "ts": 1789039200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "11:20",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861250",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789048200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "13:50",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861249",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789065900000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "18:45",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861233",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789074600000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "21:10",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861180",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
         {
           "ts": 1789213200000,
           "dayKey": "2026-09-12",
@@ -6209,6 +5229,16 @@
           "icon": "assets/icons/cinema-city.png"
         },
         {
+          "ts": 1789421400000,
+          "dayKey": "2026-09-14",
+          "day": "שני 14/09/2026",
+          "hour": "21:30",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/863884",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
           "ts": 1789424400000,
           "dayKey": "2026-09-14",
           "day": "שני 14/09/2026",
@@ -6304,46 +5334,6 @@
       "key": "שנתהבגידהשלי",
       "name": "שנת הבגידה שלי",
       "screenings": [
-        {
-          "ts": 1789067700000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "19:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324341?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789074900000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "21:15",
-          "bookingUrl": "https://ticket.lev.co.il/order/605776",
-          "providerId": "lev-ramat-hasharon",
-          "providerName": "לב · רמת השרון",
-          "icon": "assets/icons/lev.png"
-        },
-        {
-          "ts": 1789075200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "21:20",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861165",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789083900000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "23:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324342?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
         {
           "ts": 1789210800000,
           "dayKey": "2026-09-12",
@@ -6547,39 +5537,185 @@
       ]
     },
     {
+      "key": "בחזרהמההימלאיה",
+      "name": "בחזרה מההימלאיה",
+      "screenings": [
+        {
+          "ts": 1789217100000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
+          "hour": "12:45",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324141?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789224300000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
+          "hour": "14:45",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322675?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789233300000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
+          "hour": "17:15",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322680?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789239000000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
+          "hour": "18:50",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861343",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789303500000,
+          "dayKey": "2026-09-13",
+          "day": "ראשון 13/09/2026",
+          "hour": "12:45",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324142?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789310700000,
+          "dayKey": "2026-09-13",
+          "day": "ראשון 13/09/2026",
+          "hour": "14:45",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322676?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789319700000,
+          "dayKey": "2026-09-13",
+          "day": "ראשון 13/09/2026",
+          "hour": "17:15",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322679?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789320900000,
+          "dayKey": "2026-09-13",
+          "day": "ראשון 13/09/2026",
+          "hour": "17:35",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861659",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789396200000,
+          "dayKey": "2026-09-14",
+          "day": "שני 14/09/2026",
+          "hour": "14:30",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861845",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789406100000,
+          "dayKey": "2026-09-14",
+          "day": "שני 14/09/2026",
+          "hour": "17:15",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322684?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789414800000,
+          "dayKey": "2026-09-14",
+          "day": "שני 14/09/2026",
+          "hour": "19:40",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322683?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789474500000,
+          "dayKey": "2026-09-15",
+          "day": "שלישי 15/09/2026",
+          "hour": "12:15",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322689?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789483500000,
+          "dayKey": "2026-09-15",
+          "day": "שלישי 15/09/2026",
+          "hour": "14:45",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322688?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789492500000,
+          "dayKey": "2026-09-15",
+          "day": "שלישי 15/09/2026",
+          "hour": "17:15",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322690?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789498200000,
+          "dayKey": "2026-09-15",
+          "day": "שלישי 15/09/2026",
+          "hour": "18:50",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862065",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789578900000,
+          "dayKey": "2026-09-16",
+          "day": "רביעי 16/09/2026",
+          "hour": "17:15",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322678?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789586400000,
+          "dayKey": "2026-09-16",
+          "day": "רביעי 16/09/2026",
+          "hour": "19:20",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862827",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        }
+      ]
+    },
+    {
       "key": "טדהחוקרומנורתהקסמיםמדובב",
       "name": "טד החוקר ומנורת הקסמים-מדובב",
       "screenings": [
-        {
-          "ts": 1789040400000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "11:40",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861150",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789049400000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "14:10",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861243",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789058400000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "16:40",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861157",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
         {
           "ts": 1789209000000,
           "dayKey": "2026-09-12",
@@ -6757,46 +5893,6 @@
       "name": "ילד המדבר-מדובב",
       "screenings": [
         {
-          "ts": 1789038000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "11:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861154",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789046100000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "13:15",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861153",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789054200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "15:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861152",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789062300000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "17:45",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861151",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
           "ts": 1789210800000,
           "dayKey": "2026-09-12",
           "day": "שבת 12/09/2026",
@@ -6959,235 +6055,9 @@
       ]
     },
     {
-      "key": "בחזרהמההימלאיה",
-      "name": "בחזרה מההימלאיה",
-      "screenings": [
-        {
-          "ts": 1789060500000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "17:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322681?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789066200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "18:50",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861166",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789217100000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "12:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324141?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789224300000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "14:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322675?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789233300000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "17:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322680?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789239000000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "18:50",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861343",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789303500000,
-          "dayKey": "2026-09-13",
-          "day": "ראשון 13/09/2026",
-          "hour": "12:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324142?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789310700000,
-          "dayKey": "2026-09-13",
-          "day": "ראשון 13/09/2026",
-          "hour": "14:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322676?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789319700000,
-          "dayKey": "2026-09-13",
-          "day": "ראשון 13/09/2026",
-          "hour": "17:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322679?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789320900000,
-          "dayKey": "2026-09-13",
-          "day": "ראשון 13/09/2026",
-          "hour": "17:35",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861659",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789396200000,
-          "dayKey": "2026-09-14",
-          "day": "שני 14/09/2026",
-          "hour": "14:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861845",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789406100000,
-          "dayKey": "2026-09-14",
-          "day": "שני 14/09/2026",
-          "hour": "17:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322684?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789414800000,
-          "dayKey": "2026-09-14",
-          "day": "שני 14/09/2026",
-          "hour": "19:40",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322683?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789474500000,
-          "dayKey": "2026-09-15",
-          "day": "שלישי 15/09/2026",
-          "hour": "12:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322689?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789483500000,
-          "dayKey": "2026-09-15",
-          "day": "שלישי 15/09/2026",
-          "hour": "14:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322688?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789492500000,
-          "dayKey": "2026-09-15",
-          "day": "שלישי 15/09/2026",
-          "hour": "17:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322690?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789498200000,
-          "dayKey": "2026-09-15",
-          "day": "שלישי 15/09/2026",
-          "hour": "18:50",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862065",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789578900000,
-          "dayKey": "2026-09-16",
-          "day": "רביעי 16/09/2026",
-          "hour": "17:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322678?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789586400000,
-          "dayKey": "2026-09-16",
-          "day": "רביעי 16/09/2026",
-          "hour": "19:20",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862827",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        }
-      ]
-    },
-    {
       "key": "מהשמריאליודעת",
       "name": "מה שמריאל יודעת",
       "screenings": [
-        {
-          "ts": 1789048800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "14:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861164",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789057800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "16:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324277?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789073100000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "20:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324278?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
         {
           "ts": 1789221600000,
           "dayKey": "2026-09-12",
@@ -7355,26 +6225,6 @@
       "name": "סיפורים קרועים",
       "screenings": [
         {
-          "ts": 1789059000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "16:50",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323716?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789066800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "19:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861163",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
           "ts": 1789232400000,
           "dayKey": "2026-09-12",
           "day": "שבת 12/09/2026",
@@ -7541,26 +6391,6 @@
       "name": "טד החוקר ומנורת הקסמים",
       "screenings": [
         {
-          "ts": 1789053300000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "15:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324296?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789061400000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "17:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324297?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
           "ts": 1789209900000,
           "dayKey": "2026-09-12",
           "day": "שבת 12/09/2026",
@@ -7706,26 +6536,6 @@
       "key": "ילדהמדבר",
       "name": "ילד המדבר",
       "screenings": [
-        {
-          "ts": 1789051200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "14:40",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324376?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789058700000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "16:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324377?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
         {
           "ts": 1789208400000,
           "dayKey": "2026-09-12",
@@ -7873,26 +6683,6 @@
       "name": "פרנקי והמפלצות-מדובב",
       "screenings": [
         {
-          "ts": 1789050000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "14:20",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861173",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789057800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "16:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861172",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
           "ts": 1789207200000,
           "dayKey": "2026-09-12",
           "day": "שבת 12/09/2026",
@@ -8039,36 +6829,6 @@
       "name": "לגמור את הלילה",
       "screenings": [
         {
-          "ts": 1789075800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "21:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861254",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789076700000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "21:45",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861256",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789076700000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "21:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324238?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
           "ts": 1789248900000,
           "dayKey": "2026-09-12",
           "day": "שבת 12/09/2026",
@@ -8129,6 +6889,16 @@
           "icon": "assets/icons/cinema-city.png"
         },
         {
+          "ts": 1789421400000,
+          "dayKey": "2026-09-14",
+          "day": "שני 14/09/2026",
+          "hour": "21:30",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/863886",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
           "ts": 1789422300000,
           "dayKey": "2026-09-14",
           "day": "שני 14/09/2026",
@@ -8174,26 +6944,6 @@
       "key": "תיכוןמגשימים",
       "name": "תיכון מגשימים",
       "screenings": [
-        {
-          "ts": 1789050600000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "14:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324349?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789057200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "16:20",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861192",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
         {
           "ts": 1789223400000,
           "dayKey": "2026-09-12",
@@ -8311,26 +7061,6 @@
       "name": "ההזמנה.",
       "screenings": [
         {
-          "ts": 1789053300000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "15:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324158?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789066800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "19:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861244",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
           "ts": 1789226100000,
           "dayKey": "2026-09-12",
           "day": "שבת 12/09/2026",
@@ -8436,26 +7166,6 @@
       "key": "לוניטונסמציגיםקיוטינגדאקמימדובב",
       "name": "לוני טונס מציגים: קיוטי נגד אקמי-מדובב",
       "screenings": [
-        {
-          "ts": 1789057200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "16:20",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861170",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789059600000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "17:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861234",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
         {
           "ts": 1789207200000,
           "dayKey": "2026-09-12",
@@ -8563,26 +7273,6 @@
       "name": "כוכבי כלב",
       "screenings": [
         {
-          "ts": 1789058700000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "16:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324227?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789067700000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "19:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324228?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
           "ts": 1789240500000,
           "dayKey": "2026-09-12",
           "day": "שבת 12/09/2026",
@@ -8678,16 +7368,6 @@
       "key": "מפרץההרפתקאותאיהדינוזאורים",
       "name": "מפרץ ההרפתקאות: אי הדינוזאורים",
       "screenings": [
-        {
-          "ts": 1789049400000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "14:10",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323621?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
         {
           "ts": 1789210800000,
           "dayKey": "2026-09-12",
@@ -8785,16 +7465,6 @@
       "name": "אידיוטים",
       "screenings": [
         {
-          "ts": 1789074600000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "21:10",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861183",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
           "ts": 1789247400000,
           "dayKey": "2026-09-12",
           "day": "שבת 12/09/2026",
@@ -8881,16 +7551,6 @@
       "name": "המשפחה האיטלקית שלי",
       "screenings": [
         {
-          "ts": 1789069500000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "19:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323142?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
           "ts": 1789217100000,
           "dayKey": "2026-09-12",
           "day": "שבת 12/09/2026",
@@ -8966,178 +7626,6 @@
           "day": "רביעי 16/09/2026",
           "hour": "19:45",
           "bookingUrl": "https://tickets5.planetcinema.co.il/order/323144?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        }
-      ]
-    },
-    {
-      "key": "אדיוטים",
-      "name": "אדיוטים",
-      "screenings": [
-        {
-          "ts": 1789077000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "21:50",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322666?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789086000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "00:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323590?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789249800000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "21:50",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322667?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789259400000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "00:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323591?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789336200000,
-          "dayKey": "2026-09-13",
-          "day": "ראשון 13/09/2026",
-          "hour": "21:50",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322669?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789423800000,
-          "dayKey": "2026-09-14",
-          "day": "שני 14/09/2026",
-          "hour": "22:10",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322672?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789509000000,
-          "dayKey": "2026-09-15",
-          "day": "שלישי 15/09/2026",
-          "hour": "21:50",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322670?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789595400000,
-          "dayKey": "2026-09-16",
-          "day": "רביעי 16/09/2026",
-          "hour": "21:50",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322671?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        }
-      ]
-    },
-    {
-      "key": "הרועשבפניםמחוץלמעבר",
-      "name": "הרוע שבפנים: מחוץ למעבר",
-      "screenings": [
-        {
-          "ts": 1789077600000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "22:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323677?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789086000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "00:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323679?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789248600000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "21:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323680?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789256700000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "23:45",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323681?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789335000000,
-          "dayKey": "2026-09-13",
-          "day": "ראשון 13/09/2026",
-          "hour": "21:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323689?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789421400000,
-          "dayKey": "2026-09-14",
-          "day": "שני 14/09/2026",
-          "hour": "21:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323691?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789507800000,
-          "dayKey": "2026-09-15",
-          "day": "שלישי 15/09/2026",
-          "hour": "21:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323692?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789594200000,
-          "dayKey": "2026-09-16",
-          "day": "רביעי 16/09/2026",
-          "hour": "21:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323693?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -9231,85 +7719,75 @@
       ]
     },
     {
-      "key": "מיניוניםומפלצותמדובב",
-      "name": "מיניונים ומפלצות-מדובב",
+      "key": "הנוקמיםסוףהמשחקהדרן",
+      "name": "הנוקמים: סוף המשחק הדרן",
       "screenings": [
         {
-          "ts": 1789039800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "11:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861211",
+          "ts": 1790267400000,
+          "dayKey": "2026-09-24",
+          "day": "חמישי 24/09/2026",
+          "hour": "16:30",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/857141",
           "providerId": "cc-galilot",
           "providerName": "Cinema City · גלילות",
           "icon": "assets/icons/cinema-city.png"
         },
         {
-          "ts": 1789056000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "16:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861229",
+          "ts": 1790267400000,
+          "dayKey": "2026-09-24",
+          "day": "חמישי 24/09/2026",
+          "hour": "16:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322140?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1790280000000,
+          "dayKey": "2026-09-24",
+          "day": "חמישי 24/09/2026",
+          "hour": "20:00",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322141?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1790339400000,
+          "dayKey": "2026-09-25",
+          "day": "שישי 25/09/2026",
+          "hour": "12:30",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/857142",
           "providerId": "cc-galilot",
           "providerName": "Cinema City · גלילות",
           "icon": "assets/icons/cinema-city.png"
         },
         {
-          "ts": 1789211700000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "11:15",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861406",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
+          "ts": 1790353800000,
+          "dayKey": "2026-09-25",
+          "day": "שישי 25/09/2026",
+          "hour": "16:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322142?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
         },
         {
-          "ts": 1789228800000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "16:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861464",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
+          "ts": 1790366400000,
+          "dayKey": "2026-09-25",
+          "day": "שישי 25/09/2026",
+          "hour": "20:00",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322143?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
         },
         {
-          "ts": 1789299900000,
-          "dayKey": "2026-09-13",
-          "day": "ראשון 13/09/2026",
-          "hour": "11:45",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861709",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789308000000,
-          "dayKey": "2026-09-13",
-          "day": "ראשון 13/09/2026",
-          "hour": "14:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861730",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789398900000,
-          "dayKey": "2026-09-14",
-          "day": "שני 14/09/2026",
-          "hour": "15:15",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861881",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789574400000,
-          "dayKey": "2026-09-16",
-          "day": "רביעי 16/09/2026",
-          "hour": "16:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862784",
+          "ts": 1790425800000,
+          "dayKey": "2026-09-26",
+          "day": "שבת 26/09/2026",
+          "hour": "12:30",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/857144",
           "providerId": "cc-galilot",
           "providerName": "Cinema City · גלילות",
           "icon": "assets/icons/cinema-city.png"
@@ -9317,19 +7795,141 @@
       ]
     },
     {
+      "key": "אדיוטים",
+      "name": "אדיוטים",
+      "screenings": [
+        {
+          "ts": 1789249800000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
+          "hour": "21:50",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322667?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789259400000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
+          "hour": "00:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323591?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789336200000,
+          "dayKey": "2026-09-13",
+          "day": "ראשון 13/09/2026",
+          "hour": "21:50",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322669?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789423800000,
+          "dayKey": "2026-09-14",
+          "day": "שני 14/09/2026",
+          "hour": "22:10",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322672?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789509000000,
+          "dayKey": "2026-09-15",
+          "day": "שלישי 15/09/2026",
+          "hour": "21:50",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322670?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789595400000,
+          "dayKey": "2026-09-16",
+          "day": "רביעי 16/09/2026",
+          "hour": "21:50",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322671?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        }
+      ]
+    },
+    {
+      "key": "הרועשבפניםמחוץלמעבר",
+      "name": "הרוע שבפנים: מחוץ למעבר",
+      "screenings": [
+        {
+          "ts": 1789248600000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
+          "hour": "21:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323680?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789256700000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
+          "hour": "23:45",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323681?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789335000000,
+          "dayKey": "2026-09-13",
+          "day": "ראשון 13/09/2026",
+          "hour": "21:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323689?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789421400000,
+          "dayKey": "2026-09-14",
+          "day": "שני 14/09/2026",
+          "hour": "21:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323691?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789507800000,
+          "dayKey": "2026-09-15",
+          "day": "שלישי 15/09/2026",
+          "hour": "21:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323692?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789594200000,
+          "dayKey": "2026-09-16",
+          "day": "רביעי 16/09/2026",
+          "hour": "21:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323693?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        }
+      ]
+    },
+    {
       "key": "מייקל",
       "name": "מייקל",
       "screenings": [
-        {
-          "ts": 1789045800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "13:10",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861206",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
         {
           "ts": 1789207200000,
           "dayKey": "2026-09-12",
@@ -9393,283 +7993,65 @@
       ]
     },
     {
-      "key": "צעצועשלסיפור5מדובב",
-      "name": "צעצוע של סיפור 5-מדובב",
+      "key": "מיניוניםומפלצותמדובב",
+      "name": "מיניונים ומפלצות-מדובב",
       "screenings": [
         {
-          "ts": 1789047600000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "13:40",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861194",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789219800000,
+          "ts": 1789211700000,
           "dayKey": "2026-09-12",
           "day": "שבת 12/09/2026",
-          "hour": "13:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861376",
+          "hour": "11:15",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861406",
           "providerId": "cc-galilot",
           "providerName": "Cinema City · גלילות",
           "icon": "assets/icons/cinema-city.png"
         },
         {
-          "ts": 1789231200000,
+          "ts": 1789228800000,
           "dayKey": "2026-09-12",
           "day": "שבת 12/09/2026",
-          "hour": "16:40",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861375",
+          "hour": "16:00",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861464",
           "providerId": "cc-galilot",
           "providerName": "Cinema City · גלילות",
           "icon": "assets/icons/cinema-city.png"
         },
         {
-          "ts": 1789296300000,
+          "ts": 1789299900000,
           "dayKey": "2026-09-13",
           "day": "ראשון 13/09/2026",
-          "hour": "10:45",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861739",
+          "hour": "11:45",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861709",
           "providerId": "cc-galilot",
           "providerName": "Cinema City · גלילות",
           "icon": "assets/icons/cinema-city.png"
         },
         {
-          "ts": 1789305000000,
+          "ts": 1789308000000,
           "dayKey": "2026-09-13",
           "day": "ראשון 13/09/2026",
-          "hour": "13:10",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861693",
+          "hour": "14:00",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861730",
           "providerId": "cc-galilot",
           "providerName": "Cinema City · גלילות",
           "icon": "assets/icons/cinema-city.png"
         },
         {
-          "ts": 1789316100000,
-          "dayKey": "2026-09-13",
-          "day": "ראשון 13/09/2026",
-          "hour": "16:15",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861692",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789566000000,
-          "dayKey": "2026-09-16",
-          "day": "רביעי 16/09/2026",
-          "hour": "13:40",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862880",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        }
-      ]
-    },
-    {
-      "key": "צריךשנייםלטנגו",
-      "name": "צריך שניים לטנגו",
-      "screenings": [
-        {
-          "ts": 1789051200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "14:40",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324244?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789223400000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "14:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324245?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789309800000,
-          "dayKey": "2026-09-13",
-          "day": "ראשון 13/09/2026",
-          "hour": "14:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324246?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789396800000,
+          "ts": 1789398900000,
           "dayKey": "2026-09-14",
           "day": "שני 14/09/2026",
-          "hour": "14:40",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324247?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
+          "hour": "15:15",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861881",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
         },
         {
-          "ts": 1789467300000,
-          "dayKey": "2026-09-15",
-          "day": "שלישי 15/09/2026",
-          "hour": "10:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324248?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789483200000,
-          "dayKey": "2026-09-15",
-          "day": "שלישי 15/09/2026",
-          "hour": "14:40",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324249?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789569600000,
+          "ts": 1789574400000,
           "dayKey": "2026-09-16",
           "day": "רביעי 16/09/2026",
-          "hour": "14:40",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324250?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        }
-      ]
-    },
-    {
-      "key": "אישהגלידה",
-      "name": "איש הגלידה",
-      "screenings": [
-        {
-          "ts": 1789085400000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "00:10",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323735?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789257300000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "23:55",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861379",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789258200000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "00:10",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323736?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789338000000,
-          "dayKey": "2026-09-13",
-          "day": "ראשון 13/09/2026",
-          "hour": "22:20",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861695",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789507800000,
-          "dayKey": "2026-09-15",
-          "day": "שלישי 15/09/2026",
-          "hour": "21:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862152",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789596600000,
-          "dayKey": "2026-09-16",
-          "day": "רביעי 16/09/2026",
-          "hour": "22:10",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862810",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        }
-      ]
-    },
-    {
-      "key": "המסעהמופלאלעץהקסמיםמדובב",
-      "name": "המסע המופלא לעץ הקסמים-מדובב",
-      "screenings": [
-        {
-          "ts": 1789040400000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "11:40",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861189",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789213200000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "11:40",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861369",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789230600000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "16:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861344",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789295400000,
-          "dayKey": "2026-09-13",
-          "day": "ראשון 13/09/2026",
-          "hour": "10:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861688",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789312200000,
-          "dayKey": "2026-09-13",
-          "day": "ראשון 13/09/2026",
-          "hour": "15:10",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861660",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789405200000,
-          "dayKey": "2026-09-14",
-          "day": "שני 14/09/2026",
-          "hour": "17:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861860",
+          "hour": "16:00",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862784",
           "providerId": "cc-galilot",
           "providerName": "Cinema City · גלילות",
           "icon": "assets/icons/cinema-city.png"
@@ -9743,319 +8125,243 @@
       ]
     },
     {
-      "key": "סולטיזהסרטוולוגה100",
-      "name": "סולטיז הסרט-וולוג ה-100",
+      "key": "צעצועשלסיפור5מדובב",
+      "name": "צעצוע של סיפור 5-מדובב",
       "screenings": [
         {
-          "ts": 1789048200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "13:50",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861253",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789212600000,
+          "ts": 1789219800000,
           "dayKey": "2026-09-12",
           "day": "שבת 12/09/2026",
-          "hour": "11:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861396",
+          "hour": "13:30",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861376",
           "providerId": "cc-galilot",
           "providerName": "Cinema City · גלילות",
           "icon": "assets/icons/cinema-city.png"
         },
         {
-          "ts": 1789298400000,
+          "ts": 1789231200000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
+          "hour": "16:40",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861375",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789296300000,
           "dayKey": "2026-09-13",
           "day": "ראשון 13/09/2026",
-          "hour": "11:20",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861705",
+          "hour": "10:45",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861739",
           "providerId": "cc-galilot",
           "providerName": "Cinema City · גלילות",
           "icon": "assets/icons/cinema-city.png"
         },
         {
-          "ts": 1789396200000,
-          "dayKey": "2026-09-14",
-          "day": "שני 14/09/2026",
+          "ts": 1789305000000,
+          "dayKey": "2026-09-13",
+          "day": "ראשון 13/09/2026",
+          "hour": "13:10",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861693",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789316100000,
+          "dayKey": "2026-09-13",
+          "day": "ראשון 13/09/2026",
+          "hour": "16:15",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861692",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789566000000,
+          "dayKey": "2026-09-16",
+          "day": "רביעי 16/09/2026",
+          "hour": "13:40",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862880",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        }
+      ]
+    },
+    {
+      "key": "צריךשנייםלטנגו",
+      "name": "צריך שניים לטנגו",
+      "screenings": [
+        {
+          "ts": 1789223400000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
           "hour": "14:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861889",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324245?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
         },
         {
-          "ts": 1789485600000,
+          "ts": 1789309800000,
+          "dayKey": "2026-09-13",
+          "day": "ראשון 13/09/2026",
+          "hour": "14:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324246?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789396800000,
+          "dayKey": "2026-09-14",
+          "day": "שני 14/09/2026",
+          "hour": "14:40",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324247?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789467300000,
           "dayKey": "2026-09-15",
           "day": "שלישי 15/09/2026",
-          "hour": "15:20",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862148",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
+          "hour": "10:15",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324248?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
         },
         {
-          "ts": 1789568400000,
+          "ts": 1789483200000,
+          "dayKey": "2026-09-15",
+          "day": "שלישי 15/09/2026",
+          "hour": "14:40",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324249?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789569600000,
           "dayKey": "2026-09-16",
           "day": "רביעי 16/09/2026",
-          "hour": "14:20",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862813",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
+          "hour": "14:40",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324250?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
         }
       ]
     },
     {
-      "key": "ערךסנטימנטלי",
-      "name": "ערך סנטימנטלי",
+      "key": "אישהגלידה",
+      "name": "איש הגלידה",
       "screenings": [
         {
-          "ts": 1789038000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "11:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861252",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789209000000,
+          "ts": 1789257300000,
           "dayKey": "2026-09-12",
           "day": "שבת 12/09/2026",
-          "hour": "10:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323327?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789295400000,
-          "dayKey": "2026-09-13",
-          "day": "ראשון 13/09/2026",
-          "hour": "10:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323330?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789423200000,
-          "dayKey": "2026-09-14",
-          "day": "שני 14/09/2026",
-          "hour": "22:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861888",
+          "hour": "23:55",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861379",
           "providerId": "cc-galilot",
           "providerName": "Cinema City · גלילות",
           "icon": "assets/icons/cinema-city.png"
         },
         {
-          "ts": 1789470000000,
-          "dayKey": "2026-09-15",
-          "day": "שלישי 15/09/2026",
-          "hour": "11:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862147",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789560600000,
-          "dayKey": "2026-09-16",
-          "day": "רביעי 16/09/2026",
-          "hour": "12:10",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862814",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        }
-      ]
-    },
-    {
-      "key": "קופהראשית",
-      "name": "קופה ראשית",
-      "screenings": [
-        {
-          "ts": 1789078200000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "22:10",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324188?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789251000000,
+          "ts": 1789258200000,
           "dayKey": "2026-09-12",
           "day": "שבת 12/09/2026",
-          "hour": "22:10",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324192?lang=he",
+          "hour": "00:10",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323736?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
         },
         {
-          "ts": 1789337400000,
+          "ts": 1789338000000,
           "dayKey": "2026-09-13",
           "day": "ראשון 13/09/2026",
-          "hour": "22:10",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324195?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
+          "hour": "22:20",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861695",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
         },
         {
-          "ts": 1789423800000,
-          "dayKey": "2026-09-14",
-          "day": "שני 14/09/2026",
-          "hour": "22:10",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324196?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789510200000,
+          "ts": 1789507800000,
           "dayKey": "2026-09-15",
           "day": "שלישי 15/09/2026",
-          "hour": "22:10",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324197?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
+          "hour": "21:30",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862152",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
         },
         {
           "ts": 1789596600000,
           "dayKey": "2026-09-16",
           "day": "רביעי 16/09/2026",
           "hour": "22:10",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324199?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862810",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
         }
       ]
     },
     {
-      "key": "קיוטינגדאקמי",
-      "name": "קיוטי נגד אקמי",
+      "key": "המסעהמופלאלעץהקסמיםמדובב",
+      "name": "המסע המופלא לעץ הקסמים-מדובב",
       "screenings": [
         {
-          "ts": 1789084800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "00:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324251?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789208100000,
+          "ts": 1789213200000,
           "dayKey": "2026-09-12",
           "day": "שבת 12/09/2026",
-          "hour": "10:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324253?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789215600000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "12:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324254?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789257600000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "00:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324252?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789294500000,
-          "dayKey": "2026-09-13",
-          "day": "ראשון 13/09/2026",
-          "hour": "10:15",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324255?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789302000000,
-          "dayKey": "2026-09-13",
-          "day": "ראשון 13/09/2026",
-          "hour": "12:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324256?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        }
-      ]
-    },
-    {
-      "key": "הנוקמיםסוףהמשחקהדרן",
-      "name": "הנוקמים: סוף המשחק הדרן",
-      "screenings": [
-        {
-          "ts": 1790267400000,
-          "dayKey": "2026-09-24",
-          "day": "חמישי 24/09/2026",
-          "hour": "16:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/857141",
+          "hour": "11:40",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861369",
           "providerId": "cc-galilot",
           "providerName": "Cinema City · גלילות",
           "icon": "assets/icons/cinema-city.png"
         },
         {
-          "ts": 1790267400000,
-          "dayKey": "2026-09-24",
-          "day": "חמישי 24/09/2026",
+          "ts": 1789230600000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
           "hour": "16:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322140?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1790280000000,
-          "dayKey": "2026-09-24",
-          "day": "חמישי 24/09/2026",
-          "hour": "20:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/322141?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1790339400000,
-          "dayKey": "2026-09-25",
-          "day": "שישי 25/09/2026",
-          "hour": "12:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/857142",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861344",
           "providerId": "cc-galilot",
           "providerName": "Cinema City · גלילות",
           "icon": "assets/icons/cinema-city.png"
         },
         {
-          "ts": 1790425800000,
-          "dayKey": "2026-09-26",
-          "day": "שבת 26/09/2026",
-          "hour": "12:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/857144",
+          "ts": 1789295400000,
+          "dayKey": "2026-09-13",
+          "day": "ראשון 13/09/2026",
+          "hour": "10:30",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861688",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789312200000,
+          "dayKey": "2026-09-13",
+          "day": "ראשון 13/09/2026",
+          "hour": "15:10",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861660",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789405200000,
+          "dayKey": "2026-09-14",
+          "day": "שני 14/09/2026",
+          "hour": "17:00",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861860",
           "providerId": "cc-galilot",
           "providerName": "Cinema City · גלילות",
           "icon": "assets/icons/cinema-city.png"
@@ -10119,118 +8425,6 @@
       ]
     },
     {
-      "key": "כיאתמכוערת",
-      "name": "כי את מכוערת",
-      "screenings": [
-        {
-          "ts": 1789052400000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "15:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861184",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789221000000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "13:50",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861363",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789398000000,
-          "dayKey": "2026-09-14",
-          "day": "שני 14/09/2026",
-          "hour": "15:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861856",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789479000000,
-          "dayKey": "2026-09-15",
-          "day": "שלישי 15/09/2026",
-          "hour": "13:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862157",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789566000000,
-          "dayKey": "2026-09-16",
-          "day": "רביעי 16/09/2026",
-          "hour": "13:40",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862807",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        }
-      ]
-    },
-    {
-      "key": "לוניטונסמציגיםקיוטינגדאקמיאנגלית",
-      "name": "לוני טונס מציגים: קיוטי נגד אקמי-אנגלית",
-      "screenings": [
-        {
-          "ts": 1789065600000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "18:40",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861171",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789238400000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "18:40",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861349",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789326000000,
-          "dayKey": "2026-09-13",
-          "day": "ראשון 13/09/2026",
-          "hour": "19:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861665",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789497000000,
-          "dayKey": "2026-09-15",
-          "day": "שלישי 15/09/2026",
-          "hour": "18:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862068",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789583700000,
-          "dayKey": "2026-09-16",
-          "day": "רביעי 16/09/2026",
-          "hour": "18:35",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862824",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        }
-      ]
-    },
-    {
       "key": "מיניוניםומפלצות",
       "name": "מיניונים ומפלצות",
       "screenings": [
@@ -10287,48 +8481,226 @@
       ]
     },
     {
-      "key": "בחזרהמההימאליה",
-      "name": "בחזרה מההימאליה",
+      "key": "סולטיזהסרטוולוגה100",
+      "name": "סולטיז הסרט-וולוג ה-100",
       "screenings": [
         {
-          "ts": 1789058400000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "16:40",
-          "bookingUrl": "https://ticket.lev.co.il/order/605777",
-          "providerId": "lev-ramat-hasharon",
-          "providerName": "לב · רמת השרון",
-          "icon": "assets/icons/lev.png"
+          "ts": 1789212600000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
+          "hour": "11:30",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861396",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
         },
         {
-          "ts": 1789404000000,
+          "ts": 1789298400000,
+          "dayKey": "2026-09-13",
+          "day": "ראשון 13/09/2026",
+          "hour": "11:20",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861705",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789396200000,
           "dayKey": "2026-09-14",
           "day": "שני 14/09/2026",
-          "hour": "16:40",
-          "bookingUrl": "https://ticket.lev.co.il/order/605783",
-          "providerId": "lev-ramat-hasharon",
-          "providerName": "לב · רמת השרון",
-          "icon": "assets/icons/lev.png"
+          "hour": "14:30",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861889",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
         },
         {
-          "ts": 1789486200000,
+          "ts": 1789485600000,
           "dayKey": "2026-09-15",
           "day": "שלישי 15/09/2026",
-          "hour": "15:30",
-          "bookingUrl": "https://ticket.lev.co.il/order/605764",
-          "providerId": "lev-ramat-hasharon",
-          "providerName": "לב · רמת השרון",
-          "icon": "assets/icons/lev.png"
+          "hour": "15:20",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862148",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
         },
         {
-          "ts": 1789593600000,
+          "ts": 1789568400000,
           "dayKey": "2026-09-16",
           "day": "רביעי 16/09/2026",
-          "hour": "21:20",
-          "bookingUrl": "https://ticket.lev.co.il/order/605759",
-          "providerId": "lev-ramat-hasharon",
-          "providerName": "לב · רמת השרון",
-          "icon": "assets/icons/lev.png"
+          "hour": "14:20",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862813",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        }
+      ]
+    },
+    {
+      "key": "ערךסנטימנטלי",
+      "name": "ערך סנטימנטלי",
+      "screenings": [
+        {
+          "ts": 1789209000000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
+          "hour": "10:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323327?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789295400000,
+          "dayKey": "2026-09-13",
+          "day": "ראשון 13/09/2026",
+          "hour": "10:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323330?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789423200000,
+          "dayKey": "2026-09-14",
+          "day": "שני 14/09/2026",
+          "hour": "22:00",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861888",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789470000000,
+          "dayKey": "2026-09-15",
+          "day": "שלישי 15/09/2026",
+          "hour": "11:00",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862147",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789560600000,
+          "dayKey": "2026-09-16",
+          "day": "רביעי 16/09/2026",
+          "hour": "12:10",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862814",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        }
+      ]
+    },
+    {
+      "key": "קופהראשית",
+      "name": "קופה ראשית",
+      "screenings": [
+        {
+          "ts": 1789251000000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
+          "hour": "22:10",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324192?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789337400000,
+          "dayKey": "2026-09-13",
+          "day": "ראשון 13/09/2026",
+          "hour": "22:10",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324195?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789423800000,
+          "dayKey": "2026-09-14",
+          "day": "שני 14/09/2026",
+          "hour": "22:10",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324196?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789510200000,
+          "dayKey": "2026-09-15",
+          "day": "שלישי 15/09/2026",
+          "hour": "22:10",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324197?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789596600000,
+          "dayKey": "2026-09-16",
+          "day": "רביעי 16/09/2026",
+          "hour": "22:10",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324199?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        }
+      ]
+    },
+    {
+      "key": "קיוטינגדאקמי",
+      "name": "קיוטי נגד אקמי",
+      "screenings": [
+        {
+          "ts": 1789208100000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
+          "hour": "10:15",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324253?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789215600000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
+          "hour": "12:20",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324254?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789257600000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
+          "hour": "00:00",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324252?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789294500000,
+          "dayKey": "2026-09-13",
+          "day": "ראשון 13/09/2026",
+          "hour": "10:15",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324255?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
+        },
+        {
+          "ts": 1789302000000,
+          "dayKey": "2026-09-13",
+          "day": "ראשון 13/09/2026",
+          "hour": "12:20",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324256?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
         }
       ]
     },
@@ -10379,25 +8751,25 @@
       ]
     },
     {
-      "key": "כוכביהכלב",
-      "name": "כוכבי הכלב",
+      "key": "כיאתמכוערת",
+      "name": "כי את מכוערת",
       "screenings": [
         {
-          "ts": 1789056900000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "16:15",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861255",
+          "ts": 1789221000000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
+          "hour": "13:50",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861363",
           "providerId": "cc-galilot",
           "providerName": "Cinema City · גלילות",
           "icon": "assets/icons/cinema-city.png"
         },
         {
-          "ts": 1789313400000,
-          "dayKey": "2026-09-13",
-          "day": "ראשון 13/09/2026",
-          "hour": "15:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861738",
+          "ts": 1789398000000,
+          "dayKey": "2026-09-14",
+          "day": "שני 14/09/2026",
+          "hour": "15:00",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861856",
           "providerId": "cc-galilot",
           "providerName": "Cinema City · גלילות",
           "icon": "assets/icons/cinema-city.png"
@@ -10407,17 +8779,17 @@
           "dayKey": "2026-09-15",
           "day": "שלישי 15/09/2026",
           "hour": "13:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862150",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862157",
           "providerId": "cc-galilot",
           "providerName": "Cinema City · גלילות",
           "icon": "assets/icons/cinema-city.png"
         },
         {
-          "ts": 1789568100000,
+          "ts": 1789566000000,
           "dayKey": "2026-09-16",
           "day": "רביעי 16/09/2026",
-          "hour": "14:15",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862812",
+          "hour": "13:40",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862807",
           "providerId": "cc-galilot",
           "providerName": "Cinema City · גלילות",
           "icon": "assets/icons/cinema-city.png"
@@ -10425,45 +8797,45 @@
       ]
     },
     {
-      "key": "מאשהוהדובההרפתקההגדולהמדובב",
-      "name": "מאשה והדוב-ההרפתקה הגדולה-מדובב",
+      "key": "לוניטונסמציגיםקיוטינגדאקמיאנגלית",
+      "name": "לוני טונס מציגים: קיוטי נגד אקמי-אנגלית",
       "screenings": [
         {
-          "ts": 1789041000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "11:50",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861167",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789207500000,
+          "ts": 1789238400000,
           "dayKey": "2026-09-12",
           "day": "שבת 12/09/2026",
-          "hour": "10:05",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861475",
+          "hour": "18:40",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861349",
           "providerId": "cc-galilot",
           "providerName": "Cinema City · גלילות",
           "icon": "assets/icons/cinema-city.png"
         },
         {
-          "ts": 1789213800000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "11:50",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861345",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789296600000,
+          "ts": 1789326000000,
           "dayKey": "2026-09-13",
           "day": "ראשון 13/09/2026",
-          "hour": "10:50",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861661",
+          "hour": "19:00",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861665",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789497000000,
+          "dayKey": "2026-09-15",
+          "day": "שלישי 15/09/2026",
+          "hour": "18:30",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862068",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789583700000,
+          "dayKey": "2026-09-16",
+          "day": "רביעי 16/09/2026",
+          "hour": "18:35",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862824",
           "providerId": "cc-galilot",
           "providerName": "Cinema City · גלילות",
           "icon": "assets/icons/cinema-city.png"
@@ -10563,84 +8935,38 @@
       ]
     },
     {
-      "key": "ראנר",
-      "name": "ראנר",
+      "key": "בחזרהמההימאליה",
+      "name": "בחזרה מההימאליה",
       "screenings": [
         {
-          "ts": 1789075800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "21:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861227",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
+          "ts": 1789404000000,
+          "dayKey": "2026-09-14",
+          "day": "שני 14/09/2026",
+          "hour": "16:40",
+          "bookingUrl": "https://ticket.lev.co.il/order/605783",
+          "providerId": "lev-ramat-hasharon",
+          "providerName": "לב · רמת השרון",
+          "icon": "assets/icons/lev.png"
         },
         {
-          "ts": 1789248600000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "21:30",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861444",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
+          "ts": 1789486200000,
+          "dayKey": "2026-09-15",
+          "day": "שלישי 15/09/2026",
+          "hour": "15:30",
+          "bookingUrl": "https://ticket.lev.co.il/order/605764",
+          "providerId": "lev-ramat-hasharon",
+          "providerName": "לב · רמת השרון",
+          "icon": "assets/icons/lev.png"
         },
         {
-          "ts": 1789258200000,
-          "dayKey": "2026-09-13",
-          "day": "ראשון 13/09/2026",
-          "hour": "00:10",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861448",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789330200000,
-          "dayKey": "2026-09-13",
-          "day": "ראשון 13/09/2026",
-          "hour": "20:10",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861726",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        }
-      ]
-    },
-    {
-      "key": "גרייסיופדרוחיותהמחמדבפעולהמדובב",
-      "name": "גרייסי ופדרו: חיות המחמד בפעולה-מדובב",
-      "screenings": [
-        {
-          "ts": 1789042500000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "12:15",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861235",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789207200000,
-          "dayKey": "2026-09-12",
-          "day": "שבת 12/09/2026",
-          "hour": "10:00",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/861484",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
-        },
-        {
-          "ts": 1789560900000,
+          "ts": 1789593600000,
           "dayKey": "2026-09-16",
           "day": "רביעי 16/09/2026",
-          "hour": "12:15",
-          "bookingUrl": "https://tickets.cinema-city.co.il/order/862774",
-          "providerId": "cc-galilot",
-          "providerName": "Cinema City · גלילות",
-          "icon": "assets/icons/cinema-city.png"
+          "hour": "21:20",
+          "bookingUrl": "https://ticket.lev.co.il/order/605759",
+          "providerId": "lev-ramat-hasharon",
+          "providerName": "לב · רמת השרון",
+          "icon": "assets/icons/lev.png"
         }
       ]
     },
@@ -10681,28 +9007,136 @@
       ]
     },
     {
-      "key": "אובססיה",
-      "name": "אובססיה",
+      "key": "כוכביהכלב",
+      "name": "כוכבי הכלב",
       "screenings": [
         {
-          "ts": 1789086000000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "00:20",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323529?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
+          "ts": 1789313400000,
+          "dayKey": "2026-09-13",
+          "day": "ראשון 13/09/2026",
+          "hour": "15:30",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861738",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
         },
         {
-          "ts": 1789259400000,
+          "ts": 1789479000000,
+          "dayKey": "2026-09-15",
+          "day": "שלישי 15/09/2026",
+          "hour": "13:30",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862150",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789568100000,
+          "dayKey": "2026-09-16",
+          "day": "רביעי 16/09/2026",
+          "hour": "14:15",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862812",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        }
+      ]
+    },
+    {
+      "key": "מאשהוהדובההרפתקההגדולהמדובב",
+      "name": "מאשה והדוב-ההרפתקה הגדולה-מדובב",
+      "screenings": [
+        {
+          "ts": 1789207500000,
           "dayKey": "2026-09-12",
           "day": "שבת 12/09/2026",
-          "hour": "00:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323532?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
+          "hour": "10:05",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861475",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789213800000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
+          "hour": "11:50",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861345",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789296600000,
+          "dayKey": "2026-09-13",
+          "day": "ראשון 13/09/2026",
+          "hour": "10:50",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861661",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        }
+      ]
+    },
+    {
+      "key": "ראנר",
+      "name": "ראנר",
+      "screenings": [
+        {
+          "ts": 1789248600000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
+          "hour": "21:30",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861444",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789258200000,
+          "dayKey": "2026-09-13",
+          "day": "ראשון 13/09/2026",
+          "hour": "00:10",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861448",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789330200000,
+          "dayKey": "2026-09-13",
+          "day": "ראשון 13/09/2026",
+          "hour": "20:10",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861726",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        }
+      ]
+    },
+    {
+      "key": "גרייסיופדרוחיותהמחמדבפעולהמדובב",
+      "name": "גרייסי ופדרו: חיות המחמד בפעולה-מדובב",
+      "screenings": [
+        {
+          "ts": 1789207200000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
+          "hour": "10:00",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/861484",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
+        },
+        {
+          "ts": 1789560900000,
+          "dayKey": "2026-09-16",
+          "day": "רביעי 16/09/2026",
+          "hour": "12:15",
+          "bookingUrl": "https://tickets.cinema-city.co.il/order/862774",
+          "providerId": "cc-galilot",
+          "providerName": "Cinema City · גלילות",
+          "icon": "assets/icons/cinema-city.png"
         }
       ]
     },
@@ -10941,25 +9375,15 @@
       ]
     },
     {
-      "key": "человекпаукновыйденьspiderman",
-      "name": "ЧЕЛОВЕК-ПАУК: НОВЫЙ ДЕНЬ - Spider-Man:",
+      "key": "אובססיה",
+      "name": "אובססיה",
       "screenings": [
         {
-          "ts": 1789066800000,
-          "dayKey": "2026-09-10",
-          "day": "חמישי 10/09/2026",
-          "hour": "19:00",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323675?lang=he",
-          "providerId": "planet-ayalon",
-          "providerName": "פלאנט · אילון",
-          "icon": "assets/icons/planet-cinema.png"
-        },
-        {
-          "ts": 1789230600000,
+          "ts": 1789259400000,
           "dayKey": "2026-09-12",
           "day": "שבת 12/09/2026",
-          "hour": "16:30",
-          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324226?lang=he",
+          "hour": "00:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/323532?lang=he",
           "providerId": "planet-ayalon",
           "providerName": "פלאנט · אילון",
           "icon": "assets/icons/planet-cinema.png"
@@ -11075,6 +9499,22 @@
           "providerId": "cc-galilot",
           "providerName": "Cinema City · גלילות",
           "icon": "assets/icons/cinema-city.png"
+        }
+      ]
+    },
+    {
+      "key": "человекпаукновыйденьspiderman",
+      "name": "ЧЕЛОВЕК-ПАУК: НОВЫЙ ДЕНЬ - Spider-Man:",
+      "screenings": [
+        {
+          "ts": 1789230600000,
+          "dayKey": "2026-09-12",
+          "day": "שבת 12/09/2026",
+          "hour": "16:30",
+          "bookingUrl": "https://tickets5.planetcinema.co.il/order/324226?lang=he",
+          "providerId": "planet-ayalon",
+          "providerName": "פלאנט · אילון",
+          "icon": "assets/icons/planet-cinema.png"
         }
       ]
     }
