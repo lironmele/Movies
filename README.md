@@ -4,8 +4,8 @@ A page that displays cinema schedules grouped by movie and by day. Every theater
 is shown at once: the schedules from all providers are merged into a single movie
 list, and each showtime is tagged with the theater's logo so you can see where it
 plays. It is built around **pluggable movie providers** — Cinema City Galilot,
-Cinema City Kfar Saba, Lev Ramat HaSharon, Planet Ayalon and the Tel Aviv
-Cinematheque are bundled today, and more can be added
+Cinema City Kfar Saba, Lev Ramat HaSharon, Planet Ayalon, Rav-Hen Givatayim,
+Rav-Hen Dizengoff and the Tel Aviv Cinematheque are bundled today, and more can be added
 without touching the UI.
 
 The project is in two parts:
@@ -32,7 +32,7 @@ providers/
   registry.js           the providers + fetchAllShows() (merge + theater tag)
   cinema-city.js        Cinema City provider factory (any branch by TheatreId)
   lev.js                Lev Cinema provider factory (any branch by locationId)
-  planet.js             Planet Cinema provider factory (any branch by cinemaId)
+  planet.js             Planet Cinema / Rav-Hen provider factory (any branch by cinemaId)
   cinematheque.js       Tel Aviv Cinematheque provider (scrapes cinema.co.il/shown/)
 assets/icons/           theater logos, fetched from each cinema's website
 .github/workflows/update-data.yml   the daily cron job
@@ -169,6 +169,15 @@ createPlanetProvider({ id: "planet-haifa", name: "פלאנט · חיפה", short
   screenings by `filmId`, and sorts chronologically. A single date that fails to
   load is tolerated; the branch only errors if every date request fails.
 - Each showtime links to the `bookingLink` returned on the event.
+
+## The Rav-Hen provider
+
+- Rav-Hen is a sibling Cineworld chain on the same Vista "quickbook" API, only
+  under `www.rav-hen.co.il/rh/…` with group ID `10104` — see
+  [`docs/rav-hen-api.md`](docs/rav-hen-api.md). It reuses the Planet factory
+  with `base: RAV_HEN_BASE`.
+- Both of the chain's current branches are included: Givatayim (`1058`) and
+  Dizengoff (`1071`).
 
 ## The Tel Aviv Cinematheque provider
 

@@ -27,7 +27,7 @@
 
 import { createCinemaCityProvider } from "./cinema-city.js";
 import { createLevProvider } from "./lev.js";
-import { createPlanetProvider } from "./planet.js";
+import { createPlanetProvider, RAV_HEN_BASE } from "./planet.js";
 import { createCinemathequeProvider } from "./cinematheque.js";
 
 // Regions, in display order. The theater picker groups by these and offers a
@@ -72,6 +72,24 @@ export const providers = [
     icon: "assets/icons/planet-cinema.png",
     region: "tlv",
     cinemaId: 1025,
+  }),
+  createPlanetProvider({
+    id: "rav-hen-givatayim",
+    name: "רב חן · גבעתיים",
+    short: "גבעתיים",
+    icon: "assets/icons/rav-hen.png",
+    region: "tlv",
+    cinemaId: 1058,
+    base: RAV_HEN_BASE,
+  }),
+  createPlanetProvider({
+    id: "rav-hen-dizengoff",
+    name: "רב חן · דיזנגוף",
+    short: "דיזנגוף",
+    icon: "assets/icons/rav-hen.png",
+    region: "tlv",
+    cinemaId: 1071,
+    base: RAV_HEN_BASE,
   }),
   createCinemathequeProvider({
     id: "cinematheque-tlv",

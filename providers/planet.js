@@ -2,7 +2,9 @@
 //
 // `createPlanetProvider` builds a provider for any Planet Cinema branch from its
 // cinemaId. Planet is part of Cineworld and serves showtimes from the Vista
-// "quickbook" JSON API. Unlike the other providers there is no single bulk
+// "quickbook" JSON API. Rav-Hen, a sibling Cineworld chain, runs the same API
+// under its own host and group ID — pass `base: RAV_HEN_BASE` to reuse this
+// factory for its branches. Unlike the other providers there is no single bulk
 // endpoint: you first ask which dates have showings, then fetch films + events
 // once per date. The two are joined on `filmId`.
 // See ../docs/planet-cinema-api.md for the endpoint details.
@@ -10,7 +12,8 @@
 import { viaProxy } from "../lib/proxy.js";
 import { toDayKey, dayLabel } from "../lib/day.js";
 
-const BASE = "https://www.planetcinema.co.il/il/data-api-service/v1/quickbook/10100";
+export const PLANET_BASE = "https://www.planetcinema.co.il/il/data-api-service/v1/quickbook/10100";
+export const RAV_HEN_BASE = "https://www.rav-hen.co.il/rh/data-api-service/v1/quickbook/10104";
 const LANG = "he_IL";
 const WINDOW_DAYS = 14; // how far ahead to ask for dates; API caps to what's published
 
@@ -58,15 +61,15 @@ async function fetchJson(url) {
 }
 
 // The dates that actually have showings, within our forward window.
-async function fetchDates(cinemaId) {
+async function fetchDates(base, cinemaId) {
   const until = addDays(israelToday(), WINDOW_DAYS);
-  const body = await fetchJson(`${BASE}/dates/in-cinema/${cinemaId}/until/${until}`);
+  const body = await fetchJson(`${base}/dates/in-cinema/${cinemaId}/until/${until}`);
   return Array.isArray(body.dates) ? body.dates : [];
 }
 
 // One date's { films[], events[] }, already joined into normalized screenings.
-async function fetchDateShows(cinemaId, date) {
-  const body = await fetchJson(`${BASE}/film-events/in-cinema/${cinemaId}/at-date/${date}`);
+async function fetchDateShows(base, cinemaId, date) {
+  const body = await fetchJson(`${base}/film-events/in-cinema/${cinemaId}/at-date/${date}`);
   const films = Array.isArray(body.films) ? body.films : [];
   const events = Array.isArray(body.events) ? body.events : [];
   const byId = new Map(films.map((f) => [f.id, f]));
@@ -92,7 +95,7 @@ function groupShows(rows) {
   return [...shows.values()];
 }
 
-export function createPlanetProvider({ id, name, short, icon, region, cinemaId }) {
+export function createPlanetProvider({ id, name, short, icon, region, cinemaId, base = PLANET_BASE }) {
   return {
     id,
     name,
@@ -100,11 +103,11 @@ export function createPlanetProvider({ id, name, short, icon, region, cinemaId }
     icon,
     region,
     async fetchShows() {
-      const dates = await fetchDates(cinemaId);
+      const dates = await fetchDates(base, cinemaId);
       // One request per date (no bulk endpoint). Tolerate a single date failing;
       // only fail outright if every date request failed.
       const results = await Promise.allSettled(
-        dates.map((d) => fetchDateShows(cinemaId, d))
+        dates.map((d) => fetchDateShows(base, cinemaId, d))
       );
       if (dates.length && results.every((r) => r.status === "rejected"))
         throw results[0].reason;
