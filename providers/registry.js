@@ -9,6 +9,7 @@
 //                                   // to the logo so two branches of one chain
 //                                   // (same logo) stay distinguishable
 //     icon: string,                 // path to the theater's logo (assets/icons)
+//     region: string,               // a `regions` id; the UI groups and filters by it
 //     async fetchShows(): Show[]    // see the normalized shape below
 //   }
 //
@@ -29,12 +30,23 @@ import { createLevProvider } from "./lev.js";
 import { createPlanetProvider } from "./planet.js";
 import { createCinemathequeProvider } from "./cinematheque.js";
 
+// Regions, in display order. The theater picker groups by these and offers a
+// one-tap "only this region" shortcut; regions with no theater are not shown.
+export const regions = [
+  { id: "tlv", name: "תל אביב והמרכז" },
+  { id: "sharon", name: "השרון" },
+  { id: "jlm", name: "ירושלים והסביבה" },
+  { id: "north", name: "חיפה והצפון" },
+  { id: "south", name: "הדרום" },
+];
+
 export const providers = [
   createCinemaCityProvider({
     id: "cc-galilot",
     name: "Cinema City · גלילות",
     short: "גלילות",
     icon: "assets/icons/cinema-city.png",
+    region: "sharon",
     theatreId: 1170,
   }),
   createCinemaCityProvider({
@@ -42,6 +54,7 @@ export const providers = [
     name: "Cinema City · כפר סבא",
     short: "כפר סבא",
     icon: "assets/icons/cinema-city.png",
+    region: "sharon",
     theatreId: 1175,
   }),
   createLevProvider({
@@ -49,6 +62,7 @@ export const providers = [
     name: "לב · רמת השרון",
     short: "רמת השרון",
     icon: "assets/icons/lev.png",
+    region: "sharon",
     locationId: 1162,
   }),
   createPlanetProvider({
@@ -56,6 +70,7 @@ export const providers = [
     name: "פלאנט · אילון",
     short: "אילון",
     icon: "assets/icons/planet-cinema.png",
+    region: "tlv",
     cinemaId: 1025,
   }),
   createCinemathequeProvider({
@@ -63,16 +78,17 @@ export const providers = [
     name: "סינמטק · תל אביב",
     short: "תל אביב",
     icon: "assets/icons/cinematheque-tlv.jpg",
+    region: "tlv",
   }),
   // Add more providers here. For other Cinema City branches, reuse the factory
   // with that branch's TheatreId, e.g.:
-  //   createCinemaCityProvider({ id: "cc-rishon", name: "Cinema City · ראשון", short: "ראשון", icon: "assets/icons/cinema-city.png", theatreId: <id> }),
+  //   createCinemaCityProvider({ id: "cc-rishon", name: "Cinema City · ראשון", short: "ראשון", icon: "assets/icons/cinema-city.png", region: "tlv", theatreId: <id> }),
   // For other Lev branches, reuse createLevProvider with that branch's locationId
   // (see ../docs/lev-presentations-api.md §7), e.g.:
-  //   createLevProvider({ id: "lev-telaviv", name: "לב · תל אביב", short: "תל אביב", icon: "assets/icons/lev.png", locationId: 1150 }),
+  //   createLevProvider({ id: "lev-telaviv", name: "לב · תל אביב", short: "תל אביב", icon: "assets/icons/lev.png", region: "tlv", locationId: 1150 }),
   // For other Planet Cinema branches, reuse createPlanetProvider with that
   // branch's cinemaId (see ../docs/planet-cinema-api.md §2), e.g.:
-  //   createPlanetProvider({ id: "planet-haifa", name: "פלאנט · חיפה", short: "חיפה", icon: "assets/icons/planet-cinema.png", cinemaId: 1070 }),
+  //   createPlanetProvider({ id: "planet-haifa", name: "פלאנט · חיפה", short: "חיפה", icon: "assets/icons/planet-cinema.png", region: "north", cinemaId: 1070 }),
 ];
 
 // Collapse near-identical titles so the same movie from two theaters merges into

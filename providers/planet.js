@@ -92,12 +92,13 @@ function groupShows(rows) {
   return [...shows.values()];
 }
 
-export function createPlanetProvider({ id, name, short, icon, cinemaId }) {
+export function createPlanetProvider({ id, name, short, icon, region, cinemaId }) {
   return {
     id,
     name,
     short,
     icon,
+    region,
     async fetchShows() {
       const dates = await fetchDates(cinemaId);
       // One request per date (no bulk endpoint). Tolerate a single date failing;

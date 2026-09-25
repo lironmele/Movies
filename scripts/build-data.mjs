@@ -11,7 +11,7 @@ import { writeFile, mkdir } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { providers, fetchAllShows } from "../providers/registry.js";
+import { providers, regions, fetchAllShows } from "../providers/registry.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const outFile = join(root, "data", "showtimes.json");
@@ -41,7 +41,10 @@ async function main() {
 
   const payload = {
     generatedAt: new Date().toISOString(),
-    providers: providers.map((p) => ({ id: p.id, name: p.name, short: p.short, icon: p.icon })),
+    regions,
+    providers: providers.map((p) => ({
+      id: p.id, name: p.name, short: p.short, icon: p.icon, region: p.region,
+    })),
     shows,
     errors: errors.map((e) => ({
       provider: e.provider.name,

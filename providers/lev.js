@@ -79,12 +79,13 @@ function groupShows(presentations) {
   return [...shows.values()];
 }
 
-export function createLevProvider({ id, name, short, icon, locationId }) {
+export function createLevProvider({ id, name, short, icon, region, locationId }) {
   return {
     id,
     name,
     short,
     icon,
+    region,
     async fetchShows() {
       return groupShows(await fetchPresentations(locationId));
     },

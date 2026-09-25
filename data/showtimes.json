@@ -1,35 +1,62 @@
 {
   "generatedAt": "2026-09-25T11:19:20.988Z",
+  "regions": [
+    {
+      "id": "tlv",
+      "name": "תל אביב והמרכז"
+    },
+    {
+      "id": "sharon",
+      "name": "השרון"
+    },
+    {
+      "id": "jlm",
+      "name": "ירושלים והסביבה"
+    },
+    {
+      "id": "north",
+      "name": "חיפה והצפון"
+    },
+    {
+      "id": "south",
+      "name": "הדרום"
+    }
+  ],
   "providers": [
     {
       "id": "cc-galilot",
       "name": "Cinema City · גלילות",
       "short": "גלילות",
-      "icon": "assets/icons/cinema-city.png"
+      "icon": "assets/icons/cinema-city.png",
+      "region": "sharon"
     },
     {
       "id": "cc-kfar-saba",
       "name": "Cinema City · כפר סבא",
       "short": "כפר סבא",
-      "icon": "assets/icons/cinema-city.png"
+      "icon": "assets/icons/cinema-city.png",
+      "region": "sharon"
     },
     {
       "id": "lev-ramat-hasharon",
       "name": "לב · רמת השרון",
       "short": "רמת השרון",
-      "icon": "assets/icons/lev.png"
+      "icon": "assets/icons/lev.png",
+      "region": "sharon"
     },
     {
       "id": "planet-ayalon",
       "name": "פלאנט · אילון",
       "short": "אילון",
-      "icon": "assets/icons/planet-cinema.png"
+      "icon": "assets/icons/planet-cinema.png",
+      "region": "tlv"
     },
     {
       "id": "cinematheque-tlv",
       "name": "סינמטק · תל אביב",
       "short": "תל אביב",
-      "icon": "assets/icons/cinematheque-tlv.jpg"
+      "icon": "assets/icons/cinematheque-tlv.jpg",
+      "region": "tlv"
     }
   ],
   "shows": [

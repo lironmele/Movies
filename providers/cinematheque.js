@@ -96,12 +96,13 @@ function groupShows(days) {
   return [...shows.values()];
 }
 
-export function createCinemathequeProvider({ id, name, short, icon }) {
+export function createCinemathequeProvider({ id, name, short, icon, region }) {
   return {
     id,
     name,
     short,
     icon,
+    region,
     async fetchShows() {
       const today = israelToday();
       const dates = Array.from({ length: WINDOW_DAYS }, (_, i) => addDays(today, i));
