@@ -4,7 +4,7 @@ A page that displays cinema schedules grouped by movie and by day. Every theater
 is shown at once: the schedules from all providers are merged into a single movie
 list, and each showtime is tagged with the theater's logo so you can see where it
 plays. It is built around **pluggable movie providers** — Cinema City Galilot,
-Lev Ramat HaSharon and Planet Ayalon are bundled today, and more can be added
+Cinema City Kfar Saba, Lev Ramat HaSharon and Planet Ayalon are bundled today, and more can be added
 without touching the UI.
 
 The project is in two parts:
@@ -56,6 +56,18 @@ The page reads that file on load. A legend under the title maps each logo to its
 theater; if a provider failed during the last build, it is listed in `errors` and
 shown in a small banner without blocking the rest.
 
+## Many theaters, shared logos
+
+Branches of one chain share a logo, so the UI never relies on the logo alone:
+
+- **Legend = theater filter.** Each legend chip toggles that theater on/off; the
+  choice is remembered in `localStorage`, so a long list can be trimmed once to
+  "my cinemas". Days, counts and ordering follow the theaters that are on.
+- **Showtimes grouped by theater.** Inside a day, every theater gets its own line
+  headed by its logo + branch name (`short`), with its times after it.
+- **One logo per chain on the collapsed row.** A small number next to a logo says
+  how many of that chain's branches show the movie; the tooltip names them.
+
 ## Booking inline
 
 Clicking a showtime opens its `bookingUrl` in an iframe right under that day's
@@ -74,6 +86,7 @@ A provider is any object shaped like:
 {
   id:   "my-cinema",          // stable id
   name: "My Cinema",          // theater name (legend + tooltip)
+  short: "Downtown",          // branch name, shown next to its showtimes
   icon: "assets/icons/my.png",// theater logo shown next to each showtime
   async fetchShows() {        // returns the normalized shape below
     return [
@@ -97,21 +110,21 @@ that `fetchAllShows()` adds — so it never needs to change. For another Cinema
 City branch, reuse the factory with that branch's `TheatreId`:
 
 ```js
-createCinemaCityProvider({ id: "cc-rishon", name: "Cinema City · ראשון", icon: "assets/icons/cinema-city.png", theatreId: <id> })
+createCinemaCityProvider({ id: "cc-rishon", name: "Cinema City · ראשון", short: "ראשון", icon: "assets/icons/cinema-city.png", theatreId: <id> })
 ```
 
 For another Lev branch, reuse its factory with that branch's `locationId`
 (branch IDs are listed in [`docs/lev-presentations-api.md`](docs/lev-presentations-api.md)):
 
 ```js
-createLevProvider({ id: "lev-telaviv", name: "לב · תל אביב", icon: "assets/icons/lev.png", locationId: 1150 })
+createLevProvider({ id: "lev-telaviv", name: "לב · תל אביב", short: "תל אביב", icon: "assets/icons/lev.png", locationId: 1150 })
 ```
 
 For another Planet Cinema branch, reuse its factory with that branch's `cinemaId`
 (branch IDs are listed in [`docs/planet-cinema-api.md`](docs/planet-cinema-api.md)):
 
 ```js
-createPlanetProvider({ id: "planet-haifa", name: "פלאנט · חיפה", icon: "assets/icons/planet-cinema.png", cinemaId: 1070 })
+createPlanetProvider({ id: "planet-haifa", name: "פלאנט · חיפה", short: "חיפה", icon: "assets/icons/planet-cinema.png", cinemaId: 1070 })
 ```
 
 ## The Cinema City provider

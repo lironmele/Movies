@@ -16,7 +16,12 @@ const noteEl = $("note");
 
 // ---- State ------------------------------------------------------------------
 let allShows = [];
-let providers = []; // { id, name, icon } list, read from the data file for the legend
+let providers = []; // { id, name, short, icon } list, read from the data file for the legend
+let providerOrder = new Map(); // providerId -> index, so theaters always list in registry order
+// Theaters the viewer switched off in the legend. Remembered per browser, so a
+// long theater list can be trimmed once to "my cinemas".
+const HIDDEN_KEY = "hiddenTheaters";
+let hidden = new Set(readHidden());
 let selectedKey = null;
 let query = "";
 let activeDay = "";
@@ -30,18 +35,37 @@ function showNote(html, isError) {
 }
 function hideNote() { noteEl.style.display = "none"; }
 
+function readHidden() {
+  try { return JSON.parse(localStorage.getItem(HIDDEN_KEY)) || []; } catch { return []; }
+}
+function saveHidden() {
+  try { localStorage.setItem(HIDDEN_KEY, JSON.stringify([...hidden])); } catch {}
+}
+
 // ---- Theater legend ---------------------------------------------------------
-// A non-interactive key mapping each theater's logo to its name, so the small
-// icons shown next to every showtime are decodable at a glance.
+// Maps each theater's logo to its name and doubles as a filter: click a theater
+// to hide/show its screenings. Several branches of one chain share a logo, so
+// the name here (and the branch name in the showtimes) is what tells them apart.
 function renderLegend() {
   legendEl.innerHTML = "";
   for (const p of providers) {
-    const item = document.createElement("span");
-    item.className = "legend-item";
+    const on = !hidden.has(p.id);
+    const item = document.createElement("button");
+    item.type = "button";
+    item.className = "legend-item" + (on ? "" : " off");
+    item.setAttribute("aria-pressed", String(on));
     item.appendChild(makeLogo(p.icon, p.name));
     const label = document.createElement("span");
     label.textContent = p.name;
     item.appendChild(label);
+    item.addEventListener("click", () => {
+      if (on) hidden.add(p.id); else hidden.delete(p.id);
+      saveHidden();
+      openBookingUrl = null;
+      renderLegend();
+      renderDays();
+      renderMovieList();
+    });
     legendEl.appendChild(item);
   }
 }
@@ -57,12 +81,19 @@ function makeLogo(src, name) {
 }
 
 // ---- Filtering --------------------------------------------------------------
+// A movie's screenings at the theaters that are switched on, on the active day
+// (or every day when none is selected).
+function shownScreenings(show) {
+  return show.screenings.filter(
+    (sc) => !hidden.has(sc.providerId) && (!activeDay || sc.dayKey === activeDay)
+  );
+}
+
 function visibleShows() {
   const q = query.trim().toLowerCase();
   return allShows.filter((s) => {
     if (q && !s.name.toLowerCase().includes(q)) return false;
-    if (activeDay) return s.screenings.some((sc) => sc.dayKey === activeDay);
-    return true;
+    return shownScreenings(s).length > 0;
   });
 }
 
@@ -72,6 +103,7 @@ function renderDays() {
   const days = new Map();
   for (const s of allShows)
     for (const sc of s.screenings) {
+      if (hidden.has(sc.providerId)) continue;
       const cur = days.get(sc.dayKey);
       if (!cur || sc.ts < cur.ts) days.set(sc.dayKey, { ts: sc.ts, label: sc.day });
     }
@@ -94,27 +126,25 @@ function renderDays() {
   for (const [dayKey, { label }] of ordered) make(dayKey, label);
 }
 
-// Count a movie's screenings on the active day (or all of them when no day is
-// selected). Used both for ordering and the count badge.
+// Count a movie's shown screenings. Used both for ordering and the count badge.
 function shownCount(show) {
-  if (!activeDay) return show.screenings.length;
-  let n = 0;
-  for (const sc of show.screenings) if (sc.dayKey === activeDay) n++;
-  return n;
+  return shownScreenings(show).length;
 }
 
 function renderMovieList() {
   const shows = visibleShows();
-  // The build-time order is by all-days total. When a day is selected, re-sort
-  // by that day's screening count so the order matches the visible counts.
-  if (activeDay)
+  // The build-time order is by all-days total over every theater. When a day is
+  // selected or a theater hidden, re-sort so the order matches the visible counts.
+  if (activeDay || hidden.size)
     shows.sort(
       (a, b) => shownCount(b) - shownCount(a) || a.name.localeCompare(b.name, "he")
     );
   movieListEl.innerHTML = "";
 
   if (!shows.length) {
-    showNote(query.trim()
+    showNote(hidden.size === providers.length
+      ? "כל בתי הקולנוע כבויים. בחרו לפחות אחד למעלה."
+      : query.trim()
       ? `אין סרט שתואם ל“${query.trim()}”. נסו שם אחר.`
       : "אין הקרנות להצגה כרגע.");
     return;
@@ -123,9 +153,7 @@ function renderMovieList() {
 
   for (const show of shows) {
     const isActive = show.key === selectedKey;
-    const screenings = activeDay
-      ? show.screenings.filter((sc) => sc.dayKey === activeDay)
-      : show.screenings;
+    const screenings = shownScreenings(show);
 
     const row = document.createElement("div");
     row.className = "movie-row" + (isActive ? " active" : "");
@@ -139,18 +167,27 @@ function renderMovieList() {
     name.textContent = show.name;
     btn.appendChild(name);
 
-    // Right-hand meta: the theaters this movie plays at, then the count. The
-    // logos let you see *where* a movie is showing without expanding the row.
+    // Right-hand meta: the chains this movie plays at, then the count. One logo
+    // per chain (branches share a logo, so repeating it would say nothing); a
+    // small number marks how many of that chain's branches show it, and the
+    // tooltip names them.
     const meta = document.createElement("span");
     meta.className = "meta";
 
     const theaters = document.createElement("span");
     theaters.className = "theaters";
-    const seen = new Set();
-    for (const sc of screenings) {
-      if (seen.has(sc.providerId)) continue;
-      seen.add(sc.providerId);
-      theaters.appendChild(makeLogo(sc.icon, sc.providerName));
+    for (const [icon, names] of chainsOf(screenings)) {
+      const chain = document.createElement("span");
+      chain.className = "chain";
+      chain.title = names.join("\n");
+      chain.appendChild(makeLogo(icon, names.join(", ")));
+      if (names.length > 1) {
+        const n = document.createElement("span");
+        n.className = "branches";
+        n.textContent = names.length;
+        chain.appendChild(n);
+      }
+      theaters.appendChild(chain);
     }
     meta.appendChild(theaters);
 
@@ -173,13 +210,27 @@ function renderMovieList() {
   }
 }
 
+// icon -> names of the distinct theaters (in registry order) using that icon.
+function chainsOf(screenings) {
+  const ids = [...new Set(screenings.map((sc) => sc.providerId))]
+    .sort((a, b) => providerOrder.get(a) - providerOrder.get(b));
+  const chains = new Map();
+  for (const id of ids) {
+    const sc = screenings.find((x) => x.providerId === id);
+    if (!chains.has(sc.icon)) chains.set(sc.icon, []);
+    chains.get(sc.icon).push(sc.providerName);
+  }
+  return chains;
+}
+
 function buildShowtimesPanel(screenings) {
   const panel = document.createElement("div");
   panel.className = "movie-panel";
 
-  // Group by canonical dayKey so both theaters' times sit under one day; the
-  // screenings arrive ts-sorted, so within a day the times stay chronological
-  // and the theater logo (set below) is what tells the cinemas apart.
+  // Group by canonical dayKey so every theater's times sit under one day, then
+  // by theater within the day: one line per theater, headed by its logo and
+  // branch name, so two branches of the same chain never look alike. The
+  // screenings arrive ts-sorted, so each line's times stay chronological.
   const byDay = new Map();
   for (const sc of screenings) {
     if (!byDay.has(sc.dayKey)) byDay.set(sc.dayKey, { label: sc.day, list: [] });
@@ -194,33 +245,53 @@ function buildShowtimesPanel(screenings) {
     dl.textContent = label;
     group.appendChild(dl);
 
-    const times = document.createElement("div");
-    times.className = "times";
+    const byTheater = new Map();
     for (const sc of list) {
-      const isOpen = sc.bookingUrl === openBookingUrl;
-      const a = document.createElement("a");
-      a.className = "time" + (isOpen ? " open" : "");
-      a.href = sc.bookingUrl;
-      a.rel = "noopener";
-      a.dataset.bookingUrl = sc.bookingUrl;
-      a.setAttribute("aria-expanded", String(isOpen));
-      // The theater logo next to the time says which cinema this screening is at.
-      a.title = sc.providerName;
-      a.appendChild(makeLogo(sc.icon, sc.providerName));
-      const hour = document.createElement("span");
-      hour.textContent = sc.hour;
-      a.appendChild(hour);
-      // A plain click opens the ticket page inline, just under this day's times.
-      // Modified/middle clicks are left alone so the browser's own "open in a new
-      // tab" still works, and the href keeps the link shareable.
-      a.addEventListener("click", (ev) => {
-        if (ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
-        ev.preventDefault();
-        openBooking(isOpen ? null : sc.bookingUrl);
-      });
-      times.appendChild(a);
+      if (!byTheater.has(sc.providerId)) byTheater.set(sc.providerId, []);
+      byTheater.get(sc.providerId).push(sc);
     }
-    group.appendChild(times);
+    const lines = [...byTheater.entries()]
+      .sort((a, b) => providerOrder.get(a[0]) - providerOrder.get(b[0]));
+    for (const [providerId, theaterList] of lines) {
+      const line = document.createElement("div");
+      line.className = "theater-line";
+
+      const p = providers[providerOrder.get(providerId)];
+      const head = document.createElement("div");
+      head.className = "theater";
+      head.title = theaterList[0].providerName;
+      head.appendChild(makeLogo(theaterList[0].icon, theaterList[0].providerName));
+      const branch = document.createElement("span");
+      branch.textContent = p?.short || theaterList[0].providerName;
+      head.appendChild(branch);
+      line.appendChild(head);
+
+      const times = document.createElement("div");
+      times.className = "times";
+      for (const sc of theaterList) {
+        const isOpen = sc.bookingUrl === openBookingUrl;
+        const a = document.createElement("a");
+        a.className = "time" + (isOpen ? " open" : "");
+        a.href = sc.bookingUrl;
+        a.rel = "noopener";
+        a.dataset.bookingUrl = sc.bookingUrl;
+        a.setAttribute("aria-expanded", String(isOpen));
+        // The line's header says which cinema this is; the tooltip repeats it.
+        a.title = sc.providerName;
+        a.textContent = sc.hour;
+        // A plain click opens the ticket page inline, just under this day's times.
+        // Modified/middle clicks are left alone so the browser's own "open in a new
+        // tab" still works, and the href keeps the link shareable.
+        a.addEventListener("click", (ev) => {
+          if (ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+          ev.preventDefault();
+          openBooking(isOpen ? null : sc.bookingUrl);
+        });
+        times.appendChild(a);
+      }
+      line.appendChild(times);
+      group.appendChild(line);
+    }
 
     // The frame belongs to the day it was opened from, so the ticket page shows
     // up in context instead of taking over the page.
@@ -318,6 +389,9 @@ async function load() {
     const data = await res.json();
 
     providers = data.providers || [];
+    providerOrder = new Map(providers.map((p, i) => [p.id, i]));
+    // Forget hidden ids of theaters that no longer exist.
+    hidden = new Set([...hidden].filter((id) => providerOrder.has(id)));
     allShows = data.shows || [];
     renderLegend();
     renderDays();

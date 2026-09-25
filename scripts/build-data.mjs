@@ -41,7 +41,7 @@ async function main() {
 
   const payload = {
     generatedAt: new Date().toISOString(),
-    providers: providers.map((p) => ({ id: p.id, name: p.name, icon: p.icon })),
+    providers: providers.map((p) => ({ id: p.id, name: p.name, short: p.short, icon: p.icon })),
     shows,
     errors: errors.map((e) => ({
       provider: e.provider.name,

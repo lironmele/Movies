@@ -92,10 +92,11 @@ function groupShows(rows) {
   return [...shows.values()];
 }
 
-export function createPlanetProvider({ id, name, icon, cinemaId }) {
+export function createPlanetProvider({ id, name, short, icon, cinemaId }) {
   return {
     id,
     name,
+    short,
     icon,
     async fetchShows() {
       const dates = await fetchDates(cinemaId);

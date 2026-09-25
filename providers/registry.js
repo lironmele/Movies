@@ -5,6 +5,9 @@
 //   {
 //     id:   string,                 // stable id
 //     name: string,                 // display label (theater name)
+//     short: string,                // branch name alone, e.g. "גלילות" — shown next
+//                                   // to the logo so two branches of one chain
+//                                   // (same logo) stay distinguishable
 //     icon: string,                 // path to the theater's logo (assets/icons)
 //     async fetchShows(): Show[]    // see the normalized shape below
 //   }
@@ -29,30 +32,40 @@ export const providers = [
   createCinemaCityProvider({
     id: "cc-galilot",
     name: "Cinema City · גלילות",
+    short: "גלילות",
     icon: "assets/icons/cinema-city.png",
     theatreId: 1170,
+  }),
+  createCinemaCityProvider({
+    id: "cc-kfar-saba",
+    name: "Cinema City · כפר סבא",
+    short: "כפר סבא",
+    icon: "assets/icons/cinema-city.png",
+    theatreId: 1175,
   }),
   createLevProvider({
     id: "lev-ramat-hasharon",
     name: "לב · רמת השרון",
+    short: "רמת השרון",
     icon: "assets/icons/lev.png",
     locationId: 1162,
   }),
   createPlanetProvider({
     id: "planet-ayalon",
     name: "פלאנט · אילון",
+    short: "אילון",
     icon: "assets/icons/planet-cinema.png",
     cinemaId: 1025,
   }),
   // Add more providers here. For other Cinema City branches, reuse the factory
   // with that branch's TheatreId, e.g.:
-  //   createCinemaCityProvider({ id: "cc-rishon", name: "Cinema City · ראשון", icon: "assets/icons/cinema-city.png", theatreId: <id> }),
+  //   createCinemaCityProvider({ id: "cc-rishon", name: "Cinema City · ראשון", short: "ראשון", icon: "assets/icons/cinema-city.png", theatreId: <id> }),
   // For other Lev branches, reuse createLevProvider with that branch's locationId
   // (see ../docs/lev-presentations-api.md §7), e.g.:
-  //   createLevProvider({ id: "lev-telaviv", name: "לב · תל אביב", icon: "assets/icons/lev.png", locationId: 1150 }),
+  //   createLevProvider({ id: "lev-telaviv", name: "לב · תל אביב", short: "תל אביב", icon: "assets/icons/lev.png", locationId: 1150 }),
   // For other Planet Cinema branches, reuse createPlanetProvider with that
   // branch's cinemaId (see ../docs/planet-cinema-api.md §2), e.g.:
-  //   createPlanetProvider({ id: "planet-haifa", name: "פלאנט · חיפה", icon: "assets/icons/planet-cinema.png", cinemaId: 1070 }),
+  //   createPlanetProvider({ id: "planet-haifa", name: "פלאנט · חיפה", short: "חיפה", icon: "assets/icons/planet-cinema.png", cinemaId: 1070 }),
 ];
 
 // Collapse near-identical titles so the same movie from two theaters merges into
