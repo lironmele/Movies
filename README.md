@@ -4,7 +4,8 @@ A page that displays cinema schedules grouped by movie and by day. Every theater
 is shown at once: the schedules from all providers are merged into a single movie
 list, and each showtime is tagged with the theater's logo so you can see where it
 plays. It is built around **pluggable movie providers** — Cinema City Galilot,
-Cinema City Kfar Saba, Lev Ramat HaSharon and Planet Ayalon are bundled today, and more can be added
+Cinema City Kfar Saba, Lev Ramat HaSharon, Planet Ayalon and the Tel Aviv
+Cinematheque are bundled today, and more can be added
 without touching the UI.
 
 The project is in two parts:
@@ -32,6 +33,7 @@ providers/
   cinema-city.js        Cinema City provider factory (any branch by TheatreId)
   lev.js                Lev Cinema provider factory (any branch by locationId)
   planet.js             Planet Cinema provider factory (any branch by cinemaId)
+  cinematheque.js       Tel Aviv Cinematheque provider (scrapes cinema.co.il/shown/)
 assets/icons/           theater logos, fetched from each cinema's website
 .github/workflows/update-data.yml   the daily cron job
 ```
@@ -153,6 +155,18 @@ createPlanetProvider({ id: "planet-haifa", name: "פלאנט · חיפה", short
   screenings by `filmId`, and sorts chronologically. A single date that fails to
   load is tolerated; the branch only errors if every date request fails.
 - Each showtime links to the `bookingLink` returned on the event.
+
+## The Tel Aviv Cinematheque provider
+
+- Scrapes the public "by day" page `https://www.cinema.co.il/shown/?date=…` —
+  see [`docs/cinematheque-tlv-shown.md`](docs/cinematheque-tlv-shown.md). Its
+  ticketing API (Presentations, like Lev) is behind Cloudflare and blocks
+  datacenter IPs, so the HTML page is the reliable source.
+- Makes one request per day for the next 14 days, reads the "by hour" tab, and
+  groups screenings by title. A single day that fails is tolerated; the provider
+  only errors if every day fails.
+- Each showtime links to its `cintlv.pres.global/order/{id}` page (or the
+  event's details page when it has no order link).
 
 ## Daily update (GitHub Actions)
 
