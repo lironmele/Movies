@@ -27,6 +27,7 @@
 import { createCinemaCityProvider } from "./cinema-city.js";
 import { createLevProvider } from "./lev.js";
 import { createPlanetProvider } from "./planet.js";
+import { createCinemathequeProvider } from "./cinematheque.js";
 
 export const providers = [
   createCinemaCityProvider({
@@ -56,6 +57,12 @@ export const providers = [
     short: "אילון",
     icon: "assets/icons/planet-cinema.png",
     cinemaId: 1025,
+  }),
+  createCinemathequeProvider({
+    id: "cinematheque-tlv",
+    name: "סינמטק · תל אביב",
+    short: "תל אביב",
+    icon: "assets/icons/cinematheque-tlv.jpg",
   }),
   // Add more providers here. For other Cinema City branches, reuse the factory
   // with that branch's TheatreId, e.g.:
