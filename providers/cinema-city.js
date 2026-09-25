@@ -77,12 +77,13 @@ function groupShows(events) {
   return [...shows.values()];
 }
 
-export function createCinemaCityProvider({ id, name, short, icon, theatreId, includeVip = true }) {
+export function createCinemaCityProvider({ id, name, short, icon, region, theatreId, includeVip = true }) {
   return {
     id,
     name,
     short,
     icon,
+    region,
     async fetchShows() {
       const venues = includeVip ? [VENUE_STANDARD, VENUE_VIP] : [VENUE_STANDARD];
       const results = await Promise.allSettled(

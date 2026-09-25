@@ -48,34 +48,46 @@ movies themselves by total number of screenings (most first) — and writes
 ```json
 {
   "generatedAt": "2026-06-22T03:00:00.000Z",
-  "providers": [ { "id": "...", "name": "...", "icon": "..." } ],
+  "regions": [ { "id": "sharon", "name": "השרון" } ],
+  "providers": [ { "id": "...", "name": "...", "short": "...", "icon": "...", "region": "sharon" } ],
   "shows": [ { "key": "...", "name": "...", "screenings": [ /* tagged */ ] } ],
   "errors": [ { "provider": "...", "reason": "..." } ]
 }
 ```
 
-The page reads that file on load. A legend under the title maps each logo to its
-theater; if a provider failed during the last build, it is listed in `errors` and
+The page reads that file on load. If a provider failed during the last build, it is listed in `errors` and
 shown in a small banner without blocking the rest.
 
 ## Many theaters, shared logos
 
-Branches of one chain share a logo, so the UI never relies on the logo alone:
+The page is built to stay usable as the theater list grows, and since branches
+of one chain share a logo, it never relies on the logo alone:
 
-- **Legend = theater filter.** Each legend chip toggles that theater on/off; the
-  choice is remembered in `localStorage`, so a long list can be trimmed once to
-  "my cinemas". Days, counts and ordering follow the theaters that are on.
-- **Showtimes grouped by theater.** Inside a day, every theater gets its own line
-  headed by its logo + branch name (`short`), with its times after it.
-- **One logo per chain on the collapsed row.** A small number next to a logo says
-  how many of that chain's branches show the movie; the tooltip names them.
+- **"My cinemas" picker.** One button above the search summarizes the choice
+  ("3 בתי קולנוע · השרון") and opens a sheet with the theaters grouped by
+  region. Regions are folded rows with an `on/total` count and a "בחירת כולם"
+  toggle; "רק <אזור>" shortcuts and a city/chain search sit on top. The choice
+  is remembered in `localStorage` (an empty choice means "all theaters", so new
+  theaters appear by default). Days, counts and ordering follow it.
+- **First-visit region prompt.** Until the viewer has chosen, a card above the
+  search asks "איפה אתם רואים סרטים?" and filters to a region in one tap (or
+  keeps every theater). It only shows when there is more than one region.
+- **One day at a time.** The day strip starts on today (היום / מחר / weekday +
+  date); showtimes that already started are dimmed.
+- **Compact movie rows.** Each row shows the next showing, at most three chain
+  logos plus "+N", and how many theaters show it.
+- **Opened movie.** Theaters are grouped under region headers, one line each
+  (logo + branch name `short`), folding after six with "הצגת עוד N". A
+  "לפי שעה" switch lists every time in order, split into part of day, with
+  each time carrying its theater.
 
 ## Booking inline
 
-Clicking a showtime opens its `bookingUrl` in an iframe right under that day's
+Clicking a showtime opens its `bookingUrl` in an iframe right under that theater's
 times instead of sending you to a new tab, so you keep the schedule in view while
 you book. One frame is open at a time; it closes when you click the same time
-again, hit the ✕, collapse the movie, or change the day/search. The chip is still
+again, hit the ✕, collapse the movie, or change the day/search/theaters. In the
+"לפי שעה" view the frame opens under that part of the day. The chip is still
 a real link, so ctrl/cmd/middle-click keeps the browser's own new-tab behavior and
 the frame's title bar carries a "פתיחה בלשונית" escape hatch for any ticket page
 that misbehaves when framed.
@@ -90,6 +102,7 @@ A provider is any object shaped like:
   name: "My Cinema",          // theater name (legend + tooltip)
   short: "Downtown",          // branch name, shown next to its showtimes
   icon: "assets/icons/my.png",// theater logo shown next to each showtime
+  region: "tlv",              // one of the `regions` ids in registry.js
   async fetchShows() {        // returns the normalized shape below
     return [
       {
@@ -105,28 +118,29 @@ A provider is any object shaped like:
 }
 ```
 
-Add it to the array in [`providers/registry.js`](providers/registry.js) and drop
+Add it to the array in [`providers/registry.js`](providers/registry.js) with a
+`region` from the `regions` list there (add a region if none fits), and drop
 its logo in `assets/icons/` (grab the theater's own favicon/PNG from its site).
 The UI only ever sees the normalized shape — plus the per-screening theater tag
 that `fetchAllShows()` adds — so it never needs to change. For another Cinema
 City branch, reuse the factory with that branch's `TheatreId`:
 
 ```js
-createCinemaCityProvider({ id: "cc-rishon", name: "Cinema City · ראשון", short: "ראשון", icon: "assets/icons/cinema-city.png", theatreId: <id> })
+createCinemaCityProvider({ id: "cc-rishon", name: "Cinema City · ראשון", short: "ראשון", icon: "assets/icons/cinema-city.png", region: "tlv", theatreId: <id> })
 ```
 
 For another Lev branch, reuse its factory with that branch's `locationId`
 (branch IDs are listed in [`docs/lev-presentations-api.md`](docs/lev-presentations-api.md)):
 
 ```js
-createLevProvider({ id: "lev-telaviv", name: "לב · תל אביב", short: "תל אביב", icon: "assets/icons/lev.png", locationId: 1150 })
+createLevProvider({ id: "lev-telaviv", name: "לב · תל אביב", short: "תל אביב", icon: "assets/icons/lev.png", region: "tlv", locationId: 1150 })
 ```
 
 For another Planet Cinema branch, reuse its factory with that branch's `cinemaId`
 (branch IDs are listed in [`docs/planet-cinema-api.md`](docs/planet-cinema-api.md)):
 
 ```js
-createPlanetProvider({ id: "planet-haifa", name: "פלאנט · חיפה", short: "חיפה", icon: "assets/icons/planet-cinema.png", cinemaId: 1070 })
+createPlanetProvider({ id: "planet-haifa", name: "פלאנט · חיפה", short: "חיפה", icon: "assets/icons/planet-cinema.png", region: "north", cinemaId: 1070 })
 ```
 
 ## The Cinema City provider

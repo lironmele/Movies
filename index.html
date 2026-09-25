@@ -96,33 +96,10 @@
     }
     .search input:focus ~ .icon { color: var(--amber); }
 
-    /* Theater legend — a key for the logos, and a toggle per theater */
-    .legend {
-      display: flex;
-      gap: 6px;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin: 18px 0 0;
-    }
-    .legend-item {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      background: transparent;
-      color: var(--text);
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 4px 11px 4px 8px;
-      font-family: var(--sans);
-      font-size: .8rem;
-      cursor: pointer;
-      transition: color .15s ease, border-color .15s ease, opacity .15s ease;
-    }
-    .legend-item:hover { border-color: var(--muted); }
-    .legend-item.off { color: var(--muted); opacity: .55; }
-    .legend-item.off span { text-decoration: line-through; }
-    .legend-item.off .logo { filter: grayscale(1); }
-    /* Shared theater logo: in the legend and inside each time chip */
+    [hidden] { display: none !important; }
+    :focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+
+    /* Shared theater logo: in the picker, the movie rows and each theater line */
     .logo {
       width: 16px;
       height: 16px;
@@ -132,6 +109,257 @@
       padding: 1px;
       flex: none;
     }
+    /* Overlapping chain logos, capped with a "+N" */
+    .stack { display: inline-flex; align-items: center; }
+    .stack .logo { box-shadow: 0 0 0 2px var(--panel); }
+    .stack .logo + .logo { margin-inline-start: -4px; }
+    .stack .more {
+      margin-inline-start: 4px;
+      font-size: .7rem;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+    .link {
+      background: none;
+      border: 0;
+      padding: 2px;
+      color: var(--muted);
+      text-decoration: underline;
+      font-family: var(--sans);
+      font-size: .8rem;
+      cursor: pointer;
+    }
+    .link:hover { color: var(--amber); }
+    .quick { display: flex; gap: 6px; flex-wrap: wrap; }
+    .quick button {
+      background: transparent;
+      color: var(--muted);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-family: var(--sans);
+      font-size: .76rem;
+      cursor: pointer;
+    }
+    .quick button:hover { color: var(--text); border-color: var(--muted); }
+    .seg {
+      display: inline-flex;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 2px;
+      background: var(--panel);
+    }
+    .seg button {
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      padding: 3px 12px;
+      border-radius: 999px;
+      font-family: var(--sans);
+      font-size: .75rem;
+      cursor: pointer;
+    }
+    .seg button.on { background: var(--amber); color: #1c1206; font-weight: 500; }
+
+    /* "My cinemas" — one button that summarizes the choice, opening a sheet */
+    .picker { margin: 22px 0 0; }
+    .picker-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      max-width: 100%;
+      background: var(--panel);
+      color: var(--text);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 14px 6px 10px;
+      font-family: var(--sans);
+      font-size: .86rem;
+      cursor: pointer;
+      transition: border-color .15s ease;
+    }
+    .picker-btn:hover, .picker-btn[aria-expanded="true"] { border-color: var(--amber); }
+    .picker-btn .sub { color: var(--muted); font-size: .78rem; }
+    .picker-btn .chev { color: var(--muted); font-size: .7rem; }
+    /* Confirms a change of theaters on the control that owns them */
+    .picker-btn.flash { animation: flash 1.2s ease-out 1; }
+    @keyframes flash {
+      0% { box-shadow: 0 0 0 6px var(--amber-soft); border-color: var(--amber); }
+      100% { box-shadow: 0 0 0 0 transparent; }
+    }
+    .picker-sheet {
+      margin-top: 10px;
+      background: var(--panel);
+      border: 1px solid var(--amber);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 24px 60px -30px rgba(255, 180, 61, .45);
+    }
+    .picker-head {
+      padding: 12px 14px 10px;
+      border-bottom: 1px solid var(--line);
+      display: grid;
+      gap: 10px;
+    }
+    .picker-head input {
+      width: 100%;
+      background: var(--panel-hi);
+      color: var(--text);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 9px 12px;
+      font-family: var(--sans);
+      font-size: .9rem;
+      outline: none;
+    }
+    .picker-head input:focus { border-color: var(--amber); }
+    /* The list scrolls inside the sheet; a fade + cue says there's more below */
+    .picker-scroll { position: relative; }
+    .picker-body {
+      max-height: 360px;
+      overflow-y: auto;
+      padding: 4px 6px 8px;
+      scrollbar-width: thin;
+      scrollbar-color: var(--muted) transparent;
+    }
+    .picker-body::-webkit-scrollbar { width: 6px; }
+    .picker-body::-webkit-scrollbar-thumb { background: var(--muted); border-radius: 3px; }
+    .scroll-cue {
+      position: absolute;
+      inset-inline: 0;
+      bottom: 0;
+      height: 56px;
+      pointer-events: none;
+      background: linear-gradient(to bottom, transparent, var(--panel) 75%);
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 6px;
+      font-size: .72rem;
+      color: var(--amber);
+    }
+    .p-region { border-bottom: 1px solid var(--line); }
+    .p-region:last-child { border-bottom: 0; }
+    .p-region-head { display: flex; align-items: center; gap: 8px; padding: 2px 4px; }
+    .p-region-toggle {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+      background: none;
+      border: 0;
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: .9rem;
+      cursor: pointer;
+      padding: 10px 4px;
+      text-align: start;
+    }
+    .p-region-toggle .caret {
+      color: var(--muted);
+      font-size: .7rem;
+      width: 10px;
+      transition: transform .15s ease;
+    }
+    .p-region.open .p-region-toggle .caret { transform: rotate(-90deg); }
+    .p-region-toggle .cnt {
+      font-size: .72rem;
+      color: var(--muted);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0 8px;
+      font-variant-numeric: tabular-nums;
+    }
+    .p-region-toggle .cnt.some { color: var(--amber); border-color: var(--amber); }
+    .p-region-all {
+      background: none;
+      border: 0;
+      color: var(--amber);
+      font-family: var(--sans);
+      font-size: .74rem;
+      cursor: pointer;
+      padding: 4px 6px;
+      flex: none;
+    }
+    .p-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+      gap: 2px 8px;
+      padding: 4px 4px 10px;
+    }
+    .p-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px;
+      border-radius: 8px;
+      font-size: .84rem;
+      cursor: pointer;
+      color: var(--muted);
+    }
+    .p-item:hover { background: var(--panel-hi); }
+    .p-item.on { color: var(--text); }
+    .p-item input { accent-color: var(--amber); margin: 0; width: 15px; height: 15px; flex: none; }
+    .p-item .nm { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .picker-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 14px;
+      border-top: 1px solid var(--line);
+      font-size: .8rem;
+      color: var(--muted);
+    }
+    .picker-foot .left { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; }
+    .picker-foot .tally { font-size: .76rem; font-variant-numeric: tabular-nums; }
+    .picker-foot .done {
+      background: var(--amber);
+      color: #1c1206;
+      border: 0;
+      border-radius: 999px;
+      padding: 7px 16px;
+      font-family: var(--sans);
+      font-weight: 500;
+      font-size: .84rem;
+      cursor: pointer;
+    }
+
+    /* First visit: the one thing to do before anything else, so it gets the beam */
+    .onboard {
+      margin: 18px 0 4px;
+      padding: 20px 18px 16px;
+      border: 1px solid var(--amber);
+      border-radius: 16px;
+      background: linear-gradient(var(--amber-soft), var(--amber-soft)), var(--panel);
+      box-shadow: 0 0 0 4px var(--amber-soft), 0 24px 60px -24px rgba(255, 180, 61, .55);
+      display: grid;
+      gap: 14px;
+      text-align: center;
+      animation: beam 1.6s ease-out 1;
+    }
+    @keyframes beam {
+      0% { box-shadow: 0 0 0 0 rgba(255, 180, 61, .55), 0 24px 60px -24px rgba(255, 180, 61, .55); }
+      100% { box-shadow: 0 0 0 4px var(--amber-soft), 0 24px 60px -24px rgba(255, 180, 61, .55); }
+    }
+    .onboard h2 {
+      margin: 0;
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: 1.45rem;
+      line-height: 1.2;
+    }
+    .onboard p { margin: 0; color: var(--muted); font-size: .86rem; }
+    .onboard .quick { justify-content: center; gap: 8px; }
+    .onboard .quick button {
+      font-size: .92rem;
+      padding: 8px 16px;
+      color: var(--text);
+      background: var(--panel-hi);
+    }
+    .onboard .quick button:hover { border-color: var(--amber); color: var(--amber); }
+    .onboard .link { justify-self: center; }
 
     /* Day filter — single quiet scrollable strip */
     .days {
@@ -166,6 +394,7 @@
       border-color: var(--amber);
       font-weight: 500;
     }
+    .day-chip small { opacity: .75; margin-inline-start: 4px; font-size: .72rem; }
 
     /* Movie list (accordion) */
     .movie-list { display: flex; flex-direction: column; gap: 8px; }
@@ -201,32 +430,22 @@
       text-overflow: ellipsis;
       white-space: nowrap;
     }
-    /* Right side of a collapsed row: theater logos + screening count. The
-       logos show which cinemas a movie plays at without expanding the card. */
+    /* Right side of a collapsed row: next showing, a capped logo stack and the
+       number of theaters, so the title keeps its room however many there are. */
     .movie-item .meta {
       display: inline-flex;
       align-items: center;
       gap: 10px;
       flex: none;
     }
-    .movie-item .theaters {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-    /* One logo per chain; the number counts its branches showing the movie */
-    .movie-item .chain {
-      display: inline-flex;
-      align-items: center;
-      gap: 2px;
-    }
-    .movie-item .branches {
+    .movie-item .next {
       font-family: var(--sans);
-      font-size: .68rem;
-      font-weight: 500;
+      font-size: .74rem;
+      font-weight: 400;
       color: var(--muted);
       font-variant-numeric: tabular-nums;
     }
+    .movie-item .next b { color: var(--text); font-weight: 500; }
     .movie-item .count {
       font-family: var(--sans);
       font-size: .78rem;
@@ -238,8 +457,37 @@
 
     /* Expanded showtimes panel */
     .movie-panel { padding: 4px 18px 16px; border-top: 1px solid var(--line); }
-    .day-group { margin-top: 14px; }
-    .day-group .label { font-size: .78rem; color: var(--muted); margin-bottom: 8px; }
+    .panel-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+    .panel-bar .hint { font-size: .78rem; color: var(--muted); }
+    .region-block { margin-top: 12px; }
+    .region-label, .slot .label {
+      font-size: .78rem;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .region-label { display: flex; align-items: center; gap: 8px; }
+    .region-label::after { content: ""; flex: 1; border-top: 1px solid var(--line); }
+    .slot { margin-top: 14px; }
+    .show-more {
+      margin-top: 8px;
+      width: 100%;
+      background: none;
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      padding: 6px 12px;
+      color: var(--muted);
+      font-family: var(--sans);
+      font-size: .8rem;
+      cursor: pointer;
+    }
+    .show-more:hover { color: var(--amber); border-color: var(--amber); }
     /* One line per theater within a day: logo + branch name, then its times */
     .theater-line {
       display: flex;
@@ -267,6 +515,7 @@
     .time {
       display: inline-flex;
       align-items: center;
+      gap: 6px;
       background: var(--panel-hi);
       border: 1px solid var(--line);
       border-radius: 8px;
@@ -278,6 +527,9 @@
       transition: border-color .15s ease, color .15s ease;
     }
     .time:hover { border-color: var(--amber); color: var(--amber); }
+    /* Already started: still a link (late arrivals), but visibly behind us */
+    .time.past { opacity: .45; text-decoration: line-through; }
+    .time .where { font-size: .72rem; color: var(--muted); }
     .time.open {
       border-color: var(--amber);
       background: var(--amber-soft);
@@ -358,6 +610,28 @@
       background: var(--amber);
       animation: pulse 1s ease-in-out infinite;
     }
+    .toast {
+      position: fixed;
+      inset-inline: 16px;
+      bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+      margin: 0 auto;
+      max-width: 420px;
+      text-align: center;
+      padding: 10px 14px;
+      background: var(--panel-hi);
+      border: 1px solid var(--amber);
+      border-radius: 10px;
+      font-size: .85rem;
+      z-index: 10;
+    }
+
+    @media (max-width: 480px) {
+      .movie-item { padding: 14px; font-size: 1.08rem; }
+      .movie-panel { padding: 4px 14px 14px; }
+      .movie-item .next { display: none; }
+      .p-grid { grid-template-columns: 1fr; }
+    }
+
     @keyframes pulse { 0%, 100% { opacity: .3; } 50% { opacity: 1; } }
 
     @media (prefers-reduced-motion: reduce) {
@@ -373,7 +647,8 @@
   </header>
 
   <main>
-    <div id="legend" class="legend"></div>
+    <div id="picker" class="picker"></div>
+    <div id="onboard"></div>
 
     <div class="search">
       <input id="search" type="text" placeholder="התחילו להקליד שם של סרט…" spellcheck="false" autocomplete="off" aria-label="חיפוש סרט">
@@ -385,6 +660,7 @@
     <div id="movieList" class="movie-list"></div>
     <div id="note" class="note"><span>טוען הקרנות</span><span class="skeleton-dot"></span></div>
   </main>
+  <div id="toast" class="toast" role="status" hidden></div>
 
   <script type="module" src="app.js"></script>
 </body>
