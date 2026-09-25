@@ -29,6 +29,7 @@ import { createCinemaCityProvider } from "./cinema-city.js";
 import { createLevProvider } from "./lev.js";
 import { createPlanetProvider, RAV_HEN_BASE } from "./planet.js";
 import { createCinemathequeProvider } from "./cinematheque.js";
+import { createHotCinemaProvider } from "./hot-cinema.js";
 
 // Regions, in display order. The theater picker groups by these and offers a
 // one-tap "only this region" shortcut; regions with no theater are not shown.
@@ -50,12 +51,68 @@ export const providers = [
     theatreId: 1170,
   }),
   createCinemaCityProvider({
+    id: "cc-rishon",
+    name: "Cinema City · ראשון לציון",
+    short: "ראשון לציון",
+    icon: "assets/icons/cinema-city.png",
+    region: "tlv",
+    theatreId: 1173,
+  }),
+  createCinemaCityProvider({
+    id: "cc-jerusalem",
+    name: "Cinema City · ירושלים",
+    short: "ירושלים",
+    icon: "assets/icons/cinema-city.png",
+    region: "jlm",
+    theatreId: 1174,
+  }),
+  createCinemaCityProvider({
     id: "cc-kfar-saba",
     name: "Cinema City · כפר סבא",
     short: "כפר סבא",
     icon: "assets/icons/cinema-city.png",
     region: "sharon",
     theatreId: 1175,
+  }),
+  createCinemaCityProvider({
+    id: "cc-netanya",
+    name: "Cinema City · נתניה",
+    short: "נתניה",
+    icon: "assets/icons/cinema-city.png",
+    region: "sharon",
+    theatreId: 1176,
+  }),
+  createCinemaCityProvider({
+    id: "cc-hadera",
+    name: "Cinema City · חדרה",
+    short: "חדרה",
+    icon: "assets/icons/cinema-city.png",
+    region: "sharon",
+    theatreId: 1350,
+  }),
+  createCinemaCityProvider({
+    id: "cc-beer-sheva",
+    name: "Cinema City · באר שבע",
+    short: "באר שבע",
+    icon: "assets/icons/cinema-city.png",
+    region: "south",
+    theatreId: 1178,
+  }),
+  createCinemaCityProvider({
+    id: "cc-ashdod",
+    name: "Cinema City · אשדוד",
+    short: "אשדוד",
+    icon: "assets/icons/cinema-city.png",
+    region: "south",
+    theatreId: 1181,
+  }),
+  createLevProvider({
+    id: "lev-telaviv",
+    name: "לב · תל אביב",
+    short: "תל אביב",
+    icon: "assets/icons/lev.png",
+    region: "tlv",
+    locationId: 1150,
   }),
   createLevProvider({
     id: "lev-ramat-hasharon",
@@ -65,6 +122,46 @@ export const providers = [
     region: "sharon",
     locationId: 1162,
   }),
+  createLevProvider({
+    id: "lev-raanana",
+    name: "לב · רעננה",
+    short: "רעננה",
+    icon: "assets/icons/lev.png",
+    region: "sharon",
+    locationId: 1161,
+  }),
+  createLevProvider({
+    id: "lev-even-yehuda",
+    name: "לב · אבן יהודה",
+    short: "אבן יהודה",
+    icon: "assets/icons/lev.png",
+    region: "sharon",
+    locationId: 1151,
+  }),
+  createLevProvider({
+    id: "lev-daniel",
+    name: "לב · דניאל",
+    short: "דניאל",
+    icon: "assets/icons/lev.png",
+    region: "sharon",
+    locationId: 1154,
+  }),
+  createLevProvider({
+    id: "lev-smadar",
+    name: "לב · סמדר",
+    short: "סמדר",
+    icon: "assets/icons/lev.png",
+    region: "jlm",
+    locationId: 1158,
+  }),
+  createLevProvider({
+    id: "lev-omer",
+    name: "לב · עומר",
+    short: "עומר",
+    icon: "assets/icons/lev.png",
+    region: "south",
+    locationId: 1155,
+  }),
   createPlanetProvider({
     id: "planet-ayalon",
     name: "פלאנט · אילון",
@@ -72,6 +169,46 @@ export const providers = [
     icon: "assets/icons/planet-cinema.png",
     region: "tlv",
     cinemaId: 1025,
+  }),
+  createPlanetProvider({
+    id: "planet-rishon",
+    name: "פלאנט · ראשון לציון",
+    short: "ראשון לציון",
+    icon: "assets/icons/planet-cinema.png",
+    region: "tlv",
+    cinemaId: 1072,
+  }),
+  createPlanetProvider({
+    id: "planet-jerusalem",
+    name: "פלאנט · ירושלים",
+    short: "ירושלים",
+    icon: "assets/icons/planet-cinema.png",
+    region: "jlm",
+    cinemaId: 1073,
+  }),
+  createPlanetProvider({
+    id: "planet-haifa",
+    name: "פלאנט · חיפה",
+    short: "חיפה",
+    icon: "assets/icons/planet-cinema.png",
+    region: "north",
+    cinemaId: 1070,
+  }),
+  createPlanetProvider({
+    id: "planet-zichron",
+    name: "פלאנט · זכרון יעקב",
+    short: "זכרון יעקב",
+    icon: "assets/icons/planet-cinema.png",
+    region: "north",
+    cinemaId: 1075,
+  }),
+  createPlanetProvider({
+    id: "planet-beer-sheva",
+    name: "פלאנט · באר שבע",
+    short: "באר שבע",
+    icon: "assets/icons/planet-cinema.png",
+    region: "south",
+    cinemaId: 1074,
   }),
   createPlanetProvider({
     id: "rav-hen-givatayim",
@@ -98,15 +235,91 @@ export const providers = [
     icon: "assets/icons/cinematheque-tlv.jpg",
     region: "tlv",
   }),
-  // Add more providers here. For other Cinema City branches, reuse the factory
-  // with that branch's TheatreId, e.g.:
-  //   createCinemaCityProvider({ id: "cc-rishon", name: "Cinema City · ראשון", short: "ראשון", icon: "assets/icons/cinema-city.png", region: "tlv", theatreId: <id> }),
-  // For other Lev branches, reuse createLevProvider with that branch's locationId
-  // (see ../docs/lev-presentations-api.md §7), e.g.:
-  //   createLevProvider({ id: "lev-telaviv", name: "לב · תל אביב", short: "תל אביב", icon: "assets/icons/lev.png", region: "tlv", locationId: 1150 }),
-  // For other Planet Cinema branches, reuse createPlanetProvider with that
-  // branch's cinemaId (see ../docs/planet-cinema-api.md §2), e.g.:
-  //   createPlanetProvider({ id: "planet-haifa", name: "פלאנט · חיפה", short: "חיפה", icon: "assets/icons/planet-cinema.png", region: "north", cinemaId: 1070 }),
+  createHotCinemaProvider({
+    id: "hot-petah-tikva",
+    name: "Hot Cinema · פתח תקווה",
+    short: "פתח תקווה",
+    icon: "assets/icons/hot-cinema.png",
+    region: "tlv",
+    theaterId: 14,
+  }),
+  createHotCinemaProvider({
+    id: "hot-rehovot",
+    name: "Hot Cinema · רחובות",
+    short: "רחובות",
+    icon: "assets/icons/hot-cinema.png",
+    region: "tlv",
+    theaterId: 17,
+  }),
+  createHotCinemaProvider({
+    id: "hot-modiin",
+    name: "Hot Cinema · מודיעין",
+    short: "מודיעין",
+    icon: "assets/icons/hot-cinema.png",
+    region: "tlv",
+    theaterId: 1,
+  }),
+  createHotCinemaProvider({
+    id: "hot-kfar-saba",
+    name: "Hot Cinema · כפר סבא",
+    short: "כפר סבא",
+    icon: "assets/icons/hot-cinema.png",
+    region: "sharon",
+    theaterId: 16,
+  }),
+  createHotCinemaProvider({
+    id: "hot-haifa",
+    name: "Hot Cinema · חיפה",
+    short: "חיפה",
+    icon: "assets/icons/hot-cinema.png",
+    region: "north",
+    theaterId: 9,
+  }),
+  createHotCinemaProvider({
+    id: "hot-kiryon",
+    name: "Hot Cinema · קריון",
+    short: "קריון",
+    icon: "assets/icons/hot-cinema.png",
+    region: "north",
+    theaterId: 2,
+  }),
+  createHotCinemaProvider({
+    id: "hot-karmiel",
+    name: "Hot Cinema · כרמיאל",
+    short: "כרמיאל",
+    icon: "assets/icons/hot-cinema.png",
+    region: "north",
+    theaterId: 15,
+  }),
+  createHotCinemaProvider({
+    id: "hot-nahariya",
+    name: "Hot Cinema · נהריה",
+    short: "נהריה",
+    icon: "assets/icons/hot-cinema.png",
+    region: "north",
+    theaterId: 6,
+  }),
+  createHotCinemaProvider({
+    id: "hot-ashdod",
+    name: "Hot Cinema · אשדוד",
+    short: "אשדוד",
+    icon: "assets/icons/hot-cinema.png",
+    region: "south",
+    theaterId: 5,
+  }),
+  createHotCinemaProvider({
+    id: "hot-ashkelon",
+    name: "Hot Cinema · אשקלון",
+    short: "אשקלון",
+    icon: "assets/icons/hot-cinema.png",
+    region: "south",
+    theaterId: 8,
+  }),
+  // Add more providers here. Every chain's factory takes that branch's id, so
+  // a new branch is one more entry: Cinema City `theatreId` (the `TixTheatreId`
+  // in the site's theater list), Lev `locationId` (../docs/lev-presentations-api.md
+  // §7), Planet / Rav-Hen `cinemaId` (../docs/planet-cinema-api.md §2) and Hot
+  // Cinema `theaterId` (../docs/hot-cinema-api.md).
 ];
 
 // Collapse near-identical titles so the same movie from two theaters merges into
