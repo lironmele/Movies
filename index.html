@@ -96,10 +96,10 @@
     }
     .search input:focus ~ .icon { color: var(--amber); }
 
-    /* Theater legend — a key for the small logos shown next to each showtime */
+    /* Theater legend — a key for the logos, and a toggle per theater */
     .legend {
       display: flex;
-      gap: 8px 18px;
+      gap: 6px;
       justify-content: center;
       flex-wrap: wrap;
       margin: 18px 0 0;
@@ -108,9 +108,20 @@
       display: inline-flex;
       align-items: center;
       gap: 7px;
-      color: var(--muted);
-      font-size: .82rem;
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 4px 11px 4px 8px;
+      font-family: var(--sans);
+      font-size: .8rem;
+      cursor: pointer;
+      transition: color .15s ease, border-color .15s ease, opacity .15s ease;
     }
+    .legend-item:hover { border-color: var(--muted); }
+    .legend-item.off { color: var(--muted); opacity: .55; }
+    .legend-item.off span { text-decoration: line-through; }
+    .legend-item.off .logo { filter: grayscale(1); }
     /* Shared theater logo: in the legend and inside each time chip */
     .logo {
       width: 16px;
@@ -201,7 +212,20 @@
     .movie-item .theaters {
       display: inline-flex;
       align-items: center;
-      gap: 4px;
+      gap: 6px;
+    }
+    /* One logo per chain; the number counts its branches showing the movie */
+    .movie-item .chain {
+      display: inline-flex;
+      align-items: center;
+      gap: 2px;
+    }
+    .movie-item .branches {
+      font-family: var(--sans);
+      font-size: .68rem;
+      font-weight: 500;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
     }
     .movie-item .count {
       font-family: var(--sans);
@@ -216,11 +240,33 @@
     .movie-panel { padding: 4px 18px 16px; border-top: 1px solid var(--line); }
     .day-group { margin-top: 14px; }
     .day-group .label { font-size: .78rem; color: var(--muted); margin-bottom: 8px; }
-    .times { display: flex; flex-wrap: wrap; gap: 8px; }
+    /* One line per theater within a day: logo + branch name, then its times */
+    .theater-line {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 6px 0;
+    }
+    .theater-line + .theater-line { border-top: 1px dashed var(--line); }
+    .theater-line .theater {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      flex: none;
+      width: 92px;
+      min-height: 34px;
+      font-size: .78rem;
+      color: var(--muted);
+    }
+    .theater-line .theater span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .times { display: flex; flex-wrap: wrap; gap: 6px; min-width: 0; }
     .time {
       display: inline-flex;
       align-items: center;
-      gap: 7px;
       background: var(--panel-hi);
       border: 1px solid var(--line);
       border-radius: 8px;
