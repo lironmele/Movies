@@ -3,9 +3,9 @@
 A page that displays cinema schedules grouped by movie and by day. Every theater
 is shown at once: the schedules from all providers are merged into a single movie
 list, and each showtime is tagged with the theater's logo so you can see where it
-plays. It is built around **pluggable movie providers** — Cinema City Galilot,
-Cinema City Kfar Saba, Lev Ramat HaSharon, Planet Ayalon, Rav-Hen Givatayim,
-Rav-Hen Dizengoff and the Tel Aviv Cinematheque are bundled today, and more can be added
+plays. It is built around **pluggable movie providers** — every branch of
+Cinema City, Hot Cinema, Lev and Planet, Rav-Hen Givatayim and Dizengoff, and the
+Tel Aviv Cinematheque are bundled today (34 theaters), and more can be added
 without touching the UI.
 
 The project is in two parts:
@@ -33,6 +33,7 @@ providers/
   cinema-city.js        Cinema City provider factory (any branch by TheatreId)
   lev.js                Lev Cinema provider factory (any branch by locationId)
   planet.js             Planet Cinema / Rav-Hen provider factory (any branch by cinemaId)
+  hot-cinema.js         Hot Cinema provider factory (any branch by site theaterId)
   cinematheque.js       Tel Aviv Cinematheque provider (scrapes cinema.co.il/shown/)
 assets/icons/           theater logos, fetched from each cinema's website
 .github/workflows/update-data.yml   the daily cron job
@@ -122,26 +123,16 @@ Add it to the array in [`providers/registry.js`](providers/registry.js) with a
 `region` from the `regions` list there (add a region if none fits), and drop
 its logo in `assets/icons/` (grab the theater's own favicon/PNG from its site).
 The UI only ever sees the normalized shape — plus the per-screening theater tag
-that `fetchAllShows()` adds — so it never needs to change. For another Cinema
-City branch, reuse the factory with that branch's `TheatreId`:
+that `fetchAllShows()` adds — so it never needs to change. For a new branch of
+a chain that is already bundled, reuse that chain's factory with the branch's
+id — see the existing entries in `registry.js`:
 
-```js
-createCinemaCityProvider({ id: "cc-rishon", name: "Cinema City · ראשון", short: "ראשון", icon: "assets/icons/cinema-city.png", region: "tlv", theatreId: <id> })
-```
-
-For another Lev branch, reuse its factory with that branch's `locationId`
-(branch IDs are listed in [`docs/lev-presentations-api.md`](docs/lev-presentations-api.md)):
-
-```js
-createLevProvider({ id: "lev-telaviv", name: "לב · תל אביב", short: "תל אביב", icon: "assets/icons/lev.png", region: "tlv", locationId: 1150 })
-```
-
-For another Planet Cinema branch, reuse its factory with that branch's `cinemaId`
-(branch IDs are listed in [`docs/planet-cinema-api.md`](docs/planet-cinema-api.md)):
-
-```js
-createPlanetProvider({ id: "planet-haifa", name: "פלאנט · חיפה", short: "חיפה", icon: "assets/icons/planet-cinema.png", region: "north", cinemaId: 1070 })
-```
+| Chain | Factory | Branch id | Where to find it |
+|---|---|---|---|
+| Cinema City | `createCinemaCityProvider` | `theatreId` | `TixTheatreId` in the site's theater list |
+| Lev | `createLevProvider` | `locationId` | [`docs/lev-presentations-api.md`](docs/lev-presentations-api.md) §7 |
+| Planet / Rav-Hen | `createPlanetProvider` | `cinemaId` | [`docs/planet-cinema-api.md`](docs/planet-cinema-api.md) §2 |
+| Hot Cinema | `createHotCinemaProvider` | `theaterId` | [`docs/hot-cinema-api.md`](docs/hot-cinema-api.md) |
 
 ## The Cinema City provider
 
@@ -150,6 +141,10 @@ createPlanetProvider({ id: "planet-haifa", name: "פלאנט · חיפה", short
 - Makes 1–2 requests per branch (standard halls + optional VIP), merges and
   de-dupes them, groups screenings by `ExportCode`, and sorts chronologically.
 - Each showtime links to the booking handle built from `Dates.EventId`.
+- All eight branches are included: Galilot (`1170`), Rishon LeZion (`1173`),
+  Jerusalem (`1174`), Kfar Saba (`1175`), Netanya (`1176`), Hadera (`1350`),
+  Beer Sheva (`1178`) and Ashdod (`1181`). The Prime/ONYX/Lounge venue types
+  return the same events as the standard halls, so only VIP is fetched on top.
 
 ## The Lev provider
 
@@ -159,6 +154,9 @@ createPlanetProvider({ id: "planet-haifa", name: "פלאנט · חיפה", short
   physical-hall rows (`venueTypeId === 1`), groups screenings by `featureId`, and
   sorts chronologically.
 - Each showtime links to the order page built from the presentation `id`.
+- Every branch with physical-hall screenings is included: Tel Aviv, Ramat
+  HaSharon, Ra'anana, Even Yehuda, Daniel (Herzliya), Smadar (Jerusalem) and
+  Omer. The other ids in the locations list return no screenings.
 
 ## The Planet Cinema provider
 
@@ -169,6 +167,22 @@ createPlanetProvider({ id: "planet-haifa", name: "פלאנט · חיפה", short
   screenings by `filmId`, and sorts chronologically. A single date that fails to
   load is tolerated; the branch only errors if every date request fails.
 - Each showtime links to the `bookingLink` returned on the event.
+- All six branches are included: Ayalon (`1025`), Rishon LeZion (`1072`),
+  Jerusalem (`1073`), Haifa (`1070`), Zichron Yaakov (`1075`) and Beer Sheva
+  (`1074`).
+
+## The Hot Cinema provider
+
+- Same ticketing platform as Cinema City but no flat endpoint — see
+  [`docs/hot-cinema-api.md`](docs/hot-cinema-api.md). It reads the dates with
+  screenings from the branch's theater page, then makes one `TheaterEvents2`
+  request per date for the next 14 days, grouping screenings by `MovieId`
+  under the queried business day. A single date that fails is tolerated; the
+  branch only errors if every date request fails.
+- Each showtime links to `/order/?eventID=…`, which redirects to the ticket page.
+- All ten cinemas are included: Petah Tikva, Rehovot, Modi'in, Kfar Saba,
+  Haifa, Kiryon, Karmiel, Nahariya, Ashdod and Ashkelon. The Pop Up venue and
+  the Dream Stage (a live-show stage in Holon) are left out.
 
 ## The Rav-Hen provider
 
