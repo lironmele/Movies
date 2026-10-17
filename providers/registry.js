@@ -48,7 +48,7 @@ export const providers = [
     short: "גלילות",
     icon: "assets/icons/cinema-city.png",
     region: "sharon",
-    theatreId: 1170,
+    locationId: 1170,
   }),
   createCinemaCityProvider({
     id: "cc-rishon",
@@ -56,7 +56,7 @@ export const providers = [
     short: "ראשון לציון",
     icon: "assets/icons/cinema-city.png",
     region: "tlv",
-    theatreId: 1173,
+    locationId: 1173,
   }),
   createCinemaCityProvider({
     id: "cc-jerusalem",
@@ -64,7 +64,7 @@ export const providers = [
     short: "ירושלים",
     icon: "assets/icons/cinema-city.png",
     region: "jlm",
-    theatreId: 1174,
+    locationId: 1174,
   }),
   createCinemaCityProvider({
     id: "cc-kfar-saba",
@@ -72,7 +72,7 @@ export const providers = [
     short: "כפר סבא",
     icon: "assets/icons/cinema-city.png",
     region: "sharon",
-    theatreId: 1175,
+    locationId: 1175,
   }),
   createCinemaCityProvider({
     id: "cc-netanya",
@@ -80,7 +80,7 @@ export const providers = [
     short: "נתניה",
     icon: "assets/icons/cinema-city.png",
     region: "sharon",
-    theatreId: 1176,
+    locationId: 1176,
   }),
   createCinemaCityProvider({
     id: "cc-hadera",
@@ -88,7 +88,7 @@ export const providers = [
     short: "חדרה",
     icon: "assets/icons/cinema-city.png",
     region: "sharon",
-    theatreId: 1350,
+    locationId: 1350,
   }),
   createCinemaCityProvider({
     id: "cc-beer-sheva",
@@ -96,7 +96,7 @@ export const providers = [
     short: "באר שבע",
     icon: "assets/icons/cinema-city.png",
     region: "south",
-    theatreId: 1178,
+    locationId: 1178,
   }),
   createCinemaCityProvider({
     id: "cc-ashdod",
@@ -104,7 +104,7 @@ export const providers = [
     short: "אשדוד",
     icon: "assets/icons/cinema-city.png",
     region: "south",
-    theatreId: 1181,
+    locationId: 1181,
   }),
   createLevProvider({
     id: "lev-telaviv",
@@ -316,8 +316,8 @@ export const providers = [
     theaterId: 8,
   }),
   // Add more providers here. Every chain's factory takes that branch's id, so
-  // a new branch is one more entry: Cinema City `theatreId` (the `TixTheatreId`
-  // in the site's theater list), Lev `locationId` (../docs/lev-presentations-api.md
+  // a new branch is one more entry: Cinema City `locationId` (../docs/cinema-city-api.md
+  // "Branch IDs"), Lev `locationId` (../docs/lev-presentations-api.md
   // §7), Planet / Rav-Hen `cinemaId` (../docs/planet-cinema-api.md §2) and Hot
   // Cinema `theaterId` (../docs/hot-cinema-api.md).
 ];
