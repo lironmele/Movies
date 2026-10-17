@@ -129,22 +129,25 @@ id — see the existing entries in `registry.js`:
 
 | Chain | Factory | Branch id | Where to find it |
 |---|---|---|---|
-| Cinema City | `createCinemaCityProvider` | `theatreId` | `TixTheatreId` in the site's theater list |
+| Cinema City | `createCinemaCityProvider` | `locationId` | [`docs/cinema-city-api.md`](docs/cinema-city-api.md) "Branch IDs" |
 | Lev | `createLevProvider` | `locationId` | [`docs/lev-presentations-api.md`](docs/lev-presentations-api.md) §7 |
 | Planet / Rav-Hen | `createPlanetProvider` | `cinemaId` | [`docs/planet-cinema-api.md`](docs/planet-cinema-api.md) §2 |
 | Hot Cinema | `createHotCinemaProvider` | `theaterId` | [`docs/hot-cinema-api.md`](docs/hot-cinema-api.md) |
 
 ## The Cinema City provider
 
-- Pulls from the undocumented `EventsFlat` endpoint — see
-  [`docs/cinema-city-galilot-api.md`](docs/cinema-city-galilot-api.md).
-- Makes 1–2 requests per branch (standard halls + optional VIP), merges and
-  de-dupes them, groups screenings by `ExportCode`, and sorts chronologically.
-- Each showtime links to the booking handle built from `Dates.EventId`.
+- Pulls from the ticketing backend's `/api/presentations/` endpoint on
+  `tickets.cinema-city.co.il` (the same platform Lev uses) — see
+  [`docs/cinema-city-api.md`](docs/cinema-city-api.md). The old `EventsFlat`
+  endpoint died with the October 2026 move to a Wix site.
+- Makes one request per branch; it already covers every hall type (standard,
+  VIP, Prime, Lounge, Onyx). Screenings are grouped by `featureId` and sorted
+  chronologically.
+- Each showtime links to `https://tickets.cinema-city.co.il/order/<id>`, the
+  page the site's own "הזמנת כרטיסים" button opens.
 - All eight branches are included: Galilot (`1170`), Rishon LeZion (`1173`),
   Jerusalem (`1174`), Kfar Saba (`1175`), Netanya (`1176`), Hadera (`1350`),
-  Beer Sheva (`1178`) and Ashdod (`1181`). The Prime/ONYX/Lounge venue types
-  return the same events as the standard halls, so only VIP is fetched on top.
+  Beer Sheva (`1178`) and Ashdod (`1181`).
 
 ## The Lev provider
 

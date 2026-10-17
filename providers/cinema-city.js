@@ -1,83 +1,83 @@
 // Cinema City provider.
 //
 // `createCinemaCityProvider` builds a provider for any Cinema City branch from
-// its TheatreId. The undocumented `EventsFlat` endpoint returns a branch's
-// entire forward schedule in 1–2 requests (standard halls + optional VIP).
-// See ../docs/cinema-city-galilot-api.md for the endpoint details.
+// its locationId. Since the October 2026 move to a Wix site, showtimes come
+// from the chain's ticketing backend (the same platform Lev uses): the
+// `/api/presentations/` endpoint on tickets.cinema-city.co.il returns a
+// branch's entire forward schedule — every hall type (standard, VIP, Prime,
+// Lounge, Onyx…) — in a single request.
+// See ../docs/cinema-city-api.md for the endpoint details.
 
 import { viaProxy } from "../lib/proxy.js";
 import { toDayKey, dayLabel } from "../lib/day.js";
 
-const ENDPOINT = "https://www.cinema-city.co.il/tickets/EventsFlat";
-const VENUE_STANDARD = 1;
-const VENUE_VIP = 3;
+const ORIGIN = "https://tickets.cinema-city.co.il";
+const ENDPOINT = `${ORIGIN}/api/presentations/`;
+const VENUE_VOD = 101; // home-streaming rows on this platform; not a hall
 
-// "DD/MM/YYYY HH:MM" -> epoch millis, for chronological sorting.
-function toTs(dateStr) {
-  const [d, t] = dateStr.split(" ");
-  const [dd, mm, yyyy] = d.split("/");
-  return new Date(`${yyyy}-${mm}-${dd}T${t || "00:00"}`).getTime();
-}
-
-// "DD/MM/YYYY HH:MM" -> canonical "YYYY-MM-DD" day key.
-function toDay(dateStr) {
-  const [dd, mm, yyyy] = dateStr.split(" ")[0].split("/").map(Number);
+// "YYYY-MM-DD" (Asia/Jerusalem business day) -> canonical "YYYY-MM-DD" day key.
+function toDay(businessDate) {
+  const [yyyy, mm, dd] = businessDate.split("-").map(Number);
   return toDayKey(yyyy, mm, dd);
 }
 
-// The site's order flow (ticketsNew2.js -> navigateToOrder) hits
-// `/order/?eventID=<id>&theaterId=<tid>`, which 302-redirects to the canonical
-// order page on the ticketing host. Link straight to that final URL so the
-// "buy" link resolves in one hop instead of 404-ing.
-function bookingUrl(eventId) {
-  return `https://tickets.cinema-city.co.il/order/${eventId}`;
+// "YYYY-MM-DD HH:MM" (no offset) -> epoch millis, for chronological sorting.
+// Parsed as local wall-clock; all rows share Asia/Jerusalem, so order holds.
+function toTs(dateTime) {
+  return new Date(dateTime.replace(" ", "T")).getTime();
 }
 
-function buildEndpointUrl(theatreId, venueTypeId) {
-  const today = new Date().toISOString().slice(0, 10);
+// The Wix site's "הזמנת כרטיסים" button opens this page directly (no redirect).
+function bookingUrl(id) {
+  return `${ORIGIN}/order/${id}`;
+}
+
+// Today's date in Asia/Jerusalem as "YYYY-MM-DD" (en-CA yields ISO order).
+function israelToday() {
+  return new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Jerusalem" });
+}
+
+function buildEndpointUrl(locationId) {
   const qs = new URLSearchParams({
-    TheatreId: theatreId,
-    VenueTypeId: venueTypeId,
-    MovieId: 0, // 0 = all movies — this is what flattens the whole schedule
-    Date: today, // required by the endpoint but ignored as a filter
+    locationId, // server-side filter to one branch
+    startDate: israelToday(), // no endDate: keep everything published ahead
   });
   return `${ENDPOINT}?${qs.toString()}`;
 }
 
-async function fetchEvents(theatreId, venueTypeId) {
-  const res = await fetch(viaProxy(buildEndpointUrl(theatreId, venueTypeId)), {
-    headers: { "X-Requested-With": "XMLHttpRequest" },
+async function fetchPresentations(locationId) {
+  const res = await fetch(viaProxy(buildEndpointUrl(locationId)), {
+    headers: { Accept: "application/json" },
   });
   if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
   const data = await res.json();
-  return Array.isArray(data) ? data : [];
+  return Array.isArray(data?.presentations) ? data.presentations : [];
 }
 
-// Flat screening array -> normalized shows grouped by movie.
-function groupShows(events) {
+// Flat presentation array -> normalized shows grouped by movie.
+function groupShows(presentations) {
   const shows = new Map();
   const seen = new Set();
-  for (const e of events) {
-    const d = e.Dates;
-    if (!d) continue;
-    const dedupeKey = `${e.ExportCode}|${d.EventId}`;
-    if (seen.has(dedupeKey)) continue; // standard + VIP can overlap
-    seen.add(dedupeKey);
-    const key = String(e.ExportCode ?? e.Name); // ExportCode is the stable id
-    if (!shows.has(key)) shows.set(key, { key, name: e.Name, screenings: [] });
-    const dayKey = toDay(d.Date);
+  for (const p of presentations) {
+    if (p.venueTypeId === VENUE_VOD) continue; // drop VOD defensively
+    if (!p.dateTime || !p.businessDate) continue;
+    if (seen.has(p.id)) continue;
+    seen.add(p.id);
+    const key = String(p.featureId ?? p.featureName); // featureId is the stable id
+    if (!shows.has(key)) shows.set(key, { key, name: p.featureName, screenings: [] });
+    const dayKey = toDay(p.businessDate);
     shows.get(key).screenings.push({
-      ts: toTs(d.Date),
+      ts: toTs(p.dateTime),
       dayKey, // canonical "YYYY-MM-DD" — groups across providers
       day: dayLabel(dayKey), // display label, built from the same source
-      hour: d.Hour,
-      bookingUrl: bookingUrl(d.EventId),
+      hour: p.dateTime.slice(11, 16), // "HH:MM"
+      bookingUrl: bookingUrl(p.id),
     });
   }
   return [...shows.values()];
 }
 
-export function createCinemaCityProvider({ id, name, short, icon, region, theatreId, includeVip = true }) {
+export function createCinemaCityProvider({ id, name, short, icon, region, locationId }) {
   return {
     id,
     name,
@@ -85,16 +85,7 @@ export function createCinemaCityProvider({ id, name, short, icon, region, theatr
     icon,
     region,
     async fetchShows() {
-      const venues = includeVip ? [VENUE_STANDARD, VENUE_VIP] : [VENUE_STANDARD];
-      const results = await Promise.allSettled(
-        venues.map((v) => fetchEvents(theatreId, v))
-      );
-      // Tolerate a missing VIP hall; only fail if every request failed.
-      if (results.every((r) => r.status === "rejected")) throw results[0].reason;
-      const events = results.flatMap((r) =>
-        r.status === "fulfilled" ? r.value : []
-      );
-      return groupShows(events);
+      return groupShows(await fetchPresentations(locationId));
     },
   };
 }
