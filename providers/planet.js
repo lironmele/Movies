@@ -10,7 +10,7 @@
 // See ../docs/planet-cinema-api.md for the endpoint details.
 
 import { viaProxy } from "../lib/proxy.js";
-import { toDayKey, dayLabel } from "../lib/day.js";
+import { toDayKey, dayLabel, israelTs } from "../lib/day.js";
 
 export const PLANET_BASE = "https://www.planetcinema.co.il/il/data-api-service/v1/quickbook/10100";
 export const RAV_HEN_BASE = "https://www.rav-hen.co.il/rh/data-api-service/v1/quickbook/10104";
@@ -18,9 +18,9 @@ const LANG = "he_IL";
 const WINDOW_DAYS = 14; // how far ahead to ask for dates; API caps to what's published
 
 // "YYYY-MM-DDTHH:MM:SS" (no offset, Asia/Jerusalem) -> epoch millis for sorting.
-// Parsed as local wall-clock; all rows share Asia/Jerusalem, so order holds.
+// Interpreted in Asia/Jerusalem regardless of the runner's time zone.
 function toTs(eventDateTime) {
-  return new Date(eventDateTime).getTime();
+  return israelTs(eventDateTime);
 }
 
 // The API's `bookingLink` points at the internal data path

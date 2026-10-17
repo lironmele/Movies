@@ -8,7 +8,7 @@
 // See ../docs/hot-cinema-api.md for the endpoint details.
 
 import { viaProxy } from "../lib/proxy.js";
-import { toDayKey, dayLabel } from "../lib/day.js";
+import { toDayKey, dayLabel, israelTs } from "../lib/day.js";
 
 const ORIGIN = "https://www.hotcinema.co.il";
 const WINDOW_DAYS = 14; // how far ahead to fetch; one request per date
@@ -20,9 +20,9 @@ function toDay(date) {
 }
 
 // "YYYY-MM-DDTHH:MM:SS" (no offset, Asia/Jerusalem) -> epoch millis for sorting.
-// Parsed as local wall-clock; all rows share Asia/Jerusalem, so order holds.
+// Interpreted in Asia/Jerusalem regardless of the runner's time zone.
 function toTs(dateTime) {
-  return new Date(dateTime).getTime();
+  return israelTs(dateTime);
 }
 
 // The site's order button (theater-order.js -> order) hits `/order/?eventID=`,

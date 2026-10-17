@@ -7,7 +7,7 @@
 // See ../docs/lev-presentations-api.md for the endpoint details.
 
 import { viaProxy } from "../lib/proxy.js";
-import { toDayKey, dayLabel } from "../lib/day.js";
+import { toDayKey, dayLabel, israelTs } from "../lib/day.js";
 
 const ENDPOINT = "https://ticket.lev.co.il/api/presentations/";
 const VENUE_HALL = 1; // physical cinema hall (101 = VOD, excluded)
@@ -20,9 +20,9 @@ function toDay(businessDate) {
 }
 
 // "YYYY-MM-DD HH:MM" (no offset) -> epoch millis, for chronological sorting.
-// Parsed as local wall-clock; all rows share Asia/Jerusalem, so order holds.
+// Interpreted in Asia/Jerusalem regardless of the runner's time zone.
 function toTs(dateTime) {
-  return new Date(dateTime.replace(" ", "T")).getTime();
+  return israelTs(dateTime);
 }
 
 function bookingUrl(id) {
