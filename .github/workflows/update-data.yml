@@ -25,10 +25,18 @@ jobs:
         with:
           node-version: 20
 
+      # Exits non-zero if any provider failed, but still writes partial data
+      # first and then sets the `written` output.
       - name: Fetch showtimes
+        id: fetch
         run: node scripts/build-data.mjs
 
+      # Commit whatever was written, even when the fetch step failed on provider
+      # errors. Skipped if the script never wrote the file (all providers
+      # failed, or it crashed), so nothing broken is committed. The job still
+      # ends red because the fetch step failed.
       - name: Commit if changed
+        if: ${{ !cancelled() && steps.fetch.outputs.written == 'true' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
