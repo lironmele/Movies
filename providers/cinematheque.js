@@ -9,7 +9,7 @@
 // See ../docs/cinematheque-tlv-shown.md for the page structure.
 
 import { viaProxy } from "../lib/proxy.js";
-import { toDayKey, dayLabel } from "../lib/day.js";
+import { toDayKey, dayLabel, israelTs } from "../lib/day.js";
 
 const PAGE = "https://www.cinema.co.il/shown/";
 const WINDOW_DAYS = 14; // how many days ahead to fetch, one page per day
@@ -84,8 +84,7 @@ function groupShows(days) {
     for (const r of rows) {
       if (!shows.has(r.name)) shows.set(r.name, { key: r.name, name: r.name, screenings: [] });
       shows.get(r.name).screenings.push({
-        // Parsed as local wall-clock; all rows share Asia/Jerusalem, so order holds.
-        ts: new Date(`${dayKey}T${r.hour}:00`).getTime(),
+        ts: israelTs(`${dayKey}T${r.hour}`), // Israel wall-clock, runner-TZ independent
         dayKey, // canonical "YYYY-MM-DD" — groups across providers
         day: dayLabel(dayKey), // display label, built from the same source
         hour: r.hour,

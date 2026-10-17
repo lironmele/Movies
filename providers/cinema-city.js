@@ -9,7 +9,7 @@
 // See ../docs/cinema-city-api.md for the endpoint details.
 
 import { viaProxy } from "../lib/proxy.js";
-import { toDayKey, dayLabel } from "../lib/day.js";
+import { toDayKey, dayLabel, israelTs } from "../lib/day.js";
 
 const ORIGIN = "https://tickets.cinema-city.co.il";
 const ENDPOINT = `${ORIGIN}/api/presentations/`;
@@ -22,9 +22,9 @@ function toDay(businessDate) {
 }
 
 // "YYYY-MM-DD HH:MM" (no offset) -> epoch millis, for chronological sorting.
-// Parsed as local wall-clock; all rows share Asia/Jerusalem, so order holds.
+// Interpreted in Asia/Jerusalem regardless of the runner's time zone.
 function toTs(dateTime) {
-  return new Date(dateTime.replace(" ", "T")).getTime();
+  return israelTs(dateTime);
 }
 
 // The Wix site's "הזמנת כרטיסים" button opens this page directly (no redirect).
