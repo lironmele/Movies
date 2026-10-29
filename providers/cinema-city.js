@@ -9,6 +9,7 @@
 // See ../docs/cinema-city-api.md for the endpoint details.
 
 import { viaProxy } from "../lib/proxy.js";
+import { fetchWithRetry } from "../lib/http.js";
 import { toDayKey, dayLabel, israelTs } from "../lib/day.js";
 
 const ORIGIN = "https://tickets.cinema-city.co.il";
@@ -46,7 +47,7 @@ function buildEndpointUrl(locationId) {
 }
 
 async function fetchPresentations(locationId) {
-  const res = await fetch(viaProxy(buildEndpointUrl(locationId)), {
+  const res = await fetchWithRetry(viaProxy(buildEndpointUrl(locationId)), {
     headers: { Accept: "application/json" },
   });
   if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);

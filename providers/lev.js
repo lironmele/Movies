@@ -7,6 +7,7 @@
 // See ../docs/lev-presentations-api.md for the endpoint details.
 
 import { viaProxy } from "../lib/proxy.js";
+import { fetchWithRetry } from "../lib/http.js";
 import { toDayKey, dayLabel, israelTs } from "../lib/day.js";
 
 const ENDPOINT = "https://ticket.lev.co.il/api/presentations/";
@@ -51,7 +52,7 @@ function buildEndpointUrl(locationId) {
 }
 
 async function fetchPresentations(locationId) {
-  const res = await fetch(viaProxy(buildEndpointUrl(locationId)), {
+  const res = await fetchWithRetry(viaProxy(buildEndpointUrl(locationId)), {
     headers: { Accept: "application/json" },
   });
   if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
