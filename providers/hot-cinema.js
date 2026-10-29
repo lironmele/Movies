@@ -8,6 +8,7 @@
 // See ../docs/hot-cinema-api.md for the endpoint details.
 
 import { viaProxy } from "../lib/proxy.js";
+import { fetchWithRetry } from "../lib/http.js";
 import { toDayKey, dayLabel, israelTs } from "../lib/day.js";
 
 const ORIGIN = "https://www.hotcinema.co.il";
@@ -48,7 +49,7 @@ function addDays(isoDate, days) {
 // `eventsdays='["25/09/2026", ...]'`, unsorted and running months ahead.
 // Keep the ones within our forward window.
 async function fetchDates(theaterId) {
-  const res = await fetch(viaProxy(`${ORIGIN}/theater/${theaterId}`));
+  const res = await fetchWithRetry(viaProxy(`${ORIGIN}/theater/${theaterId}`));
   if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
   const match = (await res.text()).match(/eventsdays='([^']*)'/);
   if (!match) throw new Error("no eventsdays on theater page");
@@ -63,7 +64,7 @@ async function fetchDates(theaterId) {
 // One business day's movies, each with its screenings in `Dates`.
 async function fetchDateEvents(theaterId, date) {
   const qs = new URLSearchParams({ date, theatreid: theaterId, movieid: 0 });
-  const res = await fetch(viaProxy(`${ORIGIN}/tickets/TheaterEvents2?${qs.toString()}`), {
+  const res = await fetchWithRetry(viaProxy(`${ORIGIN}/tickets/TheaterEvents2?${qs.toString()}`), {
     headers: { "X-Requested-With": "XMLHttpRequest" },
   });
   if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);

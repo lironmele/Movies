@@ -9,6 +9,7 @@
 // See ../docs/cinematheque-tlv-shown.md for the page structure.
 
 import { viaProxy } from "../lib/proxy.js";
+import { fetchWithRetry } from "../lib/http.js";
 import { toDayKey, dayLabel, israelTs } from "../lib/day.js";
 
 const PAGE = "https://www.cinema.co.il/shown/";
@@ -39,7 +40,7 @@ function decodeEntities(s) {
 }
 
 async function fetchDayHtml(date) {
-  const res = await fetch(viaProxy(`${PAGE}?date=${date}`), {
+  const res = await fetchWithRetry(viaProxy(`${PAGE}?date=${date}`), {
     headers: { Accept: "text/html", "User-Agent": "Mozilla/5.0" },
   });
   if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);

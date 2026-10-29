@@ -10,6 +10,7 @@
 // See ../docs/planet-cinema-api.md for the endpoint details.
 
 import { viaProxy } from "../lib/proxy.js";
+import { fetchWithRetry } from "../lib/http.js";
 import { toDayKey, dayLabel, israelTs } from "../lib/day.js";
 
 export const PLANET_BASE = "https://www.planetcinema.co.il/il/data-api-service/v1/quickbook/10100";
@@ -52,7 +53,7 @@ function addDays(isoDate, days) {
 
 async function fetchJson(url) {
   const qs = new URLSearchParams({ attr: "", lang: LANG });
-  const res = await fetch(viaProxy(`${url}?${qs.toString()}`), {
+  const res = await fetchWithRetry(viaProxy(`${url}?${qs.toString()}`), {
     headers: { Accept: "application/json" },
   });
   if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
